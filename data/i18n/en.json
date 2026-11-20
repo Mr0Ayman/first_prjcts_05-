@@ -1,0 +1,145 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "topBanner": "VILLAS STARTING FROM €1,000 for 10 people",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Our Services",
+    "events": "Events",
+    "contact": "Contact",
+    "quoteBtn": "Request a Quote",
+    "call": "Call",
+    "language": "Language",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "hero": {
+    "title": "MARRAKECH SÉMINAIRE MAISON D'HÔTES",
+    "subtitle": "Properties up to 60 bedrooms",
+    "cta": "Request a Quote"
+  },
+  "intro": {
+    "title": "OUR GUESTHOUSES",
+    "p1": "Marrakech Séminaire Maison D'Hôtes is pleased to present its various properties. Our numerous and diverse villas will allow you to find the one suited to your exclusive stay.",
+    "p2": "Whether you are looking for a villa for your wedding requiring 60 beds or for a family gathering of about fifteen guests, we have the villa suited to each of these events. Furthermore, if you wish, our on-site teams supervised by your event organizer, Nadia, will be there to assist you in organizing your seminars, your Arabian Nights wedding, your birthday or a product launch or a yoga retreat. We are capable of managing for you:",
+    "s1": "airport pickup with our trusted transport partners",
+    "s2": "oriental tastings prepared by our kitchen brigades",
+    "s3": "performances by our DJs, fire-eaters and folklore troupes for unforgettable evenings",
+    "s4": "Nadia will be your dedicated contact throughout your stay so you can fully enjoy your family, colleagues and friends.",
+    "pPlaceholder1Title": "[SERVICE TO BE CONFIRMED 1]",
+    "pPlaceholder1Text": "Space reserved for the presentation of an additional exclusive service.",
+    "pPlaceholder2Title": "[SERVICE TO BE CONFIRMED 2]",
+    "pPlaceholder2Text": "Space reserved for the presentation of an additional exclusive service.",
+    "pPlaceholder3Title": "[SERVICE TO BE CONFIRMED 3]",
+    "pPlaceholder3Text": "Space reserved for the presentation of an additional exclusive service.",
+    "pPlaceholder4Title": "[SERVICE TO BE CONFIRMED 4]",
+    "pPlaceholder4Text": "Space reserved for the presentation of an additional exclusive service."
+  },
+  "roomCards": {
+    "c5_10": "From 5 to 10 bedrooms",
+    "c10_20": "From 10 to 20 bedrooms",
+    "c20_40": "From 20 to 40 bedrooms",
+    "c40_60": "From 40 to 60 bedrooms"
+  },
+  "sections": {
+    "ourVillas": "Our Guesthouses",
+    "ourProperties": "Our Establishments",
+    "ourServices": "Our Services",
+    "eventsTeaser": "Our Events",
+    "eventsTeaserText": "Discover our prestige receptions, weddings and private evenings in the heart of Marrakech.",
+    "eventsTeaserBtn": "Explore Gallery",
+    "testimonials": "Testimonials",
+    "testimonialsIntro": "Stories and feedback from our clients for their exclusive stays in Marrakech.",
+    "shareStory": "Did you host an event with us? Share your story via WhatsApp",
+    "placeholderTestimonialTitle": "[TESTIMONIAL TO BE CONFIRMED]",
+    "placeholderTestimonialText": "This space will feature a verified client testimonial upon receipt of their written consent."
+  },
+  "about": {
+    "h1": "ABOUT US",
+    "p1": "Listen carefully. Your next event does not need to be merely « decent ». It must be unforgettable.",
+    "p2": "Picture this: your guests touch down in Marrakech, our teams handle their airport pickup, and they arrive at a villa designed specifically for your event, exclusively privatized. No more rushing around. No more managing everything. You enjoy.",
+    "p3": "That is what we do. An Arabian Nights wedding where you need 60 beds? We have the villa. A family celebration for fifteen guests? We have the villa. A seminar, a birthday, a product launch, or a yoga retreat? We have the villa.",
+    "p4": "And while you enjoy, Nadia, your event organizer, is your dedicated relay. Oriental tastings prepared by our culinary brigades, DJs, fire-eaters, and folklore groups for lively evenings: we manage it all.",
+    "p5": "So ask yourself one single question: do you want to organize just another event, or the one your guests will remember for years to come?",
+    "p6": "Do not let this date slip away. Request your quote today."
+  },
+  "eventsPage": {
+    "h1": "EVENTS GALLERY",
+    "subtitle": "Precious moments and atmospheres from our receptions in Marrakech",
+    "backToAlbums": "All Albums",
+    "photosCount": "{count} photos",
+    "openLightbox": "Enlarge image",
+    "prev": "Previous",
+    "next": "Next",
+    "close": "Close"
+  },
+  "contactPage": {
+    "h1": "CONTACT OUR CONCIERGE",
+    "subtitle": "Tailored guidance to bring your private event to life in Marrakech",
+    "addressTitle": "Address",
+    "phoneTitle": "Phone",
+    "emailTitle": "Email",
+    "hoursTitle": "Availability",
+    "hoursText": "7 days a week for the organization of your stays and events"
+  },
+  "quoteModal": {
+    "title": "Request a Custom Quote",
+    "intro": "Complete this form to receive a tailored proposal for your upcoming event.",
+    "fullName": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "eventType": "Event Type",
+    "guests": "Number of guests / bedrooms",
+    "dates": "Desired dates",
+    "notes": "Specific requests or details",
+    "submit": "Submit Request",
+    "whatsappSubmit": "Submit via WhatsApp",
+    "disclaimer": "Your information is strictly used to prepare your personalized quote.",
+    "datesPlaceholder": "e.g. Spring"
+  },
+  "footer": {
+    "linksTitle": "Useful Links",
+    "propertiesTitle": "Our Establishments",
+    "capacitiesTitle": "Capacities",
+    "copyright": "Copyright © 2026 Marrakech Séminaires Maison d'Hôtes. All Rights Reserved."
+  },
+  "seo": {
+    "homeTitle": "Marrakech Séminaire Maison d'Hôtes | Prestige Villas",
+    "homeDesc": "Exclusive rental of villas and guesthouses up to 60 bedrooms in Marrakech for corporate seminars, weddings, and private celebrations.",
+    "aboutTitle": "About Us | Marrakech Séminaire Maison d'Hôtes",
+    "aboutDesc": "Discover our commitment and Nadia's personalized support to create unforgettable events in exclusive Marrakech villas.",
+    "servicesTitle": "Event Services in Marrakech | Luxury Villas",
+    "servicesDesc": "Seminars, weddings, birthdays, family celebrations, and bespoke entertainment in privatized Marrakech villas.",
+    "eventsTitle": "Events & Galas Gallery | Marrakech Guesthouses",
+    "eventsDesc": "Photos of our weddings, Berber evenings, oriental banquets, and exclusive entertainment across our Marrakech estates.",
+    "contactTitle": "Contact & Quote | Marrakech Séminaire Maison d'Hôtes",
+    "contactDesc": "Contact Nadia and our hospitality team to reserve your privatized villa in Marrakech and receive a tailored quote within 24 hours.",
+    "cat5_10Title": "5 to 10 Bedroom Villas in Marrakech | Private Events",
+    "cat5_10Desc": "Prestige villas from 5 to 10 bedrooms with private pool in Marrakech for executive meetings and intimate stays.",
+    "cat10_20Title": "10 to 20 Bedroom Villas in Marrakech | Seminars & Events",
+    "cat10_20Desc": "Spacious guesthouses with 10 to 20 bedrooms in Marrakech for corporate retreats and family reunions.",
+    "cat20_40Title": "20 to 40 Bedroom Estates in Marrakech | Large Gatherings",
+    "cat20_40Desc": "Exceptional domains offering 20 to 40 bedrooms in Marrakech for conventions, luxury weddings, and product launches.",
+    "cat40_60Title": "40 to 60 Bedroom Properties in Marrakech | Grand Receptions",
+    "cat40_60Desc": "Grand estates up to 60 bedrooms in Marrakech accommodating all your guests in complete privacy."
+  },
+  "serviceDetail": {
+    "whyUsTitle": "Why Choose Us?",
+    "whyUsText": "Because with us, you have a single dedicated contact person and we take care of everything. We offer multiple luxury properties in Marrakech, ranging from 5 to 60 bedrooms, and handpick the ideal exclusive venue for your celebration. Our experienced on-site team is personally supervised by Nadia, your dedicated event coordinator, acting as your seamless liaison throughout your stay.",
+    "whatWeOfferTitle": "What We Provide",
+    "offers": [
+      "Multiple private estates at your disposal: luxury villas, authentic riads, and boutique guesthouses from 5 to 60 bedrooms",
+      "A dedicated on-site professional team, led by Nadia, your primary event planner",
+      "Airport meet-and-greet with our trusted premium transport partners",
+      "Authentic Moroccan cuisine and oriental gourmet tastings crafted by our private in-house chefs",
+      "Special dietary requirements and allergies accommodated: please specify them in your request",
+      "Lively evening entertainment: live DJs, fire-eaters, and traditional folklore performers for vibrant nights",
+      "Signature Marrakech excursions: Agafay desert dinners, quad biking, and 4x4 Atlas mountain expeditions"
+    ],
+    "photoPlaceholderLabel": "Photos to be added soon",
+    "photoPlaceholderNotice": "This gallery space is reserved for authentic event photography, to be updated shortly.",
+    "closingCta": "Share your vision with us and receive a tailored proposal crafted specifically for your event.",
+    "datesPlaceholder": "e.g. Spring"
+  }
+}

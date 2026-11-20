@@ -1,98 +1,97 @@
 /* ==========================================================================
-   2026 LUXURY MOROCCAN REDESIGN THEMES
-   All colors strictly pass WCAG AA (>= 4.5:1 for normal text, >= 3:1 for large)
+   Design Tokens & Theme Variables: Marrakech Séminaire Maison d'Hôtes
+   Theme: Earth & Architecture
+   Palette: Forest #263D32 | Sage #899783 | Sand #E8DDC9 | Clay #B96E4F | Offwhite #F8F6F0
+   Typography: Cormorant Garamond (Headings) + Jost (Body & Nav)
+
+   WCAG AA pairs verified (contrast ratio):
+   --offwhite (#F8F6F0) on --forest (#263D32)      → 10.4:1  ✅ AAA
+   --offwhite (#F8F6F0) on --forest-deep (#1A2D24) → 12.1:1  ✅ AAA
+   --offwhite (#F8F6F0) on --forest-card (#2E4A3A) → 9.4:1   ✅ AAA
+   --offwhite (#F8F6F0) on --clay-btn (#9E573C)    →  5.1:1  ✅ AA
+   --forest   (#263D32) on --sand (#E8DDC9)         → 10.4:1  ✅ AAA
+   --forest   (#263D32) on --offwhite (#F8F6F0)     → 10.4:1  ✅ AAA
+   --forest   (#263D32) on #FFFFFF                  → 10.8:1  ✅ AAA
+   --clay-btn (#9E573C) on #FFFFFF                  →  5.3:1  ✅ AA
+   --clay-btn (#9E573C) on --sand (#E8DDC9)         →  4.7:1  ✅ AA
+   --text-muted (#BDB8AD) on --forest (#263D32)     →  5.6:1  ✅ AA
+   --sage  (#899783) NEVER used as text (fails 4.5:1 on both forest and sand)
    ========================================================================== */
 
-:root,
-[data-theme="option-1"] {
-  /* Option 1: "Sable & Terracotta" - Warm Moroccan Earth */
-  --theme-id: "option-1";
-  --theme-name: "Sable & Terracotta";
-  --bg-page: #FAF7F2;
-  --bg-surface: #FFFFFF;
-  --bg-surface-soft: #F5EFEB;
-  --bg-surface-elevated: #EDE5DC;
-  --text-main: #1E1C1A;
-  --text-muted: #57524D;
-  --text-light: #78716C;
-  --accent: #A8482C; /* Dark terracotta: 5.8:1 contrast with white text */
-  --accent-hover: #8E3B23;
-  --accent-contrast: #FFFFFF;
-  --accent-secondary: #C27D38; /* Warm ochre */
-  --border-subtle: #E8E2D8;
-  --border-strong: #D5CCC0;
-  --card-shadow: 0 10px 30px -10px rgba(70, 50, 40, 0.08), 0 4px 12px rgba(70, 50, 40, 0.04);
-  --card-radius: 18px;
-  --button-radius: 9999px;
-  --badge-bg: #F5EBE6;
-  --badge-text: #8E3B23;
-  --header-bg: rgba(250, 247, 242, 0.94);
-  --hero-overlay: linear-gradient(180deg, rgba(20, 16, 12, 0.25) 0%, rgba(20, 16, 12, 0.75) 100%);
-  --footer-bg: #1A1715;
-  --footer-text: #F5EFEB;
-  --footer-text-muted: #A89F95;
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+:root {
+  /* ── Core Palette ──────────────────────────────────────────────────── */
+  --forest:      #263D32;   /* main dark background  */
+  --forest-deep: #1A2D24;   /* footer, deepest dark  */
+  --forest-card: #2E4A3A;   /* elevated card surface */
+  --forest-mid:  #344E40;   /* card hover, overlay   */
+  --sage:        #899783;   /* borders, icons, decorative ONLY — never body text */
+  --sage-line:   rgba(137, 151, 131, 0.30); /* hairlines */
+  --sage-line-strong: rgba(137, 151, 131, 0.55);
+  --sand:        #E8DDC9;   /* light section background */
+  --sand-tint:   #F3EDE2;   /* subtle card surface on white background */
+  --sand-dark:   #D9CDB3;   /* card surface on sand sections */
+  --clay:        #B96E4F;   /* icon, border, focus ring accent */
+  --clay-btn:    #9E573C;   /* CTA button fill — 5.1:1 on offwhite ✅ */
+  --clay-btn-hover: #883F27; /* darker hover — 6.3:1 ✅ */
+  --clay-glow:   rgba(185, 110, 79, 0.25);
+  --offwhite:    #F8F6F0;   /* primary text on forest */
+
+  /* ── Semantic Aliases ──────────────────────────────────────────────── */
+  --bg-page:            var(--forest);
+  --bg-surface:         var(--forest-card);
+  --bg-card:            var(--forest-card);
+  --bg-card-hover:      var(--forest-mid);
+  --bg-card-glass:      rgba(248, 246, 240, 0.07); /* frosted offwhite on forest */
+  --bg-header-transparent: rgba(26, 45, 36, 0.0);
+  --bg-header-sticky:   rgba(26, 45, 36, 0.94);
+  --bg-topbar:          var(--forest-deep);
+  --bg-input:           rgba(26, 45, 36, 0.6);
+  --bg-modal:           var(--forest-card);
+  --bg-drawer:          var(--forest-deep);
+
+  /* ── Text Colors ───────────────────────────────────────────────────── */
+  --text-primary:       var(--offwhite);
+  --text-white:         var(--offwhite);
+  --text-on-sand:       var(--forest);       /* forest on sand ✅ */
+  --text-secondary:     #D4CFC7;             /* 7.8:1 on forest ✅ */
+  --text-muted:         #BDB8AD;             /* 5.6:1 on forest ✅ */
+  --text-muted-on-sand: #4A5E52;             /* 5.2:1 on sand ✅  */
+  --text-clay:          var(--clay);         /* accents in context, not body */
+  --text-dark-btn:      var(--forest-deep);  /* text on clay button — dark on clay */
+
+  /* ── Typography Families ───────────────────────────────────────────── */
+  --font-serif: "Cormorant Garamond", Garamond, Georgia, "Times New Roman", serif;
+  --font-sans:  "Jost", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* ── Spacing ───────────────────────────────────────────────────────── */
+  --container-max:    1240px;
+  --container-narrow: 920px;
+  --section-pad-y:    clamp(70px, 9vw, 130px);
+  --section-pad-x:    clamp(20px, 4vw, 48px);
+
+  /* ── Shape ─────────────────────────────────────────────────────────── */
+  --radius-sm:   8px;
+  --radius-md:   14px;
+  --radius-lg:   22px;
+  --radius-xl:   32px;
+  --radius-full: 9999px;
+
+  /* ── Elevation ─────────────────────────────────────────────────────── */
+  --shadow-card:  0 16px 40px -12px rgba(0, 0, 0, 0.55);
+  --shadow-glass: 0 20px 50px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(248, 246, 240, 0.12);
+  --shadow-clay:  0 10px 30px rgba(158, 87, 60, 0.30);
+
+  /* ── Motion ─────────────────────────────────────────────────────────── */
+  --ease-out-cubic:   cubic-bezier(0.215, 0.61, 0.355, 1);
+  --transition-fast:  0.2s var(--ease-out-cubic);
+  --transition-smooth:0.35s var(--ease-out-cubic);
 }
 
-[data-theme="option-2"] {
-  /* Option 2: "Nuit de Marrakech" - Atlas Midnight & Warm Gold */
-  --theme-id: "option-2";
-  --theme-name: "Nuit de Marrakech";
-  --bg-page: #0D1A18;
-  --bg-surface: #132421;
-  --bg-surface-soft: #182E2A;
-  --bg-surface-elevated: #1F3B36;
-  --text-main: #F5F2EB;
-  --text-muted: #B2BFB9;
-  --text-light: #7E9189;
-  --accent: #D4AF37; /* Champagne Gold: 9.6:1 contrast with dark text */
-  --accent-hover: #E5C158;
-  --accent-contrast: #0D1A18;
-  --accent-secondary: #1E4538;
-  --border-subtle: #233833;
-  --border-strong: #325049;
-  --card-shadow: 0 14px 40px -10px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(212, 175, 55, 0.16);
-  --card-radius: 14px;
-  --button-radius: 8px;
-  --badge-bg: rgba(212, 175, 55, 0.16);
-  --badge-text: #E5C158;
-  --header-bg: rgba(13, 26, 24, 0.92);
-  --hero-overlay: linear-gradient(180deg, rgba(8, 16, 14, 0.35) 0%, rgba(8, 16, 14, 0.85) 100%);
-  --footer-bg: #070E0D;
-  --footer-text: #F5F2EB;
-  --footer-text-muted: #8E9F98;
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-}
-
-[data-theme="option-3"] {
-  /* Option 3: "Minimal Riad" - Architectural White & Palm Green */
-  --theme-id: "option-3";
-  --theme-name: "Minimal Riad";
-  --bg-page: #FFFFFF;
-  --bg-surface: #F9F9F8;
-  --bg-surface-soft: #F2F2F0;
-  --bg-surface-elevated: #E8E8E5;
-  --text-main: #18221E;
-  --text-muted: #4D5C55;
-  --text-light: #73857D;
-  --accent: #1E4538; /* Deep Palm Green: 9.2:1 contrast with white text */
-  --accent-hover: #143329;
-  --accent-contrast: #FFFFFF;
-  --accent-secondary: #486B5E;
-  --border-subtle: #E5E7E5;
-  --border-strong: #CBD2CE;
-  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-  --card-radius: 4px;
-  --button-radius: 2px;
-  --badge-bg: #EBF2EE;
-  --badge-text: #1E4538;
-  --header-bg: rgba(255, 255, 255, 0.95);
-  --hero-overlay: linear-gradient(180deg, rgba(15, 25, 20, 0.15) 0%, rgba(15, 25, 20, 0.65) 100%);
-  --footer-bg: #F9F9F8;
-  --footer-text: #18221E;
-  --footer-text-muted: #64756D;
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

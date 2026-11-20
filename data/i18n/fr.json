@@ -1,0 +1,145 @@
+{
+  "lang": "fr",
+  "dir": "ltr",
+  "topBanner": "DES VILLAS À PARTIR DE 1000 € pour 10 personnes",
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Nos Services",
+    "events": "Événements",
+    "contact": "Contact",
+    "quoteBtn": "Demander un devis",
+    "call": "Appeler",
+    "language": "Langue",
+    "menu": "Menu",
+    "close": "Fermer"
+  },
+  "hero": {
+    "title": "MARRAKECH SÉMINAIRE MAISON D'HÔTES",
+    "subtitle": "Maisons jusqu'à 60 chambres",
+    "cta": "Demander un devis"
+  },
+  "intro": {
+    "title": "NOS MAISONS D'HÔTES",
+    "p1": "Marrakech Séminaire Maison D'Hôtes a le plaisir de vous présenter ses différentes propriétés. Nos nombreuses et différentes villas vous permettront de trouver celle adaptée à votre séjour en exclusivité.",
+    "p2": "Que vous cherchiez une villa pour votre mariage où il vous faut 60 couchages ou pour une fête de famille d'une quinzaine d'invités, nous avons la villa adaptée à chacun de ces événements. De plus, si vous le désirez, nos équipes sur place supervisées par votre organisatrice d'événements, Nadia, sera là pour vous accompagner dans l'organisation de vos séminaires, de votre mariage mille et une nuit, de votre anniversaire ou d'un lancement de produit ou d'un stage de yoga. Nous sommes capables de gérer pour vous :",
+    "s1": "de la prise en charge à l'aéroport avec nos prestataires de transport",
+    "s2": "des dégustations orientales préparées par nos équipes cuisines",
+    "s3": "les performances de nos DJ, cracheur de feu et groupe folklorique pour des soirées endiablées",
+    "s4": "Nadia sera votre relais dans l'organisation de votre séjour afin que vous puissiez profiter au maximum de votre famille, collègues et amis.",
+    "pPlaceholder1Title": "[SERVICE À CONFIRMER 1]",
+    "pPlaceholder1Text": "Espace réservé pour la présentation d'un service exclusif supplémentaire.",
+    "pPlaceholder2Title": "[SERVICE À CONFIRMER 2]",
+    "pPlaceholder2Text": "Espace réservé pour la présentation d'un service exclusif supplémentaire.",
+    "pPlaceholder3Title": "[SERVICE À CONFIRMER 3]",
+    "pPlaceholder3Text": "Espace réservé pour la présentation d'un service exclusif supplémentaire.",
+    "pPlaceholder4Title": "[SERVICE À CONFIRMER 4]",
+    "pPlaceholder4Text": "Espace réservé pour la présentation d'un service exclusif supplémentaire."
+  },
+  "roomCards": {
+    "c5_10": "De 5 à 10 chambres",
+    "c10_20": "De 10 à 20 chambres",
+    "c20_40": "De 20 à 40 chambres",
+    "c40_60": "De 40 à 60 chambres"
+  },
+  "sections": {
+    "ourVillas": "Nos maisons d'hôtes",
+    "ourProperties": "Nos Établissements",
+    "ourServices": "Nos Services",
+    "eventsTeaser": "Nos Événements",
+    "eventsTeaserText": "Découvrez en images nos réceptions de prestige, mariages et soirées privées au cœur de Marrakech.",
+    "eventsTeaserBtn": "Découvrir la galerie",
+    "testimonials": "Témoignages",
+    "testimonialsIntro": "Retours d'expérience et récits de nos clients pour leurs séjours exclusifs à Marrakech.",
+    "shareStory": "Vous avez organisé un événement chez nous ? Partagez votre récit via WhatsApp",
+    "placeholderTestimonialTitle": "[TÉMOIGNAGE À CONFIRMER]",
+    "placeholderTestimonialText": "Cet espace accueillera un témoignage client vérifié dès réception de son consentement écrit."
+  },
+  "about": {
+    "h1": "À PROPOS DE NOUS",
+    "p1": "Écoutez-moi bien. Votre prochain événement n'a pas besoin d'être « correct ». Il doit être inoubliable.",
+    "p2": "Imaginez : vos invités atterrissent à Marrakech, nos équipes s'occupent de leur prise en charge à l'aéroport, et ils arrivent dans une villa pensée pour votre événement, en exclusivité. Vous n'avez plus à courir partout. Vous n'avez plus à tout gérer. Vous profitez.",
+    "p3": "Voilà ce que nous faisons. Un mariage mille et une nuit où il vous faut 60 couchages ? Nous avons la villa. Une fête de famille d'une quinzaine d'invités ? Nous avons la villa. Un séminaire, un anniversaire, un lancement de produit ou un stage de yoga ? Nous avons la villa.",
+    "p4": "Et pendant que vous profitez, Nadia, votre organisatrice d'événements, est votre relais. Dégustations orientales préparées par nos équipes cuisines, DJ, cracheur de feu et groupe folklorique pour des soirées endiablées : nous gérons.",
+    "p5": "Alors posez-vous une seule question : voulez-vous organiser un événement de plus, ou celui dont vos invités se souviendront longtemps ?",
+    "p6": "Ne laissez pas cette date vous échapper. Demandez votre devis aujourd'hui."
+  },
+  "eventsPage": {
+    "h1": "GALERIE D'ÉVÉNEMENTS",
+    "subtitle": "Instants précieux et ambiances de nos réceptions à Marrakech",
+    "backToAlbums": "Tous les albums",
+    "photosCount": "{count} photos",
+    "openLightbox": "Agrandir l'image",
+    "prev": "Précédent",
+    "next": "Suivant",
+    "close": "Fermer"
+  },
+  "contactPage": {
+    "h1": "CONTACTEZ NOTRE CONCIERGERIE",
+    "subtitle": "Un accompagnement sur mesure pour donner vie à votre événement à Marrakech",
+    "addressTitle": "Adresse",
+    "phoneTitle": "Téléphone",
+    "emailTitle": "E-mail",
+    "hoursTitle": "Disponibilité",
+    "hoursText": "7j/7 pour l'organisation de vos séjours et événements"
+  },
+  "quoteModal": {
+    "title": "Demander un devis personnalisé",
+    "intro": "Remplissez ce formulaire pour recevoir une proposition adaptée à votre événement.",
+    "fullName": "Nom complet",
+    "email": "Adresse e-mail",
+    "phone": "Numéro de téléphone",
+    "eventType": "Type d'événement",
+    "guests": "Nombre d'invités / chambres",
+    "dates": "Dates souhaitées",
+    "notes": "Précisions ou demandes particulières",
+    "submit": "Envoyer ma demande",
+    "whatsappSubmit": "Envoyer via WhatsApp",
+    "disclaimer": "Vos coordonnées sont utilisées exclusivement pour l'établissement de votre devis.",
+    "datesPlaceholder": "ex. Printemps"
+  },
+  "footer": {
+    "linksTitle": "Liens utiles",
+    "propertiesTitle": "Nos Établissements",
+    "capacitiesTitle": "Capacités",
+    "copyright": "Copyright © 2026 Marrakech Séminaires Maison d'Hôtes. All Rights Reserved."
+  },
+  "seo": {
+    "homeTitle": "Marrakech Séminaire Maison d'Hôtes | Villas de prestige",
+    "homeDesc": "Location exclusive de villas et maisons d'hôtes jusqu'à 60 chambres à Marrakech pour séminaires d'entreprise, mariages et réceptions d'exception.",
+    "aboutTitle": "À propos | Marrakech Séminaire Maison d'Hôtes",
+    "aboutDesc": "Découvrez l'engagement de Marrakech Séminaire Maison d'Hôtes et l'accompagnement de Nadia pour créer des événements inoubliables.",
+    "servicesTitle": "Nos Services Événementiels | Marrakech Séminaire",
+    "servicesDesc": "Séminaires, mariages, anniversaires, fêtes de famille et animations d'exception dans nos villas privatisées à Marrakech.",
+    "eventsTitle": "Galerie Événements & Soirées | Marrakech Séminaire",
+    "eventsDesc": "Photos de nos mariages, soirées berbères, banquets orientaux et animations exclusives dans nos propriétés à Marrakech.",
+    "contactTitle": "Contact & Devis | Marrakech Séminaire Maison d'Hôtes",
+    "contactDesc": "Contactez Nadia et notre équipe pour réserver votre villa privatisée à Marrakech et obtenir un devis personnalisé sous 24h.",
+    "cat5_10Title": "Villas 5 à 10 chambres à Marrakech | Séminaires & Événements",
+    "cat5_10Desc": "Sélection de villas de prestige de 5 à 10 chambres avec piscine à Marrakech pour réunions d'équipe et séjours intimes.",
+    "cat10_20Title": "Villas 10 à 20 chambres à Marrakech | Séminaires & Événements",
+    "cat10_20Desc": "Grandes maisons d'hôtes de 10 à 20 chambres à Marrakech pour séminaires d'entreprise et réceptions familiales.",
+    "cat20_40Title": "Domaines 20 à 40 chambres à Marrakech | Grands Événements",
+    "cat20_40Desc": "Domaines d'exception de 20 à 40 chambres à Marrakech pour conventions, mariages et lancements de produit.",
+    "cat40_60Title": "Propriétés 40 à 60 chambres à Marrakech | Événements d'envergure",
+    "cat40_60Desc": "Maisons et complexes de prestige jusqu'à 60 chambres à Marrakech pour héberger l'ensemble de vos invités en exclusivité."
+  },
+  "serviceDetail": {
+    "whyUsTitle": "Pourquoi nous choisir ?",
+    "whyUsText": "Parce qu'avec nous, vous n'avez qu'un seul interlocuteur et nous nous occupons de tout. Nous mettons à votre disposition plusieurs établissements à Marrakech, de 5 à 60 chambres, et nous choisissons avec vous celui qui convient à votre événement, en exclusivité. Notre équipe professionnelle est présente sur place, supervisée par Nadia, votre organisatrice d'événements, qui reste votre relais dans l'organisation de votre séjour.",
+    "whatWeOfferTitle": "Ce que nous vous proposons",
+    "offers": [
+      "Plusieurs établissements à votre disposition : villas, riads et maisons d'hôtes de 5 à 60 chambres",
+      "Une équipe professionnelle sur place, avec Nadia, votre organisatrice d'événements",
+      "La prise en charge à l'aéroport avec nos prestataires de transport",
+      "Une cuisine marocaine et des dégustations orientales préparées par nos équipes cuisines",
+      "Les allergies et les régimes alimentaires pris en compte : précisez-les dans votre demande",
+      "Des animations : DJ, cracheur de feu et groupe folklorique pour des soirées endiablées",
+      "Des activités emblématiques de Marrakech : excursions dans le désert d'Agafay, aventures en 4x4 ou en quad"
+    ],
+    "photoPlaceholderLabel": "Photos à ajouter plus tard",
+    "photoPlaceholderNotice": "Cet espace est réservé aux photos de nos événements, elles seront ajoutées prochainement.",
+    "closingCta": "Parlez-nous de votre projet et recevez une proposition adaptée à votre événement.",
+    "datesPlaceholder": "ex. Printemps"
+  }
+}

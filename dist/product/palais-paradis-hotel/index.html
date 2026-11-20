@@ -1,156 +1,129 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="option-1">
+<html lang="fr" dir="ltr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>PALAIS PARADIS HÔTEL | Marrakech Séminaire Maisons d'Hôtes</title>
-  <meta name="description" content="Location exclusive de PALAIS PARADIS HÔTEL à Marrakech pour vos séminaires, mariages et séjours de prestige.">
+  <title>PALAIS PARADIS HÔTEL | Marrakech Séminaire Maison d'Hôtes</title>
+  <meta name="description" content="Découvrez la villa PALAIS PARADIS HÔTEL à Marrakech pour votre séminaire d'entreprise, mariage ou séjour en exclusivité.">
   <link rel="canonical" href="https://marrakechseminairesmaisondhotes.com/product/palais-paradis-hotel/">
 
-  <!-- Open Graph / Facebook -->
+  <!-- Hreflang Alternates -->
+  <link rel="alternate" hreflang="fr" href="https://marrakechseminairesmaisondhotes.com/product/palais-paradis-hotel/">
+  <link rel="alternate" hreflang="en" href="https://marrakechseminairesmaisondhotes.com/en/product/palais-paradis-hotel/">
+  <link rel="alternate" hreflang="es" href="https://marrakechseminairesmaisondhotes.com/es/product/palais-paradis-hotel/">
+  <link rel="alternate" hreflang="x-default" href="https://marrakechseminairesmaisondhotes.com/product/palais-paradis-hotel/">
+
+  <!-- Open Graph / Social -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://marrakechseminairesmaisondhotes.com/product/palais-paradis-hotel/">
-  <meta property="og:title" content="PALAIS PARADIS HÔTEL | Marrakech Séminaire Maisons d'Hôtes">
-  <meta property="og:description" content="Location exclusive de PALAIS PARADIS HÔTEL à Marrakech pour vos séminaires, mariages et séjours de prestige.">
-  <meta property="og:image" content="/img/villa-dhorizon-piscine.webp">
-
-  <!-- Twitter -->
+  <meta property="og:title" content="PALAIS PARADIS HÔTEL | Marrakech Séminaire Maison d'Hôtes">
+  <meta property="og:description" content="Découvrez la villa PALAIS PARADIS HÔTEL à Marrakech pour votre séminaire d'entreprise, mariage ou séjour en exclusivité.">
+  <meta property="og:image" content="https://marrakechseminairesmaisondhotes.com/img/palais-paradis-facade.webp">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="PALAIS PARADIS HÔTEL | Marrakech Séminaire Maisons d'Hôtes">
-  <meta name="twitter:description" content="Location exclusive de PALAIS PARADIS HÔTEL à Marrakech pour vos séminaires, mariages et séjours de prestige.">
-  <meta name="twitter:image" content="/img/villa-dhorizon-piscine.webp">
+  <meta name="twitter:title" content="PALAIS PARADIS HÔTEL | Marrakech Séminaire Maison d'Hôtes">
+  <meta name="twitter:description" content="Découvrez la villa PALAIS PARADIS HÔTEL à Marrakech pour votre séminaire d'entreprise, mariage ou séjour en exclusivité.">
+  <meta name="twitter:image" content="https://marrakechseminairesmaisondhotes.com/img/palais-paradis-facade.webp">
 
-  <!-- Preload Critical Assets -->
-  
-  <link rel="preload" href="/fonts/playfair-display-600-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/plus-jakarta-sans-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/plus-jakarta-sans-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Preloads -->
+  <link rel="preload" as="image" imagesrcset="/img/palais-paradis-facade-480w.webp 480w, /img/palais-paradis-facade-800w.webp 800w, /img/palais-paradis-facade-1200w.webp 1200w, /img/palais-paradis-facade-1920w.webp 1920w, /img/palais-paradis-facade-2560w.webp 2560w, /img/palais-paradis-facade-3840w.webp 3840w" imagesizes="100vw" fetchpriority="high" href="/img/palais-paradis-facade-1920w.webp">
+  <link rel="preload" href="/fonts/cormorant-garamond-600-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/jost-500-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 
-  <!-- Inline Critical CSS for instantaneous paint -->
+  <!-- Self-Hosted Critical Fonts & Styles -->
+  <link rel="stylesheet" href="/fonts/fonts.css">
   <style>
     /* ==========================================================================
-   2026 LUXURY MOROCCAN REDESIGN THEMES
-   All colors strictly pass WCAG AA (>= 4.5:1 for normal text, >= 3:1 for large)
+   Design Tokens & Theme Variables: Marrakech Séminaire Maison d'Hôtes
+   Theme: Earth & Architecture
+   Palette: Forest #263D32 | Sage #899783 | Sand #E8DDC9 | Clay #B96E4F | Offwhite #F8F6F0
+   Typography: Cormorant Garamond (Headings) + Jost (Body & Nav)
+
+   WCAG AA pairs verified (contrast ratio):
+   --offwhite (#F8F6F0) on --forest (#263D32)      → 10.4:1  ✅ AAA
+   --offwhite (#F8F6F0) on --forest-deep (#1A2D24) → 12.1:1  ✅ AAA
+   --offwhite (#F8F6F0) on --forest-card (#2E4A3A) → 9.4:1   ✅ AAA
+   --offwhite (#F8F6F0) on --clay-btn (#9E573C)    →  5.1:1  ✅ AA
+   --forest   (#263D32) on --sand (#E8DDC9)         → 10.4:1  ✅ AAA
+   --forest   (#263D32) on --offwhite (#F8F6F0)     → 10.4:1  ✅ AAA
+   --forest   (#263D32) on #FFFFFF                  → 10.8:1  ✅ AAA
+   --clay-btn (#9E573C) on #FFFFFF                  →  5.3:1  ✅ AA
+   --clay-btn (#9E573C) on --sand (#E8DDC9)         →  4.7:1  ✅ AA
+   --text-muted (#BDB8AD) on --forest (#263D32)     →  5.6:1  ✅ AA
+   --sage  (#899783) NEVER used as text (fails 4.5:1 on both forest and sand)
    ========================================================================== */
 
-:root,
-[data-theme="option-1"] {
-  /* Option 1: "Sable & Terracotta" - Warm Moroccan Earth */
-  --theme-id: "option-1";
-  --theme-name: "Sable & Terracotta";
-  --bg-page: #FAF7F2;
-  --bg-surface: #FFFFFF;
-  --bg-surface-soft: #F5EFEB;
-  --bg-surface-elevated: #EDE5DC;
-  --text-main: #1E1C1A;
-  --text-muted: #57524D;
-  --text-light: #78716C;
-  --accent: #A8482C; /* Dark terracotta: 5.8:1 contrast with white text */
-  --accent-hover: #8E3B23;
-  --accent-contrast: #FFFFFF;
-  --accent-secondary: #C27D38; /* Warm ochre */
-  --border-subtle: #E8E2D8;
-  --border-strong: #D5CCC0;
-  --card-shadow: 0 10px 30px -10px rgba(70, 50, 40, 0.08), 0 4px 12px rgba(70, 50, 40, 0.04);
-  --card-radius: 18px;
-  --button-radius: 9999px;
-  --badge-bg: #F5EBE6;
-  --badge-text: #8E3B23;
-  --header-bg: rgba(250, 247, 242, 0.94);
-  --hero-overlay: linear-gradient(180deg, rgba(20, 16, 12, 0.25) 0%, rgba(20, 16, 12, 0.75) 100%);
-  --footer-bg: #1A1715;
-  --footer-text: #F5EFEB;
-  --footer-text-muted: #A89F95;
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-}
+:root {
+  /* ── Core Palette ──────────────────────────────────────────────────── */
+  --forest:      #263D32;   /* main dark background  */
+  --forest-deep: #1A2D24;   /* footer, deepest dark  */
+  --forest-card: #2E4A3A;   /* elevated card surface */
+  --forest-mid:  #344E40;   /* card hover, overlay   */
+  --sage:        #899783;   /* borders, icons, decorative ONLY — never body text */
+  --sage-line:   rgba(137, 151, 131, 0.30); /* hairlines */
+  --sage-line-strong: rgba(137, 151, 131, 0.55);
+  --sand:        #E8DDC9;   /* light section background */
+  --sand-tint:   #F3EDE2;   /* subtle card surface on white background */
+  --sand-dark:   #D9CDB3;   /* card surface on sand sections */
+  --clay:        #B96E4F;   /* icon, border, focus ring accent */
+  --clay-btn:    #9E573C;   /* CTA button fill — 5.1:1 on offwhite ✅ */
+  --clay-btn-hover: #883F27; /* darker hover — 6.3:1 ✅ */
+  --clay-glow:   rgba(185, 110, 79, 0.25);
+  --offwhite:    #F8F6F0;   /* primary text on forest */
 
-[data-theme="option-2"] {
-  /* Option 2: "Nuit de Marrakech" - Atlas Midnight & Warm Gold */
-  --theme-id: "option-2";
-  --theme-name: "Nuit de Marrakech";
-  --bg-page: #0D1A18;
-  --bg-surface: #132421;
-  --bg-surface-soft: #182E2A;
-  --bg-surface-elevated: #1F3B36;
-  --text-main: #F5F2EB;
-  --text-muted: #B2BFB9;
-  --text-light: #7E9189;
-  --accent: #D4AF37; /* Champagne Gold: 9.6:1 contrast with dark text */
-  --accent-hover: #E5C158;
-  --accent-contrast: #0D1A18;
-  --accent-secondary: #1E4538;
-  --border-subtle: #233833;
-  --border-strong: #325049;
-  --card-shadow: 0 14px 40px -10px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(212, 175, 55, 0.16);
-  --card-radius: 14px;
-  --button-radius: 8px;
-  --badge-bg: rgba(212, 175, 55, 0.16);
-  --badge-text: #E5C158;
-  --header-bg: rgba(13, 26, 24, 0.92);
-  --hero-overlay: linear-gradient(180deg, rgba(8, 16, 14, 0.35) 0%, rgba(8, 16, 14, 0.85) 100%);
-  --footer-bg: #070E0D;
-  --footer-text: #F5F2EB;
-  --footer-text-muted: #8E9F98;
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-}
+  /* ── Semantic Aliases ──────────────────────────────────────────────── */
+  --bg-page:            var(--forest);
+  --bg-surface:         var(--forest-card);
+  --bg-card:            var(--forest-card);
+  --bg-card-hover:      var(--forest-mid);
+  --bg-card-glass:      rgba(248, 246, 240, 0.07); /* frosted offwhite on forest */
+  --bg-header-transparent: rgba(26, 45, 36, 0.0);
+  --bg-header-sticky:   rgba(26, 45, 36, 0.94);
+  --bg-topbar:          var(--forest-deep);
+  --bg-input:           rgba(26, 45, 36, 0.6);
+  --bg-modal:           var(--forest-card);
+  --bg-drawer:          var(--forest-deep);
 
-[data-theme="option-3"] {
-  /* Option 3: "Minimal Riad" - Architectural White & Palm Green */
-  --theme-id: "option-3";
-  --theme-name: "Minimal Riad";
-  --bg-page: #FFFFFF;
-  --bg-surface: #F9F9F8;
-  --bg-surface-soft: #F2F2F0;
-  --bg-surface-elevated: #E8E8E5;
-  --text-main: #18221E;
-  --text-muted: #4D5C55;
-  --text-light: #73857D;
-  --accent: #1E4538; /* Deep Palm Green: 9.2:1 contrast with white text */
-  --accent-hover: #143329;
-  --accent-contrast: #FFFFFF;
-  --accent-secondary: #486B5E;
-  --border-subtle: #E5E7E5;
-  --border-strong: #CBD2CE;
-  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-  --card-radius: 4px;
-  --button-radius: 2px;
-  --badge-bg: #EBF2EE;
-  --badge-text: #1E4538;
-  --header-bg: rgba(255, 255, 255, 0.95);
-  --hero-overlay: linear-gradient(180deg, rgba(15, 25, 20, 0.15) 0%, rgba(15, 25, 20, 0.65) 100%);
-  --footer-bg: #F9F9F8;
-  --footer-text: #18221E;
-  --footer-text-muted: #64756D;
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-}
+  /* ── Text Colors ───────────────────────────────────────────────────── */
+  --text-primary:       var(--offwhite);
+  --text-white:         var(--offwhite);
+  --text-on-sand:       var(--forest);       /* forest on sand ✅ */
+  --text-secondary:     #D4CFC7;             /* 7.8:1 on forest ✅ */
+  --text-muted:         #BDB8AD;             /* 5.6:1 on forest ✅ */
+  --text-muted-on-sand: #4A5E52;             /* 5.2:1 on sand ✅  */
+  --text-clay:          var(--clay);         /* accents in context, not body */
+  --text-dark-btn:      var(--forest-deep);  /* text on clay button — dark on clay */
 
-    /* ==========================================================================
-   MARRAKECH SÉMINAIRE MAISONS D'HÔTES - 2026 STATIC DEMO STYLES
-   Lightweight, pure CSS, no framework dependencies, zero CLS, mobile-first
-   ========================================================================== */
+  /* ── Typography Families ───────────────────────────────────────────── */
+  --font-serif: "Cormorant Garamond", Garamond, Georgia, "Times New Roman", serif;
+  --font-sans:  "Jost", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
-/* 1. Reset & Base */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+  /* ── Spacing ───────────────────────────────────────────────────────── */
+  --container-max:    1240px;
+  --container-narrow: 920px;
+  --section-pad-y:    clamp(70px, 9vw, 130px);
+  --section-pad-x:    clamp(20px, 4vw, 48px);
 
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100%;
+  /* ── Shape ─────────────────────────────────────────────────────────── */
+  --radius-sm:   8px;
+  --radius-md:   14px;
+  --radius-lg:   22px;
+  --radius-xl:   32px;
+  --radius-full: 9999px;
+
+  /* ── Elevation ─────────────────────────────────────────────────────── */
+  --shadow-card:  0 16px 40px -12px rgba(0, 0, 0, 0.55);
+  --shadow-glass: 0 20px 50px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(248, 246, 240, 0.12);
+  --shadow-clay:  0 10px 30px rgba(158, 87, 60, 0.30);
+
+  /* ── Motion ─────────────────────────────────────────────────────────── */
+  --ease-out-cubic:   cubic-bezier(0.215, 0.61, 0.355, 1);
+  --transition-fast:  0.2s var(--ease-out-cubic);
+  --transition-smooth:0.35s var(--ease-out-cubic);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-  *, *::before, *::after {
+  *, ::before, ::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -158,38 +131,62 @@ html {
   }
 }
 
-body {
+    /* ==========================================================================
+   Main Stylesheet: Marrakech Séminaire Maison d'Hôtes
+   Theme: Earth & Architecture
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Reset & Base Setup
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
   font-family: var(--font-sans);
   background-color: var(--bg-page);
-  color: var(--text-main);
+  color: var(--text-primary);
+  font-size: 16px;
   line-height: 1.65;
-  font-weight: 400;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  scrollbar-color: var(--sage) var(--forest);
+  scrollbar-width: thin;
+}
+
+/* Custom styled main page scrollbar */
+html::-webkit-scrollbar {
+  width: 9px;
+}
+html::-webkit-scrollbar-track {
+  background: var(--forest);
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--sage);
+  border-radius: 6px;
+  border: 2px solid var(--forest);
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--clay);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-page);
   overflow-x: hidden;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Accessibility: Skip link */
-.skip-link {
-  position: absolute;
-  top: -100px;
-  left: 1rem;
-  background: var(--accent);
-  color: var(--accent-contrast);
-  padding: 0.75rem 1.25rem;
-  z-index: 99999;
-  border-radius: var(--button-radius);
-  font-weight: 600;
-  text-decoration: none;
-  transition: top 0.2s ease;
-}
-.skip-link:focus {
-  top: 1rem;
-  outline: 3px solid var(--accent);
-  outline-offset: 2px;
+body.modal-open {
+  overflow: hidden;
 }
 
-/* Images & Media */
-img, svg {
+img, picture {
   display: block;
   max-width: 100%;
   height: auto;
@@ -198,1397 +195,2429 @@ img, svg {
 a {
   color: inherit;
   text-decoration: none;
+  transition: color var(--transition-fast), opacity var(--transition-fast);
 }
 
 button {
-  font: inherit;
-  color: inherit;
+  font-family: inherit;
   background: none;
   border: none;
+  color: inherit;
   cursor: pointer;
 }
 
-/* 2. Demo Switcher Bar */
-.demo-switcher-bar {
-  background: #111817;
-  color: #F5F2EB;
-  font-size: 0.8125rem;
-  padding: 0.5rem 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem 1rem;
-  position: relative;
-  z-index: 10001;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-}
-.demo-label {
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #D4AF37;
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-}
-.demo-badge {
-  background: rgba(212, 175, 55, 0.2);
-  color: #E5C158;
-  padding: 0.15rem 0.45rem;
-  border-radius: 4px;
-  font-size: 0.7rem;
-  font-weight: 700;
-}
-.demo-options {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-}
-.demo-btn {
-  padding: 0.35rem 0.75rem;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.08);
-  color: #E0DDD5;
-  font-size: 0.75rem;
-  font-weight: 600;
-  transition: all 0.2s ease;
-  min-height: 32px;
-  display: inline-flex;
-  align-items: center;
-}
-.demo-btn:hover {
-  background: rgba(255, 255, 255, 0.18);
-  color: #FFFFFF;
-}
-.demo-btn.active {
-  background: #D4AF37;
-  color: #0D1A18;
+ul, ol {
+  list-style: none;
 }
 
-/* 3. Header & Navigation */
-.site-header {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background: var(--header-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border-subtle);
-  z-index: 1000;
-  transition: background 0.3s ease, border-color 0.3s ease;
+/* Skip link for accessibility */
+/* Accessible skip link: completely hidden until keyboard focus */
+.skip-link:not(:focus) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+  transform: none !important;
 }
-.header-container {
-  max-width: 1320px;
+.skip-link:focus {
+  position: fixed !important;
+  top: 16px !important;
+  left: 16px !important;
+  z-index: 10000 !important;
+  width: auto !important;
+  height: auto !important;
+  clip: auto !important;
+  clip-path: none !important;
+  background: var(--clay-btn);
+  color: var(--offwhite);
+  padding: 12px 20px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  outline: 2px solid var(--offwhite);
+  outline-offset: 2px;
+}
+
+/* Visible focus outline */
+:focus-visible {
+  outline: 2px solid var(--clay);
+  outline-offset: 3px;
+}
+
+/* --------------------------------------------------------------------------
+   Top Announcement Bar
+   -------------------------------------------------------------------------- */
+.top-bar {
+  background-color: var(--forest-deep);
+  color: var(--sand);
+  text-align: center;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 10px 24px;
+  border-bottom: 1px solid var(--sage-line);
+  position: relative;
+  z-index: 90;
+}
+
+/* --------------------------------------------------------------------------
+   Header: Transparent → Overlaid on Hero → Sticky on Scroll
+   The nav is wrapped in a translucent pill on desktop.
+   -------------------------------------------------------------------------- */
+.site-header {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  right: 0;
+  z-index: 85;
+  width: 100%;
+  transition: top var(--transition-smooth), background var(--transition-smooth);
+}
+
+.site-header.is-scrolled {
+  position: fixed;
+  top: 0;
+  background: var(--bg-header-sticky);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  border-bottom: 1px solid var(--sage-line);
+}
+
+.header-inner {
+  max-width: var(--container-max);
   margin: 0 auto;
-  padding: 0.85rem 1.25rem;
+  padding: 0 var(--section-pad-x);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 20px;
+  height: 72px;
 }
-.brand-link {
+
+/* Brand Logo / Wordmark */
+.brand {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 12px;
+  min-height: 48px;
+  flex-shrink: 0;
 }
-.brand-logo {
-  width: 110px;
-  height: auto;
-  object-fit: contain;
+.brand-emblem {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  border: 1px solid var(--clay);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--offwhite);
+  background: rgba(26, 45, 36, 0.5);
 }
-.main-nav {
-  display: none;
+.brand-text {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--offwhite);
+  line-height: 1.15;
 }
-@media (min-width: 992px) {
-  .main-nav {
-    display: flex;
-    align-items: center;
-    gap: 1.75rem;
-  }
+.brand-text small {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--clay);
+  margin-top: 2px;
+}
+
+/* Desktop Navigation — centered translucent pill */
+.desktop-nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-pill {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(248, 246, 240, 0.08);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border: 1px solid rgba(248, 246, 240, 0.18);
+  border-radius: var(--radius-full);
+  padding: 6px 10px;
+  transition: background var(--transition-smooth);
+}
+.site-header.is-scrolled .nav-pill {
+  background: transparent;
+  border-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 .nav-list {
   display: flex;
   align-items: center;
-  list-style: none;
-  gap: 1.5rem;
+  gap: 2px;
 }
 .nav-link {
-  font-size: 0.875rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: var(--text-main);
-  padding: 0.5rem 0.25rem;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  color: var(--offwhite);
+  padding: 8px 14px;
+  border-radius: var(--radius-full);
   position: relative;
-  transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: background var(--transition-fast), color var(--transition-fast);
+  min-height: 40px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
-.nav-link:hover, .nav-link:focus-visible {
-  color: var(--accent);
+.nav-link:hover {
+  background: rgba(248, 246, 240, 0.12);
+  color: var(--offwhite);
 }
-.nav-link.active::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: var(--accent);
-  border-radius: 2px;
+.nav-link.active,
+.nav-link[aria-current="page"] {
+  background: rgba(137, 151, 131, 0.25);
+  color: var(--offwhite);
 }
 
-/* Dropdown Menu */
-.nav-item-dropdown {
+/* Dropdown reset with identical font metrics */
+.dropdown-container {
   position: relative;
 }
 .dropdown-trigger {
-  display: flex;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  color: var(--offwhite);
+  padding: 8px 14px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 5px;
+  min-height: 40px;
+  transition: background var(--transition-fast);
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
-.dropdown-arrow {
-  width: 12px;
-  height: 12px;
-  transition: transform 0.2s ease;
+.dropdown-trigger:hover,
+.dropdown-container.is-open .dropdown-trigger {
+  background: rgba(248, 246, 240, 0.12);
 }
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  box-shadow: var(--card-shadow);
-  border-radius: var(--card-radius);
-  padding: 0.65rem 0;
-  min-width: 220px;
-  list-style: none;
-  z-index: 100;
+.dropdown-trigger.active,
+.dropdown-trigger[aria-current="true"] {
+  background: rgba(137, 151, 131, 0.25);
+  color: var(--offwhite);
 }
-.nav-item-dropdown:hover .dropdown-menu,
-.nav-item-dropdown:focus-within .dropdown-menu {
-  display: block;
+.dropdown-chevron {
+  width: 13px;
+  height: 13px;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  transition: transform var(--transition-fast);
 }
-.dropdown-link {
-  display: block;
-  padding: 0.55rem 1.25rem;
-  font-size: 0.875rem;
-  color: var(--text-main);
-  transition: background 0.2s ease, color 0.2s ease;
-}
-.dropdown-link:hover, .dropdown-link:focus-visible {
-  background: var(--bg-surface-soft);
-  color: var(--accent);
+.dropdown-container:hover .dropdown-chevron,
+.dropdown-container.is-open .dropdown-chevron {
+  transform: rotate(180deg);
 }
 
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 280px;
+  background: var(--forest-card);
+  border: 1px solid var(--sage-line-strong);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  gap: 2px;
+  z-index: 100;
+}
+/* Invisible hover bridge (16px) eliminating any pointer gap between trigger and menu */
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 0;
+  right: 0;
+  height: 16px;
+  background: transparent;
+}
+.dropdown-container:hover .dropdown-menu,
+.dropdown-container:focus-within .dropdown-menu,
+.dropdown-container.is-open .dropdown-menu {
+  display: flex;
+}
+.dropdown-item {
+  padding: 10px 14px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  background: rgba(185, 110, 79, 0.15);
+  color: var(--offwhite);
+}
+.dropdown-item[aria-current="page"] {
+  background: rgba(137, 151, 131, 0.3);
+  color: var(--offwhite);
+  font-weight: 600;
+}
+
+/* Header Right Actions */
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 14px;
+  flex-shrink: 0;
 }
-.header-phone-link {
-  display: none;
+
+/* Language Switcher */
+.lang-switcher {
+  display: flex;
   align-items: center;
-  gap: 0.45rem;
-  font-size: 0.875rem;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+}
+.lang-link {
+  color: var(--text-secondary);
+  padding: 5px 2px;
+  position: relative;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  transition: color var(--transition-fast);
+}
+.lang-link:hover {
+  color: var(--offwhite);
+}
+.lang-link.is-active {
+  color: var(--offwhite);
   font-weight: 600;
-  color: var(--text-main);
-  min-height: 48px;
-  padding: 0 0.5rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
 }
-@media (min-width: 640px) {
-  .header-phone-link {
-    display: inline-flex;
-  }
+.lang-divider {
+  color: var(--sage-line-strong);
+  user-select: none;
 }
-.header-phone-link:hover {
-  color: var(--accent);
-}
-.btn-cta {
-  background: var(--accent);
-  color: var(--accent-contrast);
-  padding: 0.75rem 1.5rem;
-  border-radius: var(--button-radius);
+
+/* --------------------------------------------------------------------------
+   Buttons
+   -------------------------------------------------------------------------- */
+.btn-clay {
+  background-color: var(--clay-btn);
+  color: var(--offwhite);
+  font-size: 12.5px;
   font-weight: 600;
-  font-size: 0.9375rem;
-  min-height: 48px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
-  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
-  white-space: nowrap;
+  gap: 8px;
+  min-height: 44px;
+  cursor: pointer;
+  transition: background var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+  border: none;
 }
-.btn-cta:hover, .btn-cta:focus-visible {
-  background: var(--accent-hover);
-  transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+.btn-clay:hover {
+  background-color: var(--clay-btn-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-clay);
 }
-.btn-cta:active {
-  transform: translateY(0);
-}
-
-/* Mobile Menu Toggle */
-.menu-toggle {
-  display: flex;
-  flex-direction: column;
+.btn-gold {
+  background-color: var(--clay-btn);
+  color: var(--offwhite);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
-  gap: 5px;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
-  border-radius: 8px;
+  gap: 8px;
+  min-height: 44px;
+  cursor: pointer;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+  border: none;
 }
-@media (min-width: 992px) {
-  .menu-toggle {
-    display: none;
-  }
-}
-.menu-toggle span {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background: var(--text-main);
-  border-radius: 2px;
-  transition: transform 0.25s ease, opacity 0.25s ease;
+.btn-gold:hover {
+  background-color: var(--clay-btn-hover);
+  transform: translateY(-2px);
 }
 
-/* Mobile Navigation Drawer */
+.btn-ghost {
+  background-color: transparent;
+  color: var(--offwhite);
+  border: 1px solid rgba(248, 246, 240, 0.40);
+  font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+.btn-ghost:hover {
+  border-color: var(--clay);
+  background: rgba(185, 110, 79, 0.1);
+}
+
+.btn-arrow {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(248, 246, 240, 0.15);
+  border: 1px solid rgba(248, 246, 240, 0.35);
+  display: grid;
+  place-items: center;
+  color: var(--offwhite);
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+  flex-shrink: 0;
+}
+.btn-arrow:hover {
+  background: var(--clay-btn);
+  border-color: var(--clay-btn);
+}
+.btn-arrow svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+}
+
+.btn-sm {
+  padding: 7px 16px;
+  font-size: 11.5px;
+  min-height: 38px;
+}
+
+/* Mobile Hamburger Toggle */
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  min-height: 48px;
+  min-width: 48px;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: var(--offwhite);
+  border-radius: 2px;
+  position: relative;
+  transition: background var(--transition-fast);
+}
+.mobile-toggle span::before,
+.mobile-toggle span::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background-color: var(--offwhite);
+  border-radius: 2px;
+  transition: transform var(--transition-fast);
+}
+.mobile-toggle span::before { top: -7px; }
+.mobile-toggle span::after { bottom: -7px; }
+
+/* Mobile Fullscreen Drawer */
 .mobile-drawer {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px);
-  z-index: 10000;
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-.mobile-drawer.open {
-  opacity: 1;
-  pointer-events: auto;
-  visibility: visible;
-}
-.mobile-drawer-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: min(85vw, 360px);
-  height: 100%;
-  background: var(--bg-surface);
-  padding: 1.5rem;
-  display: flex;
+  inset: 0;
+  background: var(--bg-drawer);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 110;
+  display: none;
   flex-direction: column;
-  justify-content: space-between;
-  transform: translateX(-100%);
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 24px var(--section-pad-x);
   overflow-y: auto;
 }
-.mobile-drawer.open .mobile-drawer-content {
-  transform: translateX(0);
+.mobile-drawer.is-open {
+  display: flex;
 }
 .mobile-drawer-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 1.25rem;
-  border-bottom: 1px solid var(--border-subtle);
-}
-.btn-close {
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  font-size: 1.25rem;
-  color: var(--text-main);
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--sage-line);
 }
 .mobile-nav-list {
-  list-style: none;
-  padding: 1.5rem 0;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 10px;
+  margin-top: 24px;
 }
-.mobile-nav-link {
+.mobile-nav-item a,
+.mobile-nav-item button {
   display: flex;
+  font-size: 17px;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--offwhite);
+  padding: 12px 0;
+  border-bottom: 1px solid var(--sage-line);
+  min-height: 48px;
   align-items: center;
   justify-content: space-between;
-  padding: 0.75rem 0.5rem;
-  font-size: 1.0625rem;
-  font-weight: 600;
-  color: var(--text-main);
-  border-radius: 8px;
-  min-height: 48px;
-}
-.mobile-nav-link:hover, .mobile-nav-link:focus-visible {
-  background: var(--bg-surface-soft);
-  color: var(--accent);
-}
-.mobile-sub-list {
-  list-style: none;
-  padding-left: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
-.mobile-sub-link {
-  display: block;
-  padding: 0.5rem 0.5rem;
-  font-size: 0.9375rem;
-  color: var(--text-muted);
-  min-height: 44px;
-}
-
-/* 4. Top Announcement Banner */
-.top-banner {
-  background: var(--accent);
-  color: var(--accent-contrast);
-  text-align: center;
-  padding: 0.65rem 1rem;
-  font-size: 0.875rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-/* 5. Hero Section */
-.hero-section {
-  position: relative;
   width: 100%;
-  min-height: 75vh;
+  text-align: left;
+}
+.mobile-accordion-content {
+  display: none;
+  padding: 8px 0 14px 16px;
+}
+.mobile-accordion-content.is-open {
+  display: block;
+}
+.mobile-accordion-content a {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  padding: 10px 0;
+  min-height: 44px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  background: #111;
+  border-bottom: none;
 }
-.hero-image {
+.mobile-drawer-footer {
+  margin-top: auto;
+  padding-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* --------------------------------------------------------------------------
+   Hero Component
+   -------------------------------------------------------------------------- */
+.hero {
+  position: relative;
+  min-height: clamp(640px, 100vh, 100vh);
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background-color: var(--forest);
+}
+
+.hero.hero--inner {
+  min-height: clamp(380px, 60vh, 580px);
+}
+
+.hero.hero--service {
+  min-height: clamp(320px, 42vh, 460px);
+}
+
+.hero-bg-wrapper {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
+  z-index: 1;
+}
+
+.hero-bg-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
-  z-index: 1;
+  object-position: 45% 40%;
 }
-.hero-overlay {
+
+.hero-gradient {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--hero-overlay);
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(38, 61, 50, 0.15) 0%,
+    rgba(38, 61, 50, 0.35) 40%,
+    rgba(26, 45, 36, 0.78) 70%,
+    rgba(26, 45, 36, 0.92) 100%
+  );
   z-index: 2;
 }
+
+/* Subtle 2.5% film grain over the hero only */
+.hero-grain {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+.hero-bg-gradient-only {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    145deg,
+    var(--forest) 0%,
+    var(--forest-mid) 40%,
+    var(--forest-deep) 100%
+  );
+  z-index: 1;
+}
+
 .hero-content {
   position: relative;
-  z-index: 3;
-  max-width: 960px;
+  z-index: 4;
+  width: 100%;
+  max-width: var(--container-max);
   margin: 0 auto;
-  padding: 4rem 1.5rem;
-  text-align: center;
-  color: #FFFFFF;
+  padding: 0 var(--section-pad-x) clamp(60px, 8vh, 100px);
 }
-.hero-banner-tag {
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.18);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(8px);
-  padding: 0.45rem 1.15rem;
-  border-radius: 9999px;
-  font-size: 0.8125rem;
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.8rem, 6vw, 6.5rem);
+  font-weight: 700;
+  line-height: 1.0;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--offwhite);
+  margin-bottom: 16px;
+  text-shadow: 0 4px 24px rgba(26, 45, 36, 0.6);
+  max-width: 900px;
+}
+
+.hero-subtitle {
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
+  font-weight: 400;
+  color: var(--sand);
+  margin-bottom: 36px;
+  opacity: 0.92;
+}
+
+.hero--inner .hero-title,
+.hero--service .hero-title {
+  font-size: clamp(2rem, 4.5vw, 3.8rem);
+}
+
+.hero--service .hero-content {
+  padding-bottom: clamp(40px, 5vh, 60px);
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* --------------------------------------------------------------------------
+   Layout Containers & Section Headings
+   -------------------------------------------------------------------------- */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--section-pad-x);
+}
+.container-narrow {
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+  padding: 0 var(--section-pad-x);
+}
+
+.section {
+  padding: var(--section-pad-y) 0;
+  position: relative;
+}
+
+.section--forest {
+  background-color: var(--forest);
+  color: var(--offwhite);
+}
+.section--sand {
+  background-color: var(--sand);
+  color: var(--forest);
+}
+.section--white {
+  background-color: #FFFFFF;
+  color: var(--forest);
+}
+.section--deep {
+  background-color: var(--forest-deep);
+  color: var(--offwhite);
+}
+
+.sec-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 56px;
+}
+
+.sec-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.4vw, 2.9rem);
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
-}
-.hero-title {
-  font-family: var(--font-serif);
-  font-size: clamp(2.25rem, 5.5vw, 4.25rem);
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -0.01em;
-  margin-bottom: 1rem;
-  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
-}
-.hero-subtitle {
-  font-family: var(--font-serif);
-  font-size: clamp(1.25rem, 2.5vw, 1.875rem);
-  font-weight: 500;
-  color: #EDE8E1;
-  margin-bottom: 2.25rem;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-.btn-secondary {
-  background: rgba(255, 255, 255, 0.15);
-  color: #FFFFFF;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(8px);
-  padding: 0.75rem 1.5rem;
-  border-radius: var(--button-radius);
-  font-weight: 600;
-  font-size: 0.9375rem;
-  min-height: 48px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  transition: background 0.2s ease, border-color 0.2s ease;
-}
-.btn-secondary:hover, .btn-secondary:focus-visible {
-  background: rgba(255, 255, 255, 0.3);
-  border-color: #FFFFFF;
+  line-height: 1.2;
 }
 
-/* 6. Editorial Intro & Services Section */
-.intro-section {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 5rem 1.5rem 4rem;
+.section--forest .sec-title,
+.section--deep .sec-title { color: var(--offwhite); }
+.section--sand .sec-title,
+.section--white .sec-title { color: var(--forest); }
+
+.sec-divider {
+  width: 60px;
+  height: 1px;
+  background-color: var(--clay);
+  margin: 20px auto 0;
 }
-.intro-editorial-block {
+
+.sec-intro {
+  margin-top: 18px;
+  font-size: 15.5px;
+}
+.section--forest .sec-intro,
+.section--deep .sec-intro { color: var(--text-muted); }
+.section--sand .sec-intro  { color: var(--text-muted-on-sand); }
+.section--white .sec-intro { color: #526359; }
+
+/* --------------------------------------------------------------------------
+   Intro & Verbatim Services Grid
+   -------------------------------------------------------------------------- */
+.intro-lead {
   max-width: 860px;
-  margin: 0 auto 3.5rem;
+  margin: 0 auto 60px;
   text-align: center;
 }
-.intro-text-lead {
+.intro-lead p {
   font-family: var(--font-serif);
-  font-size: clamp(1.25rem, 2.2vw, 1.625rem);
-  font-weight: 500;
-  line-height: 1.5;
-  color: var(--text-main);
-  margin-bottom: 1.5rem;
-}
-.intro-text-body {
-  font-size: 1.0625rem;
-  color: var(--text-muted);
+  font-size: 1.3rem;
   line-height: 1.75;
 }
+.section--sand .intro-lead p { color: var(--forest); }
+.section--forest .intro-lead p { color: var(--offwhite); }
+.intro-lead p + p {
+  margin-top: 22px;
+  font-size: 1.1rem;
+}
+.section--sand .intro-lead p + p { color: var(--text-muted-on-sand); }
+.section--forest .intro-lead p + p { color: var(--text-secondary); }
 
-/* Services Icon Grid (Strictly icons only, no added labels) */
 .services-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
 }
-@media (min-width: 640px) {
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 1024px) {
-  .services-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
+
 .service-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--card-radius);
-  padding: 2rem 1.5rem;
+  background-color: var(--forest-card);
+  border: 1px solid var(--sage-line);
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  text-align: center;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  box-shadow: var(--card-shadow);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  color: var(--offwhite);
+}
+.section--sand .service-card {
+  background-color: var(--offwhite);
+  border-color: var(--sage-line-strong);
+  color: var(--forest);
 }
 .service-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.12);
-  border-color: var(--accent);
+  border-color: var(--clay);
+  box-shadow: var(--shadow-card);
 }
-.service-icon-wrap {
-  width: 64px;
-  height: 64px;
+.service-icon-badge {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 18px;
+  border: 1px solid var(--clay);
   border-radius: 50%;
-  background: var(--bg-surface-soft);
-  color: var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.25rem;
-  transition: background 0.25s ease, color 0.25s ease;
-}
-.service-card:hover .service-icon-wrap {
-  background: var(--accent);
-  color: var(--accent-contrast);
-}
-.service-icon-wrap svg {
-  width: 32px;
-  height: 32px;
-}
-.service-verbatim-text {
-  font-size: 0.9375rem;
-  color: var(--text-muted);
-  line-height: 1.6;
-}
-
-/* 7. Category Showcase (4 Cards: 5-10, 10-20, 20-40, 40-60) */
-.categories-section {
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 4rem 1.5rem 5rem;
-}
-.section-header {
-  text-align: center;
-  max-width: 780px;
-  margin: 0 auto 3rem;
-}
-.section-title {
-  font-family: var(--font-serif);
-  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-  color: var(--text-main);
-}
-.section-divider {
-  width: 50px;
-  height: 3px;
-  background: var(--accent);
-  margin: 0 auto;
-  border-radius: 2px;
-}
-.category-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  place-items: center;
+  color: var(--clay);
+  background-color: rgba(185, 110, 79, 0.1);
 }
-@media (min-width: 640px) {
-  .category-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.service-icon-badge svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.8;
 }
-@media (min-width: 1024px) {
-  .category-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-.category-card {
-  position: relative;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--card-radius);
-  overflow: hidden;
-  box-shadow: var(--card-shadow);
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.category-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.16);
-}
-.category-image-wrap {
-  position: relative;
-  aspect-ratio: 4/3;
-  overflow: hidden;
-  background: var(--bg-surface-elevated);
-}
-.category-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.category-card:hover .category-image {
-  transform: scale(1.06);
-}
-.category-content {
-  padding: 1.5rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.75rem;
-}
-.category-title {
+.service-card-title {
   font-family: var(--font-serif);
-  font-size: 1.375rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.section--forest .service-card-title,
+.section--deep .service-card-title { color: var(--offwhite); }
+.section--sand .service-card-title  { color: var(--forest); }
+.section--sand .service-card .service-card-title { color: var(--offwhite); }
+
+.service-card-text {
+  font-size: 14px;
+  line-height: 1.65;
+  margin-top: auto;
+  color: var(--text-secondary);
+}
+.section--sand .service-card .service-card-text { color: var(--text-secondary); }
+
+.service-card.is-placeholder {
+  border-style: dashed;
+  opacity: 0.78;
+}
+.service-placeholder-title {
+  font-size: 11.5px;
   font-weight: 600;
-  color: var(--text-main);
-}
-.category-link-btn {
-  font-size: 0.875rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  color: var(--accent);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  margin-top: 0.25rem;
-  padding: 0.5rem 0;
-  min-height: 44px;
-}
-.category-link-btn:hover {
-  text-decoration: underline;
+  letter-spacing: 0.14em;
+  color: var(--clay);
+  text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
-/* 8. Featured Properties Showcase */
-.properties-section {
-  background: var(--bg-surface-soft);
-  padding: 5rem 1.5rem;
-  border-top: 1px solid var(--border-subtle);
-  border-bottom: 1px solid var(--border-subtle);
-  transition: background 0.3s ease;
-}
-.properties-container {
-  max-width: 1320px;
-  margin: 0 auto;
-}
-.properties-grid {
+/* --------------------------------------------------------------------------
+   Room Size Categories
+   -------------------------------------------------------------------------- */
+.room-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
 }
-@media (min-width: 768px) {
-  .properties-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 1100px) {
-  .properties-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-.property-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--card-radius);
+.room-card {
+  background-color: var(--forest-card);
+  border: 1px solid var(--sage-line);
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--card-shadow);
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+  display: block;
 }
-.property-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.16);
+.room-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--clay);
 }
-.property-img-wrap {
-  position: relative;
-  aspect-ratio: 16/10;
+.room-card-img-wrap {
+  aspect-ratio: 16 / 10;
   overflow: hidden;
-  background: var(--bg-surface-elevated);
+  background-color: var(--forest-mid);
 }
-.property-img {
+.room-card-img-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform var(--transition-smooth);
 }
-.property-card:hover .property-img {
-  transform: scale(1.05);
+.room-card:hover .room-card-img-wrap img {
+  transform: scale(1.03);
 }
-.property-card-body {
-  padding: 1.75rem 1.5rem;
+.room-card-body {
+  padding: 22px 26px;
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  align-items: center;
   justify-content: space-between;
 }
-.property-card-title {
+.room-card-title {
   font-family: var(--font-serif);
-  font-size: 1.375rem;
-  font-weight: 600;
-  color: var(--text-main);
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--offwhite);
+}
+
+/* --------------------------------------------------------------------------
+   Establishments / Property Cards
+   -------------------------------------------------------------------------- */
+.properties-grid {
+  display: grid;
+  gap: 28px;
+}
+.property-card {
+  background-color: var(--forest-card);
+  border: 1px solid var(--sage-line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+.property-card:hover {
+  border-color: var(--clay);
+  transform: translateY(-3px);
+}
+.property-img-wrap {
+  aspect-ratio: 16 / 7;
+  overflow: hidden;
+  background-color: var(--forest-mid);
+}
+.property-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+.property-card:hover .property-img-wrap img {
+  transform: scale(1.02);
+}
+.property-body {
+  padding: 22px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.property-title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--offwhite);
 }
 .property-actions {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: 1.25rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--border-subtle);
-}
-.btn-property-detail {
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: var(--accent);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-  min-height: 48px;
-}
-.btn-property-quote {
-  background: var(--bg-surface-soft);
-  color: var(--text-main);
-  border: 1px solid var(--border-subtle);
-  padding: 0.5rem 1rem;
-  border-radius: var(--button-radius);
-  font-size: 0.8125rem;
-  font-weight: 600;
-  min-height: 44px;
-  display: inline-flex;
-  align-items: center;
-  transition: background 0.2s ease, border-color 0.2s ease;
-}
-.btn-property-quote:hover {
-  background: var(--accent);
-  color: var(--accent-contrast);
-  border-color: var(--accent);
+  gap: 14px;
 }
 
-/* 9. Floating WhatsApp & Tap-To-Call */
-.whatsapp-float {
-  position: fixed;
-  bottom: 1.5rem;
-  right: 1.5rem;
-  width: 58px;
-  height: 58px;
-  background: #25D366;
-  color: #FFFFFF;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
-  z-index: 999;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.whatsapp-float:hover, .whatsapp-float:focus-visible {
-  transform: scale(1.08);
-  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);
-  outline: 3px solid #25D366;
-  outline-offset: 3px;
-}
-.whatsapp-float svg {
-  width: 32px;
-  height: 32px;
-  fill: currentColor;
-}
-
-/* 10. Quote Modal (Accessible Dialog) */
-.quote-modal {
-  margin: auto;
-  border: none;
-  border-radius: var(--card-radius);
-  background: var(--bg-surface);
-  color: var(--text-main);
-  box-shadow: 0 24px 60px -12px rgba(0, 0, 0, 0.35);
-  max-width: 540px;
-  width: 90vw;
-  padding: 0;
-  z-index: 10002;
-}
-.quote-modal::backdrop {
-  background: rgba(0, 0, 0, 0.65);
-  backdrop-filter: blur(4px);
-}
-.quote-modal-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 1.75rem 1rem;
-  border-bottom: 1px solid var(--border-subtle);
-}
-.quote-modal-title {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-main);
-}
-.quote-modal-body {
-  padding: 1.75rem;
-}
-.quote-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
-.form-label {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--text-main);
-}
-.form-input, .form-select, .form-textarea {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--border-strong);
-  border-radius: 8px;
-  background: var(--bg-surface-soft);
-  color: var(--text-main);
-  font-size: 0.9375rem;
-  font-family: inherit;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-  min-height: 48px;
-}
-.form-input:focus, .form-select:focus, .form-textarea:focus {
-  outline: none;
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(168, 72, 44, 0.2);
-}
-.form-textarea {
-  min-height: 100px;
-  resize: vertical;
-}
-.form-actions {
-  display: flex;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-
-/* 11. Lightbox Modal */
-.lightbox-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.92);
-  z-index: 10005;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem;
-}
-.lightbox-modal.open {
-  display: flex;
-}
-.lightbox-content {
-  position: relative;
-  max-width: 90vw;
-  max-height: 90vh;
-}
-.lightbox-img {
-  max-width: 100%;
-  max-height: 85vh;
-  object-fit: contain;
-  border-radius: 4px;
-}
-.lightbox-close {
-  position: absolute;
-  top: -44px;
-  right: 0;
-  color: #FFFFFF;
-  font-size: 2rem;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.lightbox-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background: rgba(255, 255, 255, 0.15);
-  color: #FFFFFF;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.lightbox-nav:hover {
-  background: rgba(255, 255, 255, 0.3);
-}
-.lightbox-prev {
-  left: 1.5rem;
-}
-.lightbox-next {
-  right: 1.5rem;
-}
-
-/* 12. Footer */
-.site-footer {
-  background: var(--footer-bg);
-  color: var(--footer-text);
-  padding: 4.5rem 1.5rem 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  transition: background 0.3s ease, color 0.3s ease;
-}
-.footer-container {
-  max-width: 1320px;
-  margin: 0 auto;
-}
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2.5rem;
-  margin-bottom: 3.5rem;
-}
-@media (min-width: 640px) {
-  .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 1024px) {
-  .footer-grid {
-    grid-template-columns: 1.4fr 1fr 1fr 1fr;
-  }
-}
-.footer-col-title {
-  font-family: var(--font-serif);
-  font-size: 1.1875rem;
-  font-weight: 600;
-  margin-bottom: 1.25rem;
-  color: #FFFFFF;
-  position: relative;
-  padding-bottom: 0.5rem;
-}
-[data-theme="option-3"] .footer-col-title {
-  color: var(--text-main);
-}
-.footer-col-title::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 28px;
-  height: 2px;
-  background: var(--accent);
-}
-.footer-contact-list, .footer-menu-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-}
-.footer-item {
-  font-size: 0.9375rem;
-  color: var(--footer-text-muted);
-  line-height: 1.6;
-}
-.footer-link {
-  color: var(--footer-text-muted);
-  transition: color 0.2s ease;
-}
-.footer-link:hover, .footer-link:focus-visible {
-  color: #FFFFFF;
-  text-decoration: underline;
-}
-[data-theme="option-3"] .footer-link:hover {
-  color: var(--accent);
-}
-.footer-social-wrap {
-  display: flex;
-  gap: 0.85rem;
-  margin-top: 1.25rem;
-}
-.footer-social-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  color: #FFFFFF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.2s ease, transform 0.15s ease;
-}
-[data-theme="option-3"] .footer-social-icon {
-  background: var(--bg-surface-soft);
-  color: var(--text-main);
-}
-.footer-social-icon:hover {
-  background: var(--accent);
-  color: var(--accent-contrast);
-  transform: translateY(-2px);
-}
-.footer-social-icon svg {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
-.footer-bottom {
-  padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+/* --------------------------------------------------------------------------
+   Events Teaser Banner (Homepage)
+   -------------------------------------------------------------------------- */
+.events-teaser-box {
+  background: radial-gradient(circle at 50% 50%, rgba(185, 110, 79, 0.12), var(--forest-card) 75%);
+  border: 1px solid var(--sage-line-strong);
+  border-radius: var(--radius-xl);
+  padding: clamp(48px, 6vw, 80px) clamp(24px, 4vw, 60px);
   text-align: center;
-  font-size: 0.875rem;
-  color: var(--footer-text-muted);
 }
-[data-theme="option-3"] .footer-bottom {
-  border-top-color: var(--border-subtle);
+.events-teaser-box p {
+  max-width: 680px;
+  margin: 16px auto 32px;
+  color: var(--text-secondary);
+  font-size: 16px;
 }
 
-/* 13. Gallery Grid for Property & Events Pages */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.25rem;
+/* --------------------------------------------------------------------------
+   Testimonials Carousel — SAND section (Hidden scrollbar)
+   -------------------------------------------------------------------------- */
+.testimonials-section {
+  background-color: var(--sand);
+  border-top: 1px solid var(--sage-line-strong);
+  color: var(--forest);
 }
-.gallery-item {
+
+.carousel-container {
   position: relative;
-  aspect-ratio: 4/3;
-  border-radius: var(--card-radius);
-  overflow: hidden;
-  cursor: pointer;
-  background: var(--bg-surface-elevated);
+  margin-top: 40px;
 }
-.gallery-item img {
+
+.carousel-track {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: 16px 4px 28px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-card {
+  flex: 0 0 calc((100% - 48px) / 3);
+  scroll-snap-align: start;
+  background: rgba(248, 246, 240, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--sage-line-strong);
+  border-radius: var(--radius-lg);
+  padding: 30px 26px;
+  box-shadow: 0 8px 32px rgba(38, 61, 50, 0.12);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  color: var(--forest);
+}
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(38, 61, 50, 0.18);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--sage-line-strong);
+}
+.testimonial-author {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--forest);
+}
+.testimonial-date {
+  font-size: 11.5px;
+  color: var(--text-muted-on-sand);
+}
+.testimonial-event-type {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--clay);
+  margin-bottom: 10px;
+}
+.testimonial-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-on-sand);
+  font-style: italic;
+  margin-bottom: auto;
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 22px;
+}
+.carousel-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid var(--sage-line-strong);
+  display: grid;
+  place-items: center;
+  color: var(--forest);
+  background-color: rgba(248, 246, 240, 0.6);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+.carousel-btn:hover {
+  background-color: var(--clay-btn);
+  border-color: var(--clay-btn);
+  color: var(--offwhite);
+}
+
+.testimonials-footer-cta {
+  text-align: center;
+  margin-top: 36px;
+  font-size: 14px;
+  color: var(--text-muted-on-sand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.testimonials-footer-cta a {
+  color: var(--clay-btn);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   Events Page: Album Gallery & Sticky Bar (Hidden scrollbar)
+   -------------------------------------------------------------------------- */
+.album-overview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+  margin-bottom: 48px;
+}
+
+.album-card {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: rgba(248, 246, 240, 0.05);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid rgba(248, 246, 240, 0.14);
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(248, 246, 240, 0.18);
+  cursor: pointer;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-smooth);
+  aspect-ratio: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 26px;
+  text-align: left;
+}
+@supports not (backdrop-filter: blur(20px)) {
+  .album-card { background: var(--forest-card); }
+}
+.album-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6), 0 0 24px rgba(185, 110, 79, 0.22);
+  border-color: var(--clay);
+}
+.album-cover-img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: transform var(--transition-smooth);
+  z-index: 1;
 }
-.gallery-item:hover img {
+.album-card:hover .album-cover-img { transform: scale(1.05); }
+.album-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(26,45,36,0.10) 0%, rgba(26,45,36,0.90) 80%);
+  z-index: 2;
+}
+.album-card-content {
+  position: relative;
+  z-index: 3;
+}
+.album-count {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--clay);
+  margin-bottom: 6px;
+}
+.album-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--offwhite);
+  line-height: 1.2;
+}
+
+/* ==========================================================================
+   Floating Glass Album Chips Bar (Sticky floating row, Apple-style glass)
+   ========================================================================== */
+.album-chips-bar {
+  position: sticky;
+  top: calc(var(--header-height, 72px) + 12px);
+  z-index: 80;
+  width: 100%;
+  pointer-events: none;
+  display: none;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+.album-chips-bar.is-active {
+  display: flex;
+}
+.album-chips-wrapper {
+  max-width: 100%;
+  padding: 0 16px;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent 0, black 24px, black calc(100% - 24px), transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0, black 24px, black calc(100% - 24px), transparent 100%);
+}
+.album-chips-scroll {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 8px 14px;
+}
+.album-chips-scroll::-webkit-scrollbar {
+  display: none;
+}
+.chip-all-albums {
+  pointer-events: auto;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(248, 246, 240, 0.12);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  border: 1px solid rgba(248, 246, 240, 0.22);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 8px 24px rgba(0, 0, 0, 0.3);
+  color: var(--offwhite);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform var(--transition-fast), background var(--transition-fast);
+  scroll-snap-align: start;
+}
+.chip-all-albums:hover {
+  transform: translateY(-2px);
+  background: rgba(248, 246, 240, 0.22);
+}
+.album-chips-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.album-chip {
+  pointer-events: auto;
+  flex-shrink: 0;
+  height: 48px;
+  padding: 0 18px 0 8px;
+  border-radius: var(--radius-full, 999px);
+  background: rgba(248, 246, 240, 0.12);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  border: 1px solid rgba(248, 246, 240, 0.22);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 8px 24px rgba(0, 0, 0, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--offwhite);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  scroll-snap-align: center;
+  transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+@supports not (backdrop-filter: blur(1px)) {
+  .album-chip, .chip-all-albums {
+    background: #263D32;
+  }
+}
+.album-chip:hover {
+  transform: translateY(-2px);
+  background: rgba(248, 246, 240, 0.22);
+}
+.chip-thumb {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1.5px solid rgba(248, 246, 240, 0.4);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.chip-label {
+  max-width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.album-chip.is-active {
+  background: rgba(248, 246, 240, 0.92);
+  color: var(--forest);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+}
+.album-chip.is-active .chip-thumb {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px var(--clay-btn);
+}
+
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 18px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background-color: var(--forest-card);
+  border: 1px solid var(--sage-line);
+  cursor: pointer;
+  position: relative;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+.masonry-item:hover {
+  transform: translateY(-4px);
+  border-color: var(--clay);
+}
+.masonry-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==========================================================================
+   Native <dialog> Photo Viewer (Edge Image Viewer inspired)
+   ========================================================================== */
+html:has(dialog.photo-viewer-dialog[open]) {
+  overflow: hidden !important;
+  scrollbar-gutter: stable;
+}
+.photo-viewer-dialog {
+  border: none;
+  padding: 0;
+  margin: auto;
+  background: transparent;
+  width: 100vw;
+  height: 100dvh;
+  max-width: 100vw;
+  max-height: 100dvh;
+  overflow: hidden;
+  overscroll-behavior: contain;
+}
+.photo-viewer-dialog::backdrop {
+  background: rgba(10, 18, 14, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.pv-inner {
+  position: relative;
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  touch-action: pan-y;
+}
+.pv-img-container {
+  position: relative;
+  max-width: 94vw;
+  max-height: 94dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pv-img {
+  max-width: 94vw;
+  max-height: 94dvh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--radius-sm, 6px);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.6);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.pv-spinner {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border: 3px solid rgba(248, 246, 240, 0.15);
+  border-top-color: var(--clay-btn);
+  border-radius: 50%;
+  animation: pvSpin 0.8s linear infinite;
+  display: none;
+}
+.pv-loading .pv-spinner { display: block; }
+.pv-loading .pv-img { opacity: 0; }
+@keyframes pvSpin { to { transform: rotate(360deg); } }
+
+.pv-btn-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(248, 246, 240, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(248, 246, 240, 0.2);
+  color: var(--offwhite);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+.pv-btn-close:hover {
+  background: rgba(248, 246, 240, 0.24);
   transform: scale(1.06);
 }
+.pv-btn-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(248, 246, 240, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(248, 246, 240, 0.2);
+  color: var(--offwhite);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+.pv-btn-prev { left: 24px; }
+.pv-btn-next { right: 24px; }
+.pv-btn-nav:hover {
+  background: rgba(248, 246, 240, 0.24);
+  transform: translateY(-50%) scale(1.08);
+}
+@media (max-width: 600px) {
+  .pv-btn-nav {
+    width: 44px;
+    height: 44px;
+  }
+  .pv-btn-prev { left: 12px; }
+  .pv-btn-next { right: 12px; }
+  .pv-btn-close {
+    top: 16px;
+    right: 16px;
+    width: 44px;
+    height: 44px;
+  }
+}
 
+
+/* --------------------------------------------------------------------------
+   Services Overview Page (/nos-services/ 8-card grid)
+   -------------------------------------------------------------------------- */
+.services-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 50px;
+}
+.service-overview-card {
+  background: var(--forest-card);
+  border: 1px solid var(--sage-line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+.service-overview-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--clay);
+  box-shadow: var(--shadow-card);
+}
+.service-overview-img-wrap {
+  aspect-ratio: 16 / 11;
+  overflow: hidden;
+  background: var(--forest-mid);
+}
+.service-overview-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+.service-overview-card:hover .service-overview-img-wrap img {
+  transform: scale(1.05);
+}
+.service-overview-body {
+  padding: 20px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--forest-card);
+  margin-top: auto;
+}
+.service-overview-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--offwhite);
+  line-height: 1.2;
+}
+.service-overview-arrow {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--sage-line-strong);
+  display: grid;
+  place-items: center;
+  color: var(--clay);
+  flex-shrink: 0;
+  transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+}
+.service-overview-card:hover .service-overview-arrow {
+  background: var(--clay-btn);
+  border-color: var(--clay-btn);
+  color: var(--offwhite);
+}
+.service-overview-arrow svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2.2;
+}
+
+/* --------------------------------------------------------------------------
+   Individual Dedicated Service Page Template (Pure White Background)
+   -------------------------------------------------------------------------- */
+.service-page-wrap {
+  background-color: #FFFFFF;
+  color: var(--forest);
+  padding: clamp(50px, 7vw, 90px) 0;
+}
+
+.service-opportunity-box {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+.service-opportunity-text {
+  font-family: var(--font-serif);
+  font-size: clamp(1.3rem, 2.4vw, 1.75rem);
+  line-height: 1.6;
+  color: var(--forest);
+  font-weight: 500;
+}
+
+.service-section-block {
+  max-width: 960px;
+  margin: 0 auto 50px;
+}
+.service-section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+  color: var(--forest);
+  margin-bottom: 18px;
+  text-align: center;
+}
+.service-why-box {
+  background: var(--sand-tint);
+  border: 1px solid var(--sage-line-strong);
+  border-radius: var(--radius-lg);
+  padding: 32px 36px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--forest);
+}
+
+.service-offers-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 24px;
+}
+.service-offer-item {
+  background: var(--sand-tint);
+  border: 1px solid var(--sage-line);
+  border-radius: var(--radius-md);
+  padding: 20px 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--forest);
+}
+.service-offer-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--clay);
+  background: rgba(185, 110, 79, 0.1);
+  color: var(--clay);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.service-offer-icon svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2.2;
+}
+
+/* Photo Placeholders Row */
+.service-photos-section {
+  max-width: 960px;
+  margin: 0 auto 50px;
+}
+.service-photos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.service-photo-placeholder {
+  aspect-ratio: 4 / 3;
+  border: 1.5px dashed var(--sage);
+  border-radius: var(--radius-md);
+  background: var(--sand-tint);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  text-align: center;
+  color: #526359;
+}
+.service-photo-placeholder svg {
+  width: 32px;
+  height: 32px;
+  stroke: var(--clay);
+  fill: none;
+  stroke-width: 1.8;
+  margin-bottom: 8px;
+}
+.service-photo-placeholder-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--forest);
+}
+.service-photo-notice {
+  text-align: center;
+  font-size: 13.5px;
+  color: #526359;
+  margin-top: 14px;
+  font-style: italic;
+}
+
+/* Closing CTA Box */
+.service-closing-box {
+  max-width: 820px;
+  margin: 40px auto 0;
+  text-align: center;
+  padding: 36px 30px;
+  border-top: 1px solid var(--sage-line);
+}
+.service-closing-text {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  line-height: 1.6;
+  color: var(--forest);
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   About Page
+   -------------------------------------------------------------------------- */
+.about-prose {
+  font-size: 1.2rem;
+  line-height: 1.85;
+  color: var(--text-secondary);
+}
+.about-prose p { margin-bottom: 22px; }
+.about-prose p:first-of-type {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 600;
+  color: var(--offwhite);
+  line-height: 1.4;
+}
+
+/* --------------------------------------------------------------------------
+   Contact Page
+   -------------------------------------------------------------------------- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 50px;
+}
+.contact-card {
+  background-color: var(--forest-card);
+  border: 1px solid var(--sage-line);
+  border-radius: var(--radius-lg);
+  padding: 34px 30px;
+}
+.contact-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+.contact-icon {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  border-radius: 50%;
+  border: 1px solid var(--clay);
+  display: grid;
+  place-items: center;
+  color: var(--clay);
+}
+.contact-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--clay);
+  margin-bottom: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   Quote Modal (Hidden Scrollbar + Rounded Container Clipping)
+   -------------------------------------------------------------------------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 130;
+  background: rgba(26, 45, 36, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.modal-overlay.is-open { display: flex; }
+
+.modal-card {
+  background-color: var(--forest-card);
+  border: 1px solid var(--sage-line-strong);
+  border-radius: var(--radius-xl);
+  max-width: 580px;
+  width: 100%;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.6);
+  position: relative;
+  max-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-scroll-container {
+  overflow-y: auto;
+  padding: clamp(26px, 4vw, 38px);
+  max-height: 90vh;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  position: relative;
+}
+.modal-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Subtle top and bottom forest fade cues */
+.modal-fade-top,
+.modal-fade-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 24px;
+  pointer-events: none;
+  z-index: 10;
+}
+.modal-fade-top {
+  top: 0;
+  background: linear-gradient(180deg, var(--forest-card) 0%, rgba(46, 74, 58, 0) 100%);
+}
+.modal-fade-bottom {
+  bottom: 0;
+  background: linear-gradient(0deg, var(--forest-card) 0%, rgba(46, 74, 58, 0) 100%);
+}
+
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+.modal-title {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--offwhite);
+}
+.modal-btn-close {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--sage-line);
+  color: var(--clay);
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  transition: background var(--transition-fast);
+}
+.modal-btn-close:hover { background: var(--clay-btn); border-color: var(--clay-btn); color: var(--offwhite); }
+.form-group { margin-bottom: 16px; }
+.form-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+.form-input, .form-textarea, .form-select {
+  width: 100%;
+  background-color: var(--bg-input);
+  border: 1px solid var(--sage-line-strong);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  font-size: 14px;
+  color: var(--offwhite);
+  min-height: 48px;
+  font-family: var(--font-sans);
+}
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+  border-color: var(--clay);
+  outline: none;
+}
+.form-textarea { min-height: 100px; resize: vertical; }
+
+/* --------------------------------------------------------------------------
+   Footer — deep forest
+   -------------------------------------------------------------------------- */
+.site-footer {
+  background-color: var(--forest-deep);
+  border-top: 1px solid var(--sage-line);
+  padding: 80px 0 30px;
+  margin-top: auto;
+  color: var(--offwhite);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.2fr 1fr;
+  gap: 48px;
+  margin-bottom: 50px;
+}
+.footer-brand p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-top: 14px;
+  line-height: 1.8;
+}
+.footer-socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+.social-icon-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--sage-line-strong);
+  display: grid;
+  place-items: center;
+  color: var(--clay);
+  transition: all var(--transition-fast);
+}
+.social-icon-btn:hover {
+  background-color: var(--clay-btn);
+  border-color: var(--clay-btn);
+  color: var(--offwhite);
+}
+.social-icon-btn svg { width: 17px; height: 17px; fill: currentColor; }
+.footer-heading {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--clay);
+  margin-bottom: 18px;
+}
+.footer-links li { margin-bottom: 10px; }
+.footer-links a {
+  font-size: 14px;
+  color: var(--text-secondary);
+  display: inline-block;
+  padding: 3px 0;
+  transition: color var(--transition-fast);
+}
+.footer-links a:hover { color: var(--offwhite); }
+.footer-bottom {
+  border-top: 1px solid var(--sage-line);
+  padding-top: 22px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Floating WhatsApp Button
+   -------------------------------------------------------------------------- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 100;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #25D366;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.5);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+.whatsapp-float:hover {
+  transform: scale(1.08);
+  box-shadow: 0 16px 36px rgba(37, 211, 102, 0.42);
+}
+.whatsapp-float svg { width: 30px; height: 30px; fill: #ffffff; }
+
+/* --------------------------------------------------------------------------
+   Responsive Media Queries
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-overview-grid { grid-template-columns: repeat(2, 1fr); }
+  .service-offers-list { grid-template-columns: 1fr; }
+  .service-photos-grid { grid-template-columns: repeat(2, 1fr); }
+  .album-overview { grid-template-columns: repeat(2, 1fr); }
+  .testimonial-card { flex: 0 0 calc((100% - 24px) / 2); }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+}
+
+@media (max-width: 768px) {
+  .desktop-nav { display: none; }
+  .mobile-toggle { display: flex; }
+  .room-grid { grid-template-columns: 1fr; }
+  .property-body { flex-direction: column; align-items: flex-start; }
+  .testimonial-card { flex: 0 0 100%; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .hero-title { letter-spacing: 0; }
+  .whatsapp-float { width: 50px; height: 50px; bottom: 18px; right: 18px; }
+  .whatsapp-float svg { width: 26px; height: 26px; }
+}
+
+@media (max-width: 480px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .services-overview-grid { grid-template-columns: 1fr; }
+  .service-photos-grid { grid-template-columns: 1fr; }
+  .album-overview { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .album-card { padding: 16px; }
+  .album-card-title { font-size: 1.2rem; }
+  .hero-actions { flex-direction: column; align-items: flex-start; }
+  .hero-actions .btn-clay,
+  .hero-actions .btn-ghost { width: 100%; }
+  .btn-arrow { align-self: flex-start; }
+}
+
+/* ==========================================================================
+   Continuous Single Photo Background (No Seams, 100lvh Fixed)
+   ========================================================================== */
+.fixed-bg-layer {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100lvh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.fixed-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+.fixed-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, 
+    rgba(26, 43, 35, 0.88) 0%, 
+    rgba(38, 61, 50, 0.65) 25%, 
+    rgba(38, 61, 50, 0.70) 55%, 
+    rgba(26, 43, 35, 0.92) 85%, 
+    rgba(26, 43, 35, 0.98) 100%
+  );
+  pointer-events: none;
+}
+.hero--transparent {
+  background: transparent !important;
+}
+.hero--transparent .hero-content {
+  position: relative;
+  z-index: 2;
+}
+.main--transparent {
+  position: relative;
+  z-index: 2;
+  background: transparent !important;
+}
+
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--masonry-cols, 4), 1fr);
+  gap: 24px;
+  max-width: calc(var(--masonry-cols, 4) * 320px + (var(--masonry-cols, 4) - 1) * 24px);
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .masonry-grid {
+    grid-template-columns: repeat(min(var(--masonry-cols, 4), 3), 1fr);
+    max-width: calc(min(var(--masonry-cols, 4), 3) * 320px + (min(var(--masonry-cols, 4), 3) - 1) * 24px);
+  }
+}
+@media (max-width: 800px) {
+  .masonry-grid {
+    grid-template-columns: repeat(min(var(--masonry-cols, 4), 2), 1fr);
+    max-width: 100%;
+    gap: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .masonry-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+}
   </style>
 
-  <!-- Self-hosted Fonts -->
-  <link rel="stylesheet" href="/fonts/fonts.css">
-
-  <!-- JSON-LD Schema (LodgingBusiness & LocalBusiness) -->
+  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": ["LodgingBusiness", "LocalBusiness"],
-    "name": "Marrakech Séminaire Maisons d'Hôtes",
-    "description": "Location exclusive de villas et maisons d'hôtes de prestige à Marrakech pour séminaires, mariages et événements privés.",
-    "url": "https://marrakechseminairesmaisondhotes.com/",
-    "telephone": ["+212619918223", "+212669719938"],
-    "email": "contact.luxurymanoir@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Route de l'Ourika, Canal de Zaraba",
-      "addressLocality": "Marrakech",
-      "postalCode": "40000",
-      "addressCountry": "MA"
-    },
-    "sameAs": [
-      "https://www.facebook.com/profile.php?id=100094674983961",
-      "https://www.instagram.com/marrakechseminairesevents"
-    ]
-  }
+  "@context": "https://schema.org",
+  "@type": [
+    "LodgingBusiness",
+    "LocalBusiness"
+  ],
+  "name": "Marrakech Séminaire Maisons d'Hôtes",
+  "description": "Location exclusive de villas et maisons d'hôtes jusqu'à 60 chambres à Marrakech pour séminaires d'entreprise, mariages et réceptions d'exception.",
+  "url": "https://marrakechseminairesmaisondhotes.com/",
+  "telephone": [
+    "+212619918223",
+    "+212669719938"
+  ],
+  "email": "contact.luxurymanoir@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Route de l'Ourika, Canal de Zaraba, 40 000 Marrakech",
+    "addressLocality": "Marrakech",
+    "postalCode": "40000",
+    "addressCountry": "MA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 31.5422,
+    "longitude": -7.9892
+  },
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=100094674983961",
+    "https://www.instagram.com/marrakechseminairesevents"
+  ]
+}
   </script>
 </head>
 <body>
   <!-- Accessibility Skip Link -->
   <a href="#main-content" class="skip-link">Passer au contenu principal</a>
 
-  <!-- Demo Switcher Bar (Easily removable for production) -->
-  <aside class="demo-switcher-bar" aria-label="Sélecteur de design pour démonstration client">
-    <div class="demo-label">
-      <span class="demo-badge">DÉMO CLIENT 2026</span>
-      <span>Direction de style :</span>
-    </div>
-    <div class="demo-options" role="group" aria-label="Choisir un style">
-      <button type="button" class="demo-btn active" data-theme-target="option-1" aria-pressed="true">
-        Option 1 : Sable &amp; Terracotta
-      </button>
-      <button type="button" class="demo-btn " data-theme-target="option-2" aria-pressed="false">
-        Option 2 : Nuit de Marrakech
-      </button>
-      <button type="button" class="demo-btn " data-theme-target="option-3" aria-pressed="false">
-        Option 3 : Minimal Riad
-      </button>
-    </div>
+  <!-- Top Announcement Bar (Only One Instance) -->
+  <aside class="top-bar" role="note">
+    DES VILLAS À PARTIR DE 1000 € pour 10 personnes
   </aside>
 
-  <!-- Top Announcement Banner -->
-  <header class="top-banner" role="banner">
-    DES VILLAS À PARTIR DE 1000 € pour 10 personnes
-  </header>
-
-  <!-- Sticky Main Header -->
-  <header class="site-header">
-    <div class="header-container">
-      <a href="/" class="brand-link" aria-label="Marrakech Séminaire Maisons d'Hôtes - Retour à l'accueil">
-        <img src="/img/logo-marrakech-seminaire.png" alt="Marrakech Séminaire Maisons d'Hôtes" width="110" height="76" class="brand-logo" fetchpriority="high">
+  <!-- Sticky Luxury Header: transparent over hero, pill nav on desktop -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="/" class="brand" aria-label="Marrakech Séminaire Maison d'Hôtes">
+        <span class="brand-emblem" aria-hidden="true">M</span>
+        <span class="brand-text">
+          Marrakech Séminaire
+          <small>Maison d'Hôtes</small>
+        </span>
       </a>
 
-      <!-- Desktop Navigation -->
-      <nav class="main-nav" aria-label="Navigation principale">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="/" class="nav-link ">ACCUEIL</a>
-          </li>
-          <li class="nav-item nav-item-dropdown">
-            <a href="/de-5-a-10-chambres/" class="nav-link dropdown-trigger active" aria-haspopup="true">
-              NOS MAISONS D'HÔTES
-              <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="/de-5-a-10-chambres/" class="dropdown-link" role="menuitem">De 5 à 10 chambres</a></li>
-              <li><a href="/de-10-a-20-chambres/" class="dropdown-link" role="menuitem">De 10 à 20 chambres</a></li>
-              <li><a href="/de-20-a-40-chambres/" class="dropdown-link" role="menuitem">De 20 à 40 chambres</a></li>
-              <li><a href="/de-40-a-60-chambres/" class="dropdown-link" role="menuitem">De 40 à 60 chambres</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="/about-us/" class="nav-link ">À PROPOS DE NOUS</a>
-          </li>
-          <li class="nav-item">
-            <a href="/events/" class="nav-link ">ÉVÉNEMENTS</a>
-          </li>
-          <li class="nav-item">
-            <a href="/contact/" class="nav-link ">CONTACT</a>
-          </li>
-        </ul>
+      <!-- Desktop Navigation — centered translucent pill -->
+      <nav class="desktop-nav" aria-label="Menu">
+        <div class="nav-pill">
+          <ul class="nav-list">
+            <li>
+              <a href="/" class="nav-link active" aria-current="page">Accueil</a>
+            </li>
+            <li>
+              <a href="/about-us/" class="nav-link " >À propos</a>
+            </li>
+            <li class="dropdown-container">
+              <button type="button" class="dropdown-trigger " aria-expanded="false" aria-haspopup="true" >
+                Nos Services
+                <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="dropdown-menu" role="menu">
+                
+                  <a href="/nos-services/seminaires/" class="dropdown-item" role="menuitem" >
+                    Séminaires d'entreprise
+                  </a>
+                  
+                  <a href="/nos-services/mariages/" class="dropdown-item" role="menuitem" >
+                    Mariages d'exception
+                  </a>
+                  
+                  <a href="/nos-services/anniversaires/" class="dropdown-item" role="menuitem" >
+                    Anniversaires & Célébrations
+                  </a>
+                  
+                  <a href="/nos-services/team-building/" class="dropdown-item" role="menuitem" >
+                    Team building
+                  </a>
+                  
+                  <a href="/nos-services/fetes-de-famille/" class="dropdown-item" role="menuitem" >
+                    Fêtes de famille
+                  </a>
+                  
+                  <a href="/nos-services/lancements-de-produit/" class="dropdown-item" role="menuitem" >
+                    Lancements de produit
+                  </a>
+                  
+                  <a href="/nos-services/stages-de-yoga/" class="dropdown-item" role="menuitem" >
+                    Stages de yoga & bien-être
+                  </a>
+                  
+                  <a href="/nos-services/soirees-et-animations/" class="dropdown-item" role="menuitem" >
+                    Soirées et animations
+                  </a>
+                  
+              </div>
+            </li>
+            <li>
+              <a href="/events/" class="nav-link " >Événements</a>
+            </li>
+            <li>
+              <a href="/contact/" class="nav-link " >Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
-      <!-- Action buttons -->
+      <!-- Header Actions Right: lang switcher + CTA + hamburger -->
       <div class="header-actions">
-        <a href="tel:+212619918223" class="header-phone-link" aria-label="Appeler notre conciergerie au +212 619 918 223">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <span>Appeler</span>
-        </a>
-        <button type="button" class="btn-cta js-open-quote">Demander un devis</button>
-        <button type="button" class="menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="mobile-drawer">
-          <span></span>
-          <span></span>
+        <!-- Language Switcher FR | EN | ES -->
+        <div class="lang-switcher" aria-label="Langue">
+          <a href="/product/palais-paradis-hotel/" class="lang-link is-active" hreflang="fr" aria-current="page">FR</a>
+          <span class="lang-divider" aria-hidden="true">|</span>
+          <a href="/en/product/palais-paradis-hotel/" class="lang-link " hreflang="en" >EN</a>
+          <span class="lang-divider" aria-hidden="true">|</span>
+          <a href="/es/product/palais-paradis-hotel/" class="lang-link " hreflang="es" >ES</a>
+        </div>
+
+        <!-- CTA Pill Button -->
+        <button type="button" class="btn-clay js-open-quote">
+          Demander un devis
+        </button>
+
+        <!-- Mobile Hamburger -->
+        <button type="button" class="mobile-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-drawer">
           <span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Navigation Drawer -->
-  <aside id="mobile-drawer" class="mobile-drawer" aria-label="Menu mobile" aria-hidden="true" inert>
-    <div class="mobile-drawer-content">
-      <div class="mobile-drawer-header">
-        <img src="/img/logo-marrakech-seminaire.png" alt="Marrakech Séminaire Maisons d'Hôtes" width="90" height="62">
-        <button type="button" class="btn-close btn-close-drawer" aria-label="Fermer le menu mobile">✕</button>
-      </div>
-      <nav class="mobile-nav" aria-label="Navigation mobile">
-        <ul class="mobile-nav-list">
-          <li><a href="/" class="mobile-nav-link">ACCUEIL</a></li>
-          <li>
-            <span class="mobile-nav-link" style="color: var(--accent);">NOS MAISONS D'HÔTES</span>
-            <ul class="mobile-sub-list">
-              <li><a href="/de-5-a-10-chambres/" class="mobile-sub-link">De 5 à 10 chambres</a></li>
-              <li><a href="/de-10-a-20-chambres/" class="mobile-sub-link">De 10 à 20 chambres</a></li>
-              <li><a href="/de-20-a-40-chambres/" class="mobile-sub-link">De 20 à 40 chambres</a></li>
-              <li><a href="/de-40-a-60-chambres/" class="mobile-sub-link">De 40 à 60 chambres</a></li>
-            </ul>
-          </li>
-          <li><a href="/about-us/" class="mobile-nav-link">À PROPOS DE NOUS</a></li>
-          <li><a href="/events/" class="mobile-nav-link">ÉVÉNEMENTS</a></li>
-          <li><a href="/contact/" class="mobile-nav-link">CONTACT</a></li>
-        </ul>
-      </nav>
-      <div style="padding-top: 1rem; border-top: 1px solid var(--border-subtle); display: flex; flex-direction: column; gap: 0.75rem;">
-        <a href="tel:+212619918223" class="btn-cta" style="background: var(--bg-surface-soft); color: var(--text-main); border: 1px solid var(--border-strong);">
-          Appeler le +212 619 918 223
-        </a>
-        <button type="button" class="btn-cta js-open-quote" style="width: 100%;">
-          Demander un devis
+  <!-- Mobile Fullscreen Navigation Drawer -->
+  <aside id="mobile-drawer" class="mobile-drawer" aria-label="Menu" inert>
+    <div class="mobile-drawer-header">
+      <span class="brand-text">
+        Marrakech Séminaire
+        <small>Maison d'Hôtes</small>
+      </span>
+      <button type="button" class="btn-ghost btn-sm btn-close-drawer" aria-label="Fermer">
+        Fermer ✕
+      </button>
+    </div>
+
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item">
+        <a href="/">Accueil</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="/about-us/">À propos</a>
+      </li>
+      <li class="mobile-nav-item">
+        <button type="button" class="mobile-accordion-trigger" aria-expanded="false">
+          <span>Nos Services</span>
+          <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
         </button>
+        <div class="mobile-accordion-content">
+          <a href="/nos-services/seminaires/" >Séminaires d'entreprise</a><a href="/nos-services/mariages/" >Mariages d'exception</a><a href="/nos-services/anniversaires/" >Anniversaires & Célébrations</a><a href="/nos-services/team-building/" >Team building</a><a href="/nos-services/fetes-de-famille/" >Fêtes de famille</a><a href="/nos-services/lancements-de-produit/" >Lancements de produit</a><a href="/nos-services/stages-de-yoga/" >Stages de yoga & bien-être</a><a href="/nos-services/soirees-et-animations/" >Soirées et animations</a>
+        </div>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="/events/">Événements</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="/contact/">Contact</a>
+      </li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <!-- Language Switcher in Mobile Drawer -->
+      <div class="lang-switcher" style="justify-content: center; font-size: 14px;">
+        <a href="/product/palais-paradis-hotel/" class="lang-link is-active">FR</a>
+        <span class="lang-divider">|</span>
+        <a href="/en/product/palais-paradis-hotel/" class="lang-link ">EN</a>
+        <span class="lang-divider">|</span>
+        <a href="/es/product/palais-paradis-hotel/" class="lang-link ">ES</a>
       </div>
+
+      <a href="tel:+212619918223" class="btn-ghost" style="width: 100%;">
+        Appeler : +212 619 918 223
+      </a>
+      <button type="button" class="btn-gold js-open-quote" style="width: 100%;">
+        Demander un devis
+      </button>
     </div>
   </aside>
 
-  <!-- Main Content -->
+  <!-- Continuous Single Photo Background (No Seams, 100lvh Fixed) when pageBackground is full -->
+  
+
+  <!-- Hero Section: 100vh full-bleed, header overlaid, content bottom-left -->
+  <section class="hero" aria-label="PALAIS PARADIS HÔTEL">
+    
+    <div class="hero-bg-wrapper">
+      <picture>
+        <source
+          type="image/webp"
+          srcset="/img/palais-paradis-facade-480w.webp 480w, /img/palais-paradis-facade-800w.webp 800w, /img/palais-paradis-facade-1200w.webp 1200w, /img/palais-paradis-facade-1920w.webp 1920w, /img/palais-paradis-facade-2560w.webp 2560w, /img/palais-paradis-facade-3840w.webp 3840w"
+          sizes="100vw">
+        <img src="/img/palais-paradis-facade-1920w.webp"
+             alt="Palais Paradis Hôtel Marrakech architecture et jardins"
+             class="hero-bg-img"
+             fetchpriority="high"
+             loading="eager"
+             width="1920"
+             height="1080">
+      </picture>
+    </div>
+    <div class="hero-gradient" aria-hidden="true"></div>
+    <div class="hero-grain" aria-hidden="true"></div>
+    
+    <div class="hero-content">
+      
+      <h1 class="hero-title">PALAIS PARADIS HÔTEL</h1>
+      <p class="hero-subtitle">De 20 à 40 chambres</p>
+      <div class="hero-actions">
+        <button type="button" class="btn-clay js-open-quote">Demander un devis</button>
+        <a href="#main-content" class="btn-arrow" aria-label="Demander un devis">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
   <main id="main-content">
     
-    <article style="max-width: 1240px; margin: 0 auto; padding: 3.5rem 1.5rem 5rem;">
-      <header style="margin-bottom: 2.5rem; text-align: center;">
-        <h1 class="hero-title" style="color: var(--text-main); text-shadow: none; font-size: clamp(2rem, 4vw, 3.25rem); margin-bottom: 0.5rem;">
-          PALAIS PARADIS HÔTEL
-        </h1>
-        <div class="section-divider" style="margin-bottom: 1.5rem;"></div>
-        <button type="button" class="btn-cta js-open-quote" data-property-name="PALAIS PARADIS HÔTEL">
-          Demander un devis
-        </button>
-      </header>
+      <section class="section">
+        <div class="container">
+          <div class="sec-header">
+            <h2 class="sec-title">PALAIS PARADIS HÔTEL</h2>
+            <div class="sec-divider" aria-hidden="true"></div>
+            <p class="sec-intro">De 20 à 40 chambres — Marrakech Séminaire Maison D'Hôtes a le plaisir de vous présenter ses différentes propriétés. Nos nombreuses et différentes villas vous permettront de trouver celle adaptée à votre séjour en exclusivité.</p>
+          </div>
 
-      <section aria-label="Photo principale" style="margin-bottom: 3.5rem;">
-        <div style="border-radius: var(--card-radius); overflow: hidden; aspect-ratio: 16/9; max-width: 900px; margin: 0 auto; box-shadow: var(--card-shadow);">
-          <picture>
-            <source srcset="/img/palais-paradis-facade-800w.webp 800w, /img/palais-paradis-facade-480w.webp 480w" type="image/webp">
-            <img src="/img/palais-paradis-facade.webp" alt="PALAIS PARADIS HÔTEL" style="width: 100%; height: 100%; object-fit: cover;" width="900" height="506">
-          </picture>
+          <div style="border-radius: var(--radius-xl); overflow: hidden; border: 1px solid var(--line-gold); margin-bottom: 40px;">
+            <img src="/img/palais-paradis-facade.webp" alt="Palais Paradis Hôtel Marrakech architecture et jardins" style="width: 100%; max-height: 600px; object-fit: cover;">
+          </div>
+
+          <div class="container-narrow" style="text-align: center;">
+            <p style="font-size: 1.2rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 30px;">
+              Que vous cherchiez une villa pour votre mariage où il vous faut 60 couchages ou pour une fête de famille d'une quinzaine d'invités, nous avons la villa adaptée à chacun de ces événements. De plus, si vous le désirez, nos équipes sur place supervisées par votre organisatrice d'événements, Nadia, sera là pour vous accompagner dans l'organisation de vos séminaires, de votre mariage mille et une nuit, de votre anniversaire ou d'un lancement de produit ou d'un stage de yoga. Nous sommes capables de gérer pour vous :
+            </p>
+            <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+              <button type="button" class="btn-gold js-open-quote">Demander un devis</button>
+              <a href="tel:+212619918223" class="btn-ghost">Appeler : +212 619 918 223</a>
+            </div>
+          </div>
         </div>
       </section>
-
-      <section aria-label="Description" style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--card-radius); padding: 2.5rem 2rem; box-shadow: var(--card-shadow); max-width: 900px; margin: 0 auto;">
-        <h2 style="font-family: var(--font-serif); font-size: 1.75rem; color: var(--text-main); margin-bottom: 1.5rem;">Description</h2>
-        <div style="font-size: 1.0625rem; color: var(--text-muted); line-height: 1.8;">
-          <p>Domaine hôtelier de charme de 30 chambres alliant architecture orientale et confort moderne, idéal pour conventions, mariages et grandes réceptions à Marrakech.</p>
-        </div>
-        <div style="margin-top: 2rem; text-align: center;">
-          <button type="button" class="btn-cta js-open-quote" data-property-name="PALAIS PARADIS HÔTEL">
-            Demander un devis
-          </button>
-        </div>
-      </section>
-    </article>
     
   </main>
 
-  <!-- Floating WhatsApp Action -->
-  <a href="https://wa.me/212619918223?text=Bonjour,%20je%20souhaite%20des%20renseignements%20sur%20la%20location%20de%20vos%20maisons%20d'h%C3%B4tes%20%C3%A0%20Marrakech." 
+  <!-- Floating WhatsApp Quick Contact -->
+  <a href="https://wa.me/212619918223" 
      class="whatsapp-float" 
      target="_blank" 
      rel="noopener noreferrer" 
-     aria-label="Contacter la conciergerie sur WhatsApp">
+     aria-label="WhatsApp (+212 619 918 223)">
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path d="M12.031 2c-5.508 0-9.988 4.477-9.988 9.985 0 1.761.459 3.479 1.331 4.992l-1.414 5.166 5.291-1.387c1.458.795 3.102 1.214 4.78 1.214 5.507 0 9.987-4.477 9.987-9.985 0-5.508-4.48-9.985-9.987-9.985zm0 18.283c-1.498 0-2.964-.403-4.244-1.164l-.305-.181-3.149.826.84-3.07-.199-.316c-.839-1.336-1.282-2.884-1.282-4.478 0-4.568 3.717-8.285 8.339-8.285 4.569 0 8.286 3.717 8.286 8.285 0 4.568-3.717 8.283-8.286 8.283zm4.551-6.208c-.249-.125-1.477-.728-1.706-.811-.229-.083-.396-.125-.562.125-.166.249-.645.811-.791.977-.145.166-.291.187-.541.062s-1.054-.388-2.008-1.238c-.742-.661-1.243-1.478-1.388-1.727-.146-.249-.016-.384.109-.508.112-.112.249-.291.374-.437.125-.145.166-.249.249-.416.083-.166.042-.312-.021-.437s-.562-1.352-.77-1.852c-.203-.487-.409-.42-.562-.428l-.479-.009c-.166 0-.437.062-.666.312s-.874.853-.874 2.081.895 2.413 1.02 2.579c.125.166 1.761 2.689 4.267 3.771.596.257 1.061.411 1.424.526.598.19 1.143.163 1.573.099.479-.072 1.477-.603 1.685-1.186.208-.583.208-1.082.146-1.186-.063-.105-.229-.167-.478-.292z"/>
     </svg>
   </a>
 
-  <!-- Frontend-Only Quote Modal Dialog -->
-  <dialog id="quote-modal" class="quote-modal" aria-labelledby="modal-title">
-    <div class="quote-modal-header">
-      <h2 id="modal-title" class="quote-modal-title">Demander un devis</h2>
-      <button type="button" class="btn-close js-close-quote" aria-label="Fermer la boîte de dialogue">✕</button>
-    </div>
-    <div class="quote-modal-body">
-      <form id="quote-form" class="quote-form" novalidate>
-        <div class="form-group">
-          <label for="form-name" class="form-label">Nom et Prénom *</label>
-          <input type="text" id="form-name" name="fullname" class="form-input" required placeholder="Votre nom complet" autocomplete="name">
+  <!-- Accessible Quote Request Modal Dialog (Hidden scrollbar clipped by card) -->
+  <div id="quote-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" inert>
+    <div class="modal-card">
+      <div class="modal-fade-top" aria-hidden="true"></div>
+      <div class="modal-scroll-container">
+        <div class="modal-header">
+          <h2 id="modal-title" class="modal-title">Demander un devis personnalisé</h2>
+          <button type="button" class="modal-btn-close js-close-quote" aria-label="Fermer">✕</button>
         </div>
-        <div class="form-group">
-          <label for="form-email" class="form-label">E-mail *</label>
-          <input type="email" id="form-email" name="email" class="form-input" required placeholder="votre.email@exemple.com" autocomplete="email">
-        </div>
-        <div class="form-group">
-          <label for="form-phone" class="form-label">Téléphone / WhatsApp *</label>
-          <input type="tel" id="form-phone" name="phone" class="form-input" required placeholder="+212 6... ou +33 6..." autocomplete="tel">
-        </div>
-        <div class="form-group">
-          <label for="form-event" class="form-label">Type d'événement</label>
-          <select id="form-event" name="event_type" class="form-select">
-            <option value="Séminaire d'entreprise">Séminaire d'entreprise</option>
-            <option value="Mariage">Mariage</option>
-            <option value="Fête de famille">Fête de famille</option>
-            <option value="Anniversaire">Anniversaire</option>
-            <option value="Lancement de produit">Lancement de produit</option>
-            <option value="Stage de yoga">Stage de yoga</option>
-            <option value="Autre événement">Autre événement</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="form-capacity" class="form-label">Capacité souhaitée</label>
-          <select id="form-capacity" name="capacity" class="form-select">
-            <option value="5 à 10 chambres (jusqu'à 20 couchages)">De 5 à 10 chambres</option>
-            <option value="10 à 20 chambres">De 10 à 20 chambres</option>
-            <option value="20 à 40 chambres">De 20 à 40 chambres</option>
-            <option value="40 à 60 chambres">De 40 à 60 chambres</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="form-dates" class="form-label">Dates envisagées</label>
-          <input type="text" id="form-dates" name="dates" class="form-input" placeholder="Ex: Octobre 2026 (3 nuits)">
-        </div>
-        <div class="form-group">
-          <label for="form-notes" class="form-label">Précisions ou demandes particulières</label>
-          <textarea id="form-notes" name="notes" class="form-textarea" placeholder="Vos souhaits (restauration, transfert, animations...)"></textarea>
-        </div>
-        <div class="form-actions">
-          <button type="submit" class="btn-cta" style="flex: 1;">Envoyer</button>
-          <button type="button" class="btn-secondary js-close-quote" style="background: var(--bg-surface-soft); color: var(--text-main); border: 1px solid var(--border-strong);">Fermer</button>
-        </div>
-      </form>
-    </div>
-  </dialog>
+        <p style="color: var(--text-secondary); margin-bottom: 20px; font-size: 14.5px;">Remplissez ce formulaire pour recevoir une proposition adaptée à votre événement.</p>
+        
+        <form id="quote-form">
+          <div class="form-group">
+            <label class="form-label" for="q-name">Nom complet *</label>
+            <input type="text" id="q-name" name="fullName" class="form-input" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="q-phone">Numéro de téléphone *</label>
+            <input type="tel" id="q-phone" name="phone" class="form-input" required autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="q-event">Type d'événement</label>
+            <select id="q-event" name="eventType" class="form-select">
+              <option value="Séminaires d'entreprise" data-slug="seminaires">Séminaires d'entreprise</option>
+              <option value="Mariages d'exception" data-slug="mariages">Mariages d'exception</option>
+              <option value="Anniversaires & Célébrations" data-slug="anniversaires">Anniversaires & Célébrations</option>
+              <option value="Team building" data-slug="team-building">Team building</option>
+              <option value="Fêtes de famille" data-slug="fetes-de-famille">Fêtes de famille</option>
+              <option value="Lancements de produit" data-slug="lancements-de-produit">Lancements de produit</option>
+              <option value="Stages de yoga & bien-être" data-slug="stages-de-yoga">Stages de yoga & bien-être</option>
+              <option value="Soirées et animations" data-slug="soirees-et-animations">Soirées et animations</option>
+              <option value="Autre événement" data-slug="autre">Autre événement</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="q-guests">Nombre d'invités / chambres</label>
+            <input type="text" id="q-guests" name="guests" class="form-input" placeholder="ex. 30 personnes / 15 chambres">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="q-dates">Dates souhaitées</label>
+            <input type="text" id="q-dates" name="dates" class="form-input" placeholder="ex. Printemps">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="q-notes">Précisions ou demandes particulières</label>
+            <textarea id="q-notes" name="notes" class="form-textarea" placeholder="Précisions ou demandes particulières"></textarea>
+          </div>
 
-  <!-- Photo Lightbox Modal -->
-  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Visualiseur de photos en plein écran">
-    <div class="lightbox-content">
-      <button type="button" id="lightbox-close" class="lightbox-close" aria-label="Fermer le visualiseur">✕</button>
-      <button type="button" id="lightbox-prev" class="lightbox-nav lightbox-prev" aria-label="Photo précédente">‹</button>
-      <img id="lightbox-img" src="" alt="" class="lightbox-img">
-      <button type="button" id="lightbox-next" class="lightbox-nav lightbox-next" aria-label="Photo suivante">›</button>
+          <button type="submit" class="btn-clay" style="width: 100%; margin-top: 10px;">
+            Envoyer via WhatsApp
+          </button>
+          <p style="font-size: 12px; color: var(--text-secondary); text-align: center; margin-top: 14px;">
+            Vos coordonnées sont utilisées exclusivement pour l'établissement de votre devis.
+          </p>
+        </form>
+      </div>
+      <div class="modal-fade-bottom" aria-hidden="true"></div>
     </div>
   </div>
 
-  <!-- Clean Luxury Footer -->
-  <footer class="site-footer">
-    <div class="footer-container">
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
       <div class="footer-grid">
-        <!-- Col 1: Brand & Contact -->
-        <div class="footer-col">
-          <img src="/img/logo-conciergerie.png" alt="Marrakech Séminaire Conciergerie" width="130" height="59" style="margin-bottom: 1.25rem;">
-          <ul class="footer-contact-list">
-            <li class="footer-item">
-              <strong>Route de l'Ourika, Canal de Zaraba, 40 000 Marrakech</strong>
-            </li>
-            <li class="footer-item">
-              <a href="tel:+212619918223" class="footer-link">+(212) 619 918 223</a>
-            </li>
-            <li class="footer-item">
-              <a href="tel:+212669719938" class="footer-link">+(212) 669 719 938</a>
-            </li>
-            <li class="footer-item">
-              <a href="mailto:contact.luxurymanoir@gmail.com" class="footer-link">contact.luxurymanoir@gmail.com</a>
-            </li>
-            <li class="footer-item">
-              <a href="mailto:nadiastrass@gmail.com" class="footer-link">nadiastrass@gmail.com</a>
-            </li>
-          </ul>
-          <div class="footer-social-wrap">
-            <a href="https://www.facebook.com/profile.php?id=100094674983961" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Consulter notre page Facebook officielle">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        <!-- Brand & Contact Details -->
+        <div class="footer-brand">
+          <span class="brand-text" style="font-size: 1.25rem;">
+            Marrakech Séminaire
+            <small>Maison d'Hôtes</small>
+          </span>
+          <p>Route de l'Ourika, Canal de Zaraba, 40 000 Marrakech</p>
+          <p>
+            <a href="tel:+212619918223">+(212) 619 918 223</a><br>
+            <a href="tel:+212669719938">+(212) 669 719 938</a><br>
+            <a href="mailto:contact.luxurymanoir@gmail.com">contact.luxurymanoir@gmail.com</a><br>
+            <a href="mailto:nadiastrass@gmail.com">nadiastrass@gmail.com</a>
+          </p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/profile.php?id=100094674983961" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
             </a>
-            <a href="https://www.instagram.com/marrakechseminairesevents" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Suivre nos événements sur Instagram">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            <a href="https://www.instagram.com/marrakechseminairesevents" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2c2.7 0 3 0 4.1.1 2.5.1 3.7 1.3 3.8 3.8.1 1.1.1 1.4.1 4.1s0 3-.1 4.1c-.1 2.5-1.3 3.7-3.8 3.8-1.1.1-1.4.1-4.1.1s-3 0-4.1-.1c-2.5-.1-3.7-1.3-3.8-3.8C2 15 2 14.7 2 12s0-3 .1-4.1C2.2 5.4 3.4 4.2 5.9 4.1 7 4 7.3 4 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm5.2-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>
             </a>
           </div>
         </div>
 
-        <!-- Col 2: Liens Utiles -->
-        <div class="footer-col">
-          <h2 class="footer-col-title">LIENS UTILES</h2>
-          <ul class="footer-menu-list">
-            <li><a href="/" class="footer-link">ACCUEIL</a></li>
-            <li><a href="/events/" class="footer-link">ÉVÉNEMENTS</a></li>
-            <li><a href="/about-us/" class="footer-link">À PROPOS DE NOUS</a></li>
-            <li><a href="/contact/" class="footer-link">CONTACT</a></li>
+        <!-- Links Column -->
+        <div>
+          <p class="footer-heading">Liens utiles</p>
+          <ul class="footer-links">
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/about-us/">À propos</a></li>
+            <li><a href="/nos-services/">Nos Services</a></li>
+            <li><a href="/events/">Événements</a></li>
+            <li><a href="/contact/">Contact</a></li>
           </ul>
         </div>
 
-        <!-- Col 3: Nos Établissements -->
-        <div class="footer-col">
-          <h2 class="footer-col-title">Nos Établissements</h2>
-          <ul class="footer-menu-list">
-            <li><a href="/product/les-lys-magiques/" class="footer-link">LES LYS MAGIQUE</a></li>
-            <li><a href="/product/villa-anouar-marrakech/" class="footer-link">Villa Anouar Marrakech</a></li>
-            <li><a href="/product/palais-paradis-hotel/" class="footer-link">PALAIS PARADIS HÔTEL</a></li>
-            <li><a href="/product/villa-dhorizon-marrakech/" class="footer-link">Villa D’Horizon Marrakech</a></li>
-            <li><a href="/product/riad-le-bleu-de-la-medina/" class="footer-link">RIAD LE BLEU DE LA MEDINA</a></li>
-            <li><a href="/product/jardin-les-deux-soeurs-marrakech/" class="footer-link">Jardin Les Deux Sœurs Marrakech</a></li>
+        <!-- Establishments Column -->
+        <div>
+          <p class="footer-heading">Nos Établissements</p>
+          <ul class="footer-links">
+            
+              <li><a href="/product/les-lys-magiques/">LES LYS MAGIQUE</a></li>
+            
+              <li><a href="/product/villa-anouar-marrakech/">Villa Anouar Marrakech</a></li>
+            
+              <li><a href="/product/palais-paradis-hotel/">PALAIS PARADIS HÔTEL</a></li>
+            
+              <li><a href="/product/villa-dhorizon-marrakech/">Villa D'Horizon Marrakech</a></li>
+            
+              <li><a href="/product/riad-le-bleu-de-la-medina/">RIAD LE BLEU DE LA MEDINA</a></li>
+            
+              <li><a href="/product/jardin-les-deux-soeurs-marrakech/">Jardin Les Deux Sœurs Marrakech</a></li>
+            
           </ul>
         </div>
 
-        <!-- Col 4: Catégories de Chambres -->
-        <div class="footer-col">
-          <h2 class="footer-col-title">Capacités</h2>
-          <ul class="footer-menu-list">
-            <li><a href="/de-5-a-10-chambres/" class="footer-link">De 5 à 10 chambres</a></li>
-            <li><a href="/de-10-a-20-chambres/" class="footer-link">De 10 à 20 chambres</a></li>
-            <li><a href="/de-20-a-40-chambres/" class="footer-link">De 20 à 40 chambres</a></li>
-            <li><a href="/de-40-a-60-chambres/" class="footer-link">De 40 à 60 chambres</a></li>
+        <!-- Capacities Column -->
+        <div>
+          <p class="footer-heading">Capacités</p>
+          <ul class="footer-links">
+            
+              <li><a href="/de-5-a-10-chambres/">De 5 à 10 chambres</a></li>
+            
+              <li><a href="/de-10-a-20-chambres/">De 10 à 20 chambres</a></li>
+            
+              <li><a href="/de-20-a-40-chambres/">De 20 à 40 chambres</a></li>
+            
+              <li><a href="/de-40-a-60-chambres/">De 40 à 60 chambres</a></li>
+            
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>© Copyright © 2026 Marrakech Seminaires Maison d'Hotes. All Rights Reserved.</p>
+        Copyright © 2026 Marrakech Séminaires Maison d'Hôtes. All Rights Reserved.
       </div>
     </div>
   </footer>
 
-  <!-- Client Script -->
-  <script defer src="/js/main.js"></script>
+  <!-- Scripts -->
+  <script src="/js/main.js" defer></script>
+  
 </body>
 </html>

@@ -1,0 +1,552 @@
+{
+  "business": {
+    "name": "Marrakech Séminaire Maison d'Hôtes",
+    "legalName": "Marrakech Séminaires Maison d'Hôtes",
+    "address": "Route de l'Ourika, Canal de Zaraba, 40 000 Marrakech",
+    "locality": "Marrakech",
+    "postalCode": "40000",
+    "country": "MA",
+    "telephones": [
+      "+212619918223",
+      "+212669719938"
+    ],
+    "emails": [
+      "contact.luxurymanoir@gmail.com",
+      "nadiastrass@gmail.com"
+    ],
+    "whatsapp": "212619918223",
+    "social": {
+      "facebook": "https://www.facebook.com/profile.php?id=100094674983961",
+      "instagram": "https://www.instagram.com/marrakechseminairesevents"
+    },
+    "coordinates": {
+      "latitude": 31.5422,
+      "longitude": -7.9892
+    }
+  },
+  "pages": {
+    "home": {
+      "slug": "",
+      "hero": "/img/home.webp",
+      "heroAlt": {
+        "fr": "Dîner de gala et banquet d'exception aux chandelles dans une villa privée de Marrakech",
+        "en": "Gala dinner and candlelit banquet in an exclusive private villa in Marrakech",
+        "es": "Cena de gala y banquete a la luz de las velas en una villa privada en Marrakech"
+      }
+    },
+    "about": {
+      "slug": "about-us",
+      "hero": "/img/about-banner.webp",
+      "heroAlt": {
+        "fr": "Domaine de prestige et architecture d'exception à Marrakech",
+        "en": "Prestige estate and exceptional architecture in Marrakech",
+        "es": "Finca de prestigio y arquitectura excepcional en Marrakech"
+      }
+    },
+    "services": {
+      "slug": "nos-services",
+      "hero": "/img/event-oriental-night-1.webp",
+      "heroAlt": {
+        "fr": "Ambiance nocturne et scénographie événementielle dans une maison d'hôtes à Marrakech",
+        "en": "Night ambiance and event scenography in a luxury guesthouse in Marrakech",
+        "es": "Ambiente nocturno y escenografía de eventos en una casa de huéspedes en Marrakech"
+      }
+    },
+    "events": {
+      "slug": "events",
+      "hero": "/img/event-soiree-dj.webp",
+      "heroAlt": {
+        "fr": "Soirée événementielle festive avec DJ et jeux de lumière à Marrakech",
+        "en": "Festive event evening with DJ and light show in Marrakech",
+        "es": "Velada de eventos festiva con DJ y espectáculo de luces en Marrakech"
+      },
+      "pageBackground": "full"
+    },
+    "contact": {
+      "slug": "contact",
+      "hero": "/img/contact-banner.webp",
+      "heroAlt": {
+        "fr": "Accueil conciergerie et accompagnement événementiel sur mesure à Marrakech",
+        "en": "Concierge reception and tailor-made event management in Marrakech",
+        "es": "Recepción de conserjería y gestión de eventos a medida en Marrakech"
+      }
+    },
+    "cat-5-10": {
+      "slug": "de-5-a-10-chambres",
+      "hero": "/img/villa-al-marrakchi.webp",
+      "heroAlt": {
+        "fr": "Villa de 5 à 10 chambres avec jardin et piscine privée à Marrakech",
+        "en": "Villa with 5 to 10 bedrooms with garden and private pool in Marrakech",
+        "es": "Villa de 5 a 10 habitaciones con jardín y piscina privada en Marrakech"
+      }
+    },
+    "cat-10-20": {
+      "slug": "de-10-a-20-chambres",
+      "hero": "/img/green-garden.webp",
+      "heroAlt": {
+        "fr": "Maison d'hôtes de 10 à 20 chambres pour séminaires et groupes à Marrakech",
+        "en": "Guesthouse with 10 to 20 bedrooms for seminars and groups in Marrakech",
+        "es": "Casa de huéspedes de 10 a 20 habitaciones para seminarios y grupos en Marrakech"
+      }
+    },
+    "cat-20-40": {
+      "slug": "de-20-a-40-chambres",
+      "hero": "/img/royal-kasbah-source.webp",
+      "heroAlt": {
+        "fr": "Domaine de 20 à 40 chambres pour grands événements à Marrakech",
+        "en": "Estate with 20 to 40 bedrooms for large events in Marrakech",
+        "es": "Finca de 20 a 40 habitaciones para grandes eventos en Marrakech"
+      }
+    },
+    "cat-40-60": {
+      "slug": "de-40-a-60-chambres",
+      "hero": "/img/majestic-luxury-piscine.webp",
+      "heroAlt": {
+        "fr": "Grand domaine jusqu'à 60 chambres avec parc et piscine à Marrakech",
+        "en": "Grand estate up to 60 bedrooms with park and pool in Marrakech",
+        "es": "Gran finca de hasta 60 habitaciones con parque y piscina en Marrakech"
+      }
+    }
+  },
+  "albums": [
+    {
+      "slug": "mariages",
+      "name": {
+        "fr": "Mariages",
+        "en": "Weddings",
+        "es": "Bodas"
+      },
+      "cover": "/img/event-day-after.webp",
+      "photos": [
+        {
+          "src": "/img/event-day-after.webp",
+          "alt": {
+            "fr": "Brunch day-after de mariage au bord de la piscine à Marrakech",
+            "en": "Wedding day-after brunch by the pool in Marrakech",
+            "es": "Brunch post-boda junto a la piscina en Marrakech"
+          }
+        },
+        {
+          "src": "/img/les-lys-coucher-soleil.webp",
+          "alt": {
+            "fr": "Coucher de soleil romantique sur les palmiers lors d'un mariage",
+            "en": "Romantic sunset over palm trees during a wedding celebration",
+            "es": "Atardecer romántico sobre las palmeras durante una boda"
+          }
+        },
+        {
+          "src": "/img/les-lys-terrasses.webp",
+          "alt": {
+            "fr": "Terrasse d'honneur aménagée pour une réception de mariage",
+            "en": "Honor terrace arranged for a luxury wedding reception",
+            "es": "Terraza de honor acondicionada para una recepción de boda"
+          }
+        },
+        {
+          "src": "/img/riad-bleu-patio.webp",
+          "alt": {
+            "fr": "Patio intimiste avec bougies pour une célébration intime",
+            "en": "Intimate candlelit patio for a romantic celebration",
+            "es": "Patio íntimo iluminado con velas para una celebración"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "soiree-berbere",
+      "name": {
+        "fr": "Soirée berbère",
+        "en": "Berber Evening",
+        "es": "Noche bereber"
+      },
+      "cover": "/img/soiree-berbere-01.webp",
+      "photos": [
+        {
+          "src": "/img/soiree-berbere-01.webp",
+          "alt": {
+            "fr": "Table de banquet dressée avec tarbouches marocains, vaisselle dorée et herbes de la pampa",
+            "en": "Banquet table decorated with Moroccan tarbooshes, gold tableware and pampas grass",
+            "es": "Mesa de banquete decorada con tarbús marroquíes, vajilla dorada y hierba de la pampa"
+          }
+        },
+        {
+          "src": "/img/soiree-berbere-02.webp",
+          "alt": {
+            "fr": "Centre de table floral raffiné avec roses et bougies pour dîner d'exception",
+            "en": "Refined floral centerpiece with roses and candles for an exclusive dinner",
+            "es": "Centro de mesa floral refinado con rosas y velas para una cena exclusiva"
+          }
+        },
+        {
+          "src": "/img/soiree-berbere-03.webp",
+          "alt": {
+            "fr": "Salle de réception sous chapiteau illuminée de lanternes en osier tressé",
+            "en": "Reception hall under canopy illuminated with woven wicker lanterns",
+            "es": "Salón de recepción bajo carpa iluminado con faroles de mimbre tejido"
+          }
+        },
+        {
+          "src": "/img/soiree-berbere-04.webp",
+          "alt": {
+            "fr": "Table ronde traditionnelle avec nappe safran, coussins berbères et composition florale",
+            "en": "Traditional round table with saffron cloth, Berber cushions and floral arrangement",
+            "es": "Mesa redonda tradicional con mantel azafrán, cojines bereberes y arreglo floral"
+          }
+        },
+        {
+          "src": "/img/soiree-berbere-05.webp",
+          "alt": {
+            "fr": "Vase en coupe dorée avec fleurs fraîches et verres en cristal taillé",
+            "en": "Golden goblet vase with fresh flowers and cut crystal glasses",
+            "es": "Copa dorada con flores frescas y copas de cristal tallado"
+          }
+        },
+        {
+          "src": "/img/soiree-berbere-06.webp",
+          "alt": {
+            "fr": "Enfilade de table de gala orientale avec amphores en terre cuite et tarbouches",
+            "en": "Long oriental gala table arrangement with terracotta amphoras and fezzes",
+            "es": "Hilera de mesa de gala oriental con ánforas de barro y tarbús"
+          }
+        },
+        {
+          "src": "/img/soiree-berbere-07.webp",
+          "alt": {
+            "fr": "Espace lounge en plein air avec tapis orientaux, poufs berbères et scène musicale",
+            "en": "Open-air lounge space with oriental rugs, Berber poufs and music stage",
+            "es": "Zona lounge al aire libre con alfombras orientales, pufs bereberes y escenario"
+          }
+        },
+        {
+          "src": "/img/soiree-berbere-08.webp",
+          "alt": {
+            "fr": "Amphithéâtre illuminé aux lanternes avec tables basses orientales pour dîner berbère",
+            "en": "Lantern-lit amphitheater with oriental low tables for Berber dinner",
+            "es": "Anfiteatro iluminado con farolillos y mesas bajas para cena bereber"
+          }
+        },
+        {
+          "src": "/img/soiree-berbere-09.webp",
+          "alt": {
+            "fr": "Grande table de banquet royale avec suspensions lumineuses et voilages blancs",
+            "en": "Royal banquet banquet table with hanging lights and flowing white drapes",
+            "es": "Gran mesa de banquete real con lámparas colgantes y cortinas blancas"
+          }
+        },
+        {
+          "src": "/img/soiree-berbere-10.webp",
+          "alt": {
+            "fr": "Perspective de la table d'honneur le long des oliviers et bougies allumées",
+            "en": "Perspective along the table of honor among olive trees and glowing candles",
+            "es": "Perspectiva de la mesa de honor entre olivos y velas encendidas"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "soiree-a-confirmer",
+      "name": {
+        "fr": "Soirée [NOM À CONFIRMER]",
+        "en": "Evening [NAME TO BE CONFIRMED]",
+        "es": "Velada [NOMBRE A CONFIRMAR]"
+      },
+      "cover": "/img/event-soiree-dj.webp",
+      "photos": [
+        {
+          "src": "/img/event-soiree-dj.webp",
+          "alt": {
+            "fr": "DJ et ambiance festive son et lumière pour événement privé",
+            "en": "DJ and festive sound and light atmosphere for private event",
+            "es": "DJ y atmósfera festiva de sonido y luces para evento privado"
+          }
+        },
+        {
+          "src": "/img/event-fire-eater.webp",
+          "alt": {
+            "fr": "Spectacle impressionnant de cracheur de feu lors d'une soirée à Marrakech",
+            "en": "Impressive fire-eater performance during an evening in Marrakech",
+            "es": "Impresionante espectáculo de tragafuegos durante una velada en Marrakech"
+          }
+        },
+        {
+          "src": "/img/event-soiree-danse.webp",
+          "alt": {
+            "fr": "Performances artistiques et danses folkloriques orientales",
+            "en": "Artistic performances and oriental folkloric dances",
+            "es": "Actuaciones artísticas y danzas folclóricas orientales"
+          }
+        },
+        {
+          "src": "/img/event-oriental-night-1.webp",
+          "alt": {
+            "fr": "Ambiance mille et une nuits avec lanternes et décor oriental",
+            "en": "Arabian nights atmosphere with lanterns and oriental decor",
+            "es": "Ambiente de las mil y una noches con faroles y decoración oriental"
+          }
+        },
+        {
+          "src": "/img/event-oriental-night-2.webp",
+          "alt": {
+            "fr": "Dîner sous les étoiles aux chandelles dans le parc d'une villa",
+            "en": "Candlelit dinner under the stars in a villa estate",
+            "es": "Cena a la luz de las velas bajo las estrellas en el parque de una villa"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "cuisine-marocaine",
+      "name": {
+        "fr": "Cuisine marocaine",
+        "en": "Moroccan Cuisine",
+        "es": "Cocina marroquí"
+      },
+      "cover": "/img/event-oriental-buffet.webp",
+      "photos": [
+        {
+          "src": "/img/event-oriental-buffet.webp",
+          "alt": {
+            "fr": "Buffet traiteur gastronomique marocain préparé par nos brigades cuisine",
+            "en": "Gourmet Moroccan buffet prepared by our on-site culinary brigade",
+            "es": "Banquete gastronómico marroquí preparado por nuestros equipos de cocina"
+          }
+        },
+        {
+          "src": "/img/les-lys-buffet.webp",
+          "alt": {
+            "fr": "Sélection de mets orientaux et dégustations culinaires d'exception",
+            "en": "Selection of oriental delicacies and exceptional culinary tastings",
+            "es": "Selección de delicias orientales y degustaciones culinarias excepcionales"
+          }
+        },
+        {
+          "src": "/img/les-lys-restaurant.webp",
+          "alt": {
+            "fr": "Espace de restauration raffiné au cœur de la propriété",
+            "en": "Refined dining room at the heart of the estate",
+            "es": "Espacio de restauración refinado en el corazón de la finca"
+          }
+        }
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "slug": "les-lys-magiques",
+      "name": "LES LYS MAGIQUE",
+      "categorySlug": "de-40-a-60-chambres",
+      "capacity": "Jusqu'à 60 chambres",
+      "image": "/img/les-lys-magique-entree.webp",
+      "alt": {
+        "fr": "Entrée majestueuse du domaine Les Lys Magique Marrakech",
+        "en": "Majestic entrance of Les Lys Magique estate in Marrakech",
+        "es": "Entrada majestuosa de la finca Les Lys Magique Marrakech"
+      }
+    },
+    {
+      "slug": "villa-anouar-marrakech",
+      "name": "Villa Anouar Marrakech",
+      "categorySlug": "de-10-a-20-chambres",
+      "capacity": "De 10 à 20 chambres",
+      "image": "/img/villa-anouar-terrasse.webp",
+      "alt": {
+        "fr": "Villa Anouar Marrakech terrasse et piscine privée",
+        "en": "Villa Anouar Marrakech private terrace and pool",
+        "es": "Villa Anouar Marrakech terraza y piscina privada"
+      }
+    },
+    {
+      "slug": "palais-paradis-hotel",
+      "name": "PALAIS PARADIS HÔTEL",
+      "categorySlug": "de-20-a-40-chambres",
+      "capacity": "De 20 à 40 chambres",
+      "image": "/img/palais-paradis-facade.webp",
+      "alt": {
+        "fr": "Palais Paradis Hôtel Marrakech architecture et jardins",
+        "en": "Palais Paradis Hotel Marrakech architecture and gardens",
+        "es": "Palais Paradis Hotel Marrakech arquitectura y jardines"
+      }
+    },
+    {
+      "slug": "villa-dhorizon-marrakech",
+      "name": "Villa D'Horizon Marrakech",
+      "categorySlug": "de-5-a-10-chambres",
+      "capacity": "De 5 à 10 chambres",
+      "image": "/img/villa-dhorizon-piscine.webp",
+      "alt": {
+        "fr": "Villa D'Horizon Marrakech avec piscine et palmiers",
+        "en": "Villa D'Horizon Marrakech with swimming pool and palm trees",
+        "es": "Villa D'Horizon Marrakech con piscina y palmeras"
+      }
+    },
+    {
+      "slug": "riad-le-bleu-de-la-medina",
+      "name": "RIAD LE BLEU DE LA MEDINA",
+      "categorySlug": "de-5-a-10-chambres",
+      "capacity": "De 5 à 10 chambres",
+      "image": "/img/riad-bleu-patio.webp",
+      "alt": {
+        "fr": "Riad Le Bleu de la Médina patio traditionnel avec piscine",
+        "en": "Riad Le Bleu de la Médina traditional patio with pool",
+        "es": "Riad Le Bleu de la Médina patio tradicional con piscina"
+      }
+    },
+    {
+      "slug": "jardin-les-deux-soeurs-marrakech",
+      "name": "Jardin Les Deux Sœurs Marrakech",
+      "categorySlug": "de-10-a-20-chambres",
+      "capacity": "De 10 à 20 chambres",
+      "image": "/img/jardin-deux-soeurs.webp",
+      "alt": {
+        "fr": "Jardin Les Deux Sœurs Marrakech parc arboré et piscine",
+        "en": "Jardin Les Deux Sœurs Marrakech tree-lined park and pool",
+        "es": "Jardin Les Deux Sœurs Marrakech parque arbolado y piscina"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "slug": "de-5-a-10-chambres",
+      "title": "De 5 à 10 chambres",
+      "image": "/img/villa-dhorizon-piscine.webp"
+    },
+    {
+      "slug": "de-10-a-20-chambres",
+      "title": "De 10 à 20 chambres",
+      "image": "/img/villa-anouar-terrasse.webp"
+    },
+    {
+      "slug": "de-20-a-40-chambres",
+      "title": "De 20 à 40 chambres",
+      "image": "/img/palais-paradis-facade.webp"
+    },
+    {
+      "slug": "de-40-a-60-chambres",
+      "title": "De 40 à 60 chambres",
+      "image": "/img/les-lys-magique-entree.webp"
+    }
+  ],
+  "services": [
+    {
+      "id": "seminaires",
+      "slug": "seminaires",
+      "title": {
+        "fr": "Séminaires d'entreprise",
+        "en": "Corporate Seminars",
+        "es": "Seminarios de Empresa"
+      },
+      "text": {
+        "fr": "l'organisation de vos séminaires",
+        "en": "the organization of your corporate seminars",
+        "es": "la organización de sus seminarios corporativos"
+      },
+      "image": "/img/les-lys-salle-conference.webp"
+    },
+    {
+      "id": "mariages",
+      "slug": "mariages",
+      "title": {
+        "fr": "Mariages d'exception",
+        "en": "Exclusive Weddings",
+        "es": "Bodas Exclusivas"
+      },
+      "text": {
+        "fr": "Que vous cherchiez une villa pour votre mariage où il vous faut 60 couchages... votre mariage mille et une nuit",
+        "en": "Whether you are looking for a villa for your wedding with 60 beds... your Arabian Nights wedding",
+        "es": "Ya sea que busque una villa para su boda donde necesite 60 camas... su boda de las mil y una noches"
+      },
+      "image": "/img/event-day-after.webp"
+    },
+    {
+      "id": "anniversaires",
+      "slug": "anniversaires",
+      "title": {
+        "fr": "Anniversaires & Célébrations",
+        "en": "Birthdays & Celebrations",
+        "es": "Cumpleaños y Celebraciones"
+      },
+      "text": {
+        "fr": "votre anniversaire",
+        "en": "your birthday celebration",
+        "es": "su cumpleaños o aniversario"
+      },
+      "image": "/img/event-oriental-night-2.webp"
+    },
+    {
+      "id": "team-building",
+      "slug": "team-building",
+      "title": {
+        "fr": "Team building",
+        "en": "Team Building",
+        "es": "Team Building"
+      },
+      "text": {
+        "fr": "[DESCRIPTION À CONFIRMER]",
+        "en": "[DESCRIPTION TO BE CONFIRMED]",
+        "es": "[DESCRIPCIÓN A CONFIRMAR]"
+      },
+      "image": "/img/majestic-luxury-piscine.webp"
+    },
+    {
+      "id": "fetes-de-famille",
+      "slug": "fetes-de-famille",
+      "title": {
+        "fr": "Fêtes de famille",
+        "en": "Family Gatherings",
+        "es": "Fiestas Familiares"
+      },
+      "text": {
+        "fr": "une fête de famille d'une quinzaine d'invités",
+        "en": "a family celebration with around fifteen guests",
+        "es": "una fiesta familiar de unos quince invitados"
+      },
+      "image": "/img/riad-bleu-patio.webp"
+    },
+    {
+      "id": "lancements-de-produit",
+      "slug": "lancements-de-produit",
+      "title": {
+        "fr": "Lancements de produit",
+        "en": "Product Launches",
+        "es": "Lanzamientos de Producto"
+      },
+      "text": {
+        "fr": "un lancement de produit",
+        "en": "a product launch event",
+        "es": "un lanzamiento de producto"
+      },
+      "image": "/img/les-lys-terrasses.webp"
+    },
+    {
+      "id": "stages-de-yoga",
+      "slug": "stages-de-yoga",
+      "title": {
+        "fr": "Stages de yoga & bien-être",
+        "en": "Yoga & Wellness Retreats",
+        "es": "Retiros de Yoga y Bienestar"
+      },
+      "text": {
+        "fr": "un stage de yoga",
+        "en": "a yoga retreat",
+        "es": "un retiro de yoga"
+      },
+      "image": "/img/jardin-deux-soeurs.webp"
+    },
+    {
+      "id": "soirees-et-animations",
+      "slug": "soirees-et-animations",
+      "title": {
+        "fr": "Soirées et animations",
+        "en": "Evenings & Entertainment",
+        "es": "Veladas y Animaciones"
+      },
+      "text": {
+        "fr": "les performances de nos DJ, cracheur de feu et groupe folklorique pour des soirées endiablées",
+        "en": "the performances of our DJs, fire-eaters and folklore troupes for unforgettable evenings",
+        "es": "las actuaciones de nuestros DJ, tragafuegos y grupo folclórico para veladas inolvidables"
+      },
+      "image": "/img/event-fire-eater.webp"
+    }
+  ],
+  "showPhotoPlaceholders": true
+}

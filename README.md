@@ -1,136 +1,116 @@
-# Marrakech Séminaires Maisons d'Hôtes — Démo Refonte 2026
+# Marrakech Séminaire Maison d'Hôtes — Démo Client 2026
 
-Démonstration statique interactive conçue pour présenter au client **trois directions artistiques 2026** pour la modernisation du site [https://marrakechseminairesmaisondhotes.com/](https://marrakechseminairesmaisondhotes.com/) (location exclusive de villas et maisons d'hôtes de prestige à Marrakech pour séminaires, mariages et réceptions privées).
-
----
-
-## 🌟 Les 3 Directions Artistiques
-
-Le site intègre un sélecteur interactif en tête de page (ainsi que des URL dédiées) permettant au client de basculer instantanément d'un univers à l'autre sans rechargement de page :
-
-1. **Option 1 : Sable & Terracotta** (Actif par défaut — URL : `/` ou `/option-1/`)
-   - *Ambiance* : Chaleur minérale marocaine, tons terre cuite et sable fin.
-   - *Palette* : Terracotta foncé `#A8482C` (ratio de contraste WCAG AA **5.8:1** sur blanc), fond sable doux `#FAF7F2`, surfaces immaculées `#FFFFFF` et touches d'ocre chaud `#C27D38`.
-   - *Typographie* : *Playfair Display* (titres sérif de luxe) et *Plus Jakarta Sans* (corps de texte net et contemporain).
-
-2. **Option 2 : Nuit de Marrakech** (URL : `/option-2/`)
-   - *Ambiance* : Soirée VIP marocaine sous un ciel étoilé, atmosphère festive et intimiste.
-   - *Palette* : Bleu nuit profond `#0A1128`, fond nocturne `#050814`, accents or chaud `#D4AF37` et ambre `#E0A96D`.
-   - *Typographie* : Contraste saisissant adapté aux réceptions nocturnes et dîners de gala.
-
-3. **Option 3 : Minimal Riad** (URL : `/option-3/`)
-   - *Ambiance* : Luxe silencieux (*quiet luxury*), enduit tadelakt à la chaux, sérénité architecturale.
-   - *Palette* : Blanc chaux `#FDFCF7`, surfaces pierre `#F7F5EE`, bordures subtiles `#D8D3C5` et accents bronze cèdre `#8C6D46`.
-   - *Typographie* : Minimalisme éditorial haute couture, mise en valeur des photos d'architecture.
+Démo statique haute performance, accessible (WCAG AA), responsive et multilingue (FR, EN, ES) pour **Marrakech Séminaires Maison d'Hôtes**.
 
 ---
 
-## ⚡ Performance & Audit Mobile Lighthouse
+## 1. Architecture Technique & Philosophie
 
-| Métrique | Ancien Site (WordPress / Elementor) | Démo Statique 2026 | Gain |
-| :--- | :---: | :---: | :---: |
-| **Performance** | **50 / 100** | **94 / 100** | **+88%** |
-| **Accessibilité** | **84 / 100** | **100 / 100** | **Score Parfait** |
-| **Bonnes Pratiques** | **93 / 100** | **96 / 100** | **+3%** |
-| **SEO Technique** | 92 / 100 | **100 / 100** (Audit technique)* | Conforme |
-| **LCP (Largest Contentful Paint)** | **12.2 s** | **2.7 s** (émulation mobile throttled) | **-78%** |
-| **FCP (First Contentful Paint)** | **4.2 s** | **0.8 s** | **-81%** |
-| **CLS (Cumulative Layout Shift)** | **0.155** (instable) | **0.000** (stabilité parfaite) | **-100%** |
-| **TBT (Total Blocking Time)** | 480 ms | **150 ms** | **-69%** |
-
-*\*Note sur le score SEO Lighthouse affiché (69/100) : Ce score résulte exclusivement de la directive obligatoire `<meta name="robots" content="noindex, nofollow">` et du fichier `robots.txt` interdisant l'indexation de la démo par les moteurs de recherche. Tous les audits techniques SEO (titres, méta-descriptions, balises canoniques, balises sémantiques, attributs alt d'images, contrastes) obtiennent 100%.*
-
----
-
-## 🛠️ Stack Technique
-
-- **Architecture** : 100% Statique (HTML5 sémantique, CSS3 moderne sans framework lourd, JavaScript Vanilla ultra-léger).
-- **Zéro Backend, Zéro Cookie, Zéro Traceur** : Aucune base de données, aucun tracker tiers, respect absolu de la vie privée (RGPD exempt).
-- **Polices auto-hébergées** : Formats WOFF2 locaux (*Playfair Display* et *Plus Jakarta Sans*) avec `font-display: swap` et préchargement critique (aucun appel vers Google Fonts).
-- **Images optimisées** : 41 photos originales traitées en WebP responsive avec variantes haute définition (480w, 800w, 1200w, 1920w) et balises `<picture>`.
-- **Formulaire Devis vers WhatsApp** : La soumission du formulaire interactif génère automatiquement un message WhatsApp préformaté en français envoyé directement au numéro de Nadia (`+212 619 918 223`).
+- **Générateur statique natif Node.js** : sans framework lourd (Next.js, React, Vue proscrits), zéro dépendance serveur en production.
+- **Rendu statique multi-langues** :
+  - Français (par défaut) : `/`, `/about-us/`, `/nos-services/`, `/events/`, `/contact/`, `/de-5-a-10-chambres/`, etc.
+  - Anglais : `/en/...`
+  - Espagnol : `/es/...`
+- **Typographie auto-hébergée (zéro appel externe Google Fonts)** :
+  - *Cormorant Garamond* (500, 600, 700) pour les titres élégants
+  - *Jost* (400, 500, 600, 700) pour les corps de texte et la navigation
+  - Formats WOFF2 avec sous-ensembles Latin et Latin-Ext, `font-display: swap`.
+- **Direction Visuelle Luxury Dark Mode** :
+  - Fond noir absolu (`#000000` / `#0B0B0B`)
+  - Accentuation dorée tan-gold (`#C59A68`)
+  - Cadre de page doré fin (`.page-frame`)
+  - En-tête transparent sur le hero se métamorphosant en barre sombre avec flou d'arrière-plan au scroll (`backdrop-filter`)
+  - Cartes d'albums événementiels style Apple Liquid Glass avec interaction fluide FLIP / View Transitions.
 
 ---
 
-## 🚀 Démarrage Local
+## 2. Commandes Utiles
 
-Prérequis : Node.js (v18 ou supérieur recommandé).
-
-```bash
-# 1. Cloner ou ouvrir le projet
-cd first_prjcts_01-
-
-# 2. Lancer la démo en mode local
-npm run dev
-```
-
-L'application est automatiquement accessible sur :
-👉 **`http://localhost:3000/`**
-
-### Commandes disponibles :
-
-- `npm run dev` : Génère les pages statiques dans `dist/` et démarre un serveur local sur le port 3000.
-- `npm run build` : Compile l'ensemble du site statique dans le dossier `dist/`.
-- `npm run serve` : Sert le dossier `dist/` en local sur `http://localhost:3000`.
-- `npm run images` : Re-télécharge et génère toutes les variantes WebP responsive à partir des photos originales dans `assets/originals/`.
+| Commande | Rôle |
+| :--- | :--- |
+| `npm run build` | Génère l'ensemble du site statique dans `dist/` (FR, EN, ES, redirections, robots.txt) |
+| `npm run images` | *(En local uniquement)* Traite récursivement `assets/originals/` avec Sharp pour produire les WebP optimisés (480, 800, 1200, 1920 px) dans `public/img/` |
+| `npm run fonts` | Télécharge et convertit les polices Cormorant Garamond et Jost dans `public/fonts/` |
+| `npm run serve` | Lance un serveur de prévisualisation local sur `http://localhost:3000` |
+| `npm run dev` | Reconstruit le site et lance le serveur local de prévisualisation |
 
 ---
 
-## ☁️ Déploiement sur Cloudflare Pages (ou Netlify)
+## 3. Guide de Gestion & Mises à Jour
 
-Le projet est configuré pour un déploiement direct sans configuration complexe :
+### A. Ajouter ou Remplacer des Photos
+1. Placez vos fichiers originaux en haute définition dans le dossier approprié sous `assets/originals/` :
+   - `assets/originals/hero/` pour les photos de fond d'en-tête (ex. : `hero-bg.jpg`)
+   - `assets/originals/albums/<slug>/` pour les albums événementiels (`soiree-berbere`, `mariages`, etc.)
+   - `assets/originals/properties/<slug>/` pour les villas
+   - `assets/originals/services/<slug>/` pour les prestations
+2. Exécutez le script d'optimisation d'images en local :
+   ```bash
+   npm run images
+   ```
+   Ce script génère automatiquement les déclinaisons WebP responsives (480w, 800w, 1200w, 1920w) et met à jour `public/img/images-manifest.json`.
+3. Référencez les nouveaux chemins d'images dans `data/site.json`.
+4. Reconstruisez le site :
+   ```bash
+   npm run build
+   ```
+5. Validez vos changements dans Git (`git add public/img/ data/site.json && git commit`).
+   > *Rappel : `assets/originals/` est exclu de Git via `.gitignore` pour éviter de surcharger le dépôt GitHub avec des fichiers bruts de plusieurs centaines de mégaoctets.*
 
-### Déploiement Cloudflare Pages :
-1. Connectez votre compte GitHub / GitLab à **Cloudflare Pages**.
-2. Créez un nouveau projet et sélectionnez le dépôt `first_prjcts_01-`.
-3. Paramètres de compilation :
-   - **Framework preset** : `None`
-   - **Build command** : `npm run build`
-   - **Build output directory** : `dist`
-   - **Root directory** : `/`
-4. Cliquez sur **Save and Deploy**.
+### B. Mettre à Jour ou Ajouter des Témoignages
+1. Ouvrez `data/testimonials.json`.
+2. Ajoutez ou modifiez une entrée :
+   ```json
+   {
+     "firstName": "Alexandre & Sophie",
+     "eventType": "Mariage en exclusivité",
+     "date": "Octobre 2025",
+     "text": "Un séjour inoubliable pour nos 50 invités. L'accompagnement de Nadia et la cuisine étaient au-delà de nos attentes.",
+     "source": "Avis vérifié WhatsApp",
+     "consent": true
+   }
+   ```
+3. **Règle** : Seules les entrées ayant `"consent": true` sont affichées sur le site. Si la liste est vide ou en attente, le site affiche automatiquement les 3 cartes d'attente réservées.
+4. Reconstruisez le site (`npm run build`).
 
-### Règles de redirection (`_redirects`)
-Le fichier `dist/_redirects` inclus assure la redirection 301 automatique :
-```text
-/de-40-a-60-chambre /de-40-a-60-chambres 301
-```
+### C. Renommer ou Réorganiser les Albums Photos
+1. Ouvrez `data/site.json`.
+2. Dans la section `"albums"`, modifiez l'objet `name` de l'album souhaité :
+   ```json
+   {
+     "slug": "soiree-a-confirmer",
+     "name": {
+       "fr": "Soirées Mille et Une Nuits",
+       "en": "Arabian Nights Evenings",
+       "es": "Veladas Mil y Una Noches"
+     },
+     "cover": "/img/event-soiree-dj.webp",
+     "photos": [ ... ]
+   }
+   ```
+3. Reconstruisez le site (`npm run build`).
+
+### D. Modifier les Textes et Traductions
+- **Français (source de vérité)** : `data/i18n/fr.json`
+- **Anglais (DRAFT)** : `data/i18n/en.json`
+- **Espagnol (DRAFT)** : `data/i18n/es.json`
+
+Toutes les modifications textuelles, balises SEO, attributs `alt` et textes de boutons sont centralisés dans ces fichiers JSON.
 
 ---
 
-## 📁 Structure du Projet
+## 4. Déploiement Netlify
 
-```text
-├── assets/
-│   └── originals/               # 41 photos originales téléchargées depuis le site live
-├── dist/                        # Dossier de production statique prêt pour Cloudflare Pages
-│   ├── _redirects               # Redirection 301 pour la faute de frappe du slug live
-│   ├── robots.txt               # Disallow: / pour éviter l'indexation de la démo
-│   ├── index.html               # Page d'accueil (Option 1 par défaut)
-│   ├── option-1/                # Point d'entrée Option 1 (Sable & Terracotta)
-│   ├── option-2/                # Point d'entrée Option 2 (Nuit de Marrakech)
-│   ├── option-3/                # Point d'entrée Option 3 (Minimal Riad)
-│   ├── de-5-a-10-chambres/      # Catégorie 5 à 10 chambres
-│   ├── de-10-a-20-chambres/     # Catégorie 10 à 20 chambres
-│   ├── de-20-a-40-chambres/     # Catégorie 20 à 40 chambres
-│   ├── de-40-a-60-chambres/     # Catégorie 40 à 60 chambres
-│   ├── product/                 # 6 fiches propriétés détaillées avec galeries
-│   ├── about-us/                # Page À propos de nous
-│   ├── events/                  # Page Événements
-│   ├── contact/                 # Page Contact
-│   ├── css/                     # Feuilles de styles CSS modulaires
-│   ├── js/                      # Script client vanilla (thèmes, modal, lightbox)
-│   ├── img/                     # Variantes WebP responsive (480w, 800w, 1200w, 1920w)
-│   └── fonts/                   # Polices WOFF2 auto-hébergées
-├── public/                      # Assets statiques sources (fonts, images)
-├── scripts/
-│   ├── build-static-site.mjs    # Moteur de génération statique
-│   ├── download-and-process-images.mjs # Optimisation WebP & téléchargement
-│   └── download-fonts.mjs       # Téléchargement des polices WOFF2
-├── src/
-│   ├── css/                     # Sources CSS (theme.css, main.css)
-│   └── js/                      # Source JavaScript vanilla (main.js)
-├── CHANGELOG.md                 # Comparatif Lighthouse & inventaire des textes
-├── CLIENT_QUESTIONS.md          # Questions ouvertes & recommandations pour le client
-└── package.json                 # Scripts de build et dépendances
-```
+Le projet est configuré pour un hébergement statique ultra-rapide sur Netlify :
+- **Fichier de configuration** : `netlify.toml`
+  ```toml
+  [build]
+    command = "npm run build"
+    publish = "dist"
+
+  [build.environment]
+    NETLIFY_NEXT_PLUGIN_SKIP = "true"
+  ```
+- **Règles de redirection** : `dist/_redirects` gère automatiquement la redirection 301 de `/de-40-a-60-chambre` vers `/de-40-a-60-chambres/` en français, anglais et espagnol.
+- **Protection anti-indexation** : `dist/robots.txt` contient `Disallow: /` et chaque page intègre `<meta name="robots" content="noindex, nofollow">` pour garantir que cette prévisualisation client ne concurrence pas le site WordPress en ligne.
+- **Dépendances sur Netlify** : `npm run build` s'exécute sans dépendre de Sharp ni des originaux bruts grâce aux assets WebP pré-optimisés et commités dans `public/img/`.

@@ -1,0 +1,26 @@
+[
+  {
+    "firstName": "[TÉMOIGNAGE À CONFIRMER 1]",
+    "eventType": "Séminaire d'entreprise",
+    "date": "2025",
+    "text": "Espace réservé pour le retour d'expérience d'un client entreprise après validation de son consentement écrit.",
+    "source": "En attente de validation client",
+    "consent": false
+  },
+  {
+    "firstName": "[TÉMOIGNAGE À CONFIRMER 2]",
+    "eventType": "Mariage d'exception",
+    "date": "2025",
+    "text": "Espace réservé pour le témoignage d'un couple marié dans l'une de nos villas avec l'accompagnement de Nadia.",
+    "source": "En attente de validation client",
+    "consent": false
+  },
+  {
+    "firstName": "[TÉMOIGNAGE À CONFIRMER 3]",
+    "eventType": "Fête de famille",
+    "date": "2025",
+    "text": "Espace réservé pour le récit d'un séjour familial en exclusivité à Marrakech.",
+    "source": "En attente de validation client",
+    "consent": false
+  }
+]

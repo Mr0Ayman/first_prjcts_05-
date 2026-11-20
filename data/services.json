@@ -1,0 +1,202 @@
+{
+  "seminaires": {
+    "slug": "seminaires",
+    "image": "/img/palais-paradis-facade.webp",
+    "title": {
+      "fr": "Séminaires d'entreprise",
+      "en": "Corporate Seminars",
+      "es": "Seminarios de Empresa"
+    },
+    "intro": {
+      "fr": "Un séminaire réussi ne se résume pas à une salle et à un ordre du jour. C'est l'occasion de réunir votre équipe dans un cadre qui inspire, loin du quotidien, et de repartir avec plus d'énergie et de cohésion. À Marrakech, entre le travail du matin et les activités de l'après-midi, chaque moment peut devenir un souvenir partagé.",
+      "en": "A successful seminar is more than just a meeting room and an agenda. It is an opportunity to bring your team together in an inspiring setting, far from the daily grind, returning with heightened energy and cohesion. In Marrakech, balancing productive morning sessions with vibrant afternoon experiences, every single moment becomes a lasting shared memory.",
+      "es": "Un seminario exitoso va mucho más allá de una sala y un orden del día. Es la oportunidad de reunir a su equipo en un entorno inspirador, lejos de la rutina, volviendo con mayor energía y cohesión. En Marrakech, entre el trabajo matutino y las actividades vespertinas, cada momento se convierte en un recuerdo inolvidable."
+    },
+    "metaTitle": {
+      "fr": "Séminaires d'Entreprise Marrakech | Villas & Riads Privatisés",
+      "en": "Corporate Seminars in Marrakech | Private Luxury Villas",
+      "es": "Seminarios de Empresa en Marrakech | Villas Privadas"
+    },
+    "metaDesc": {
+      "fr": "Organisez votre séminaire d'entreprise à Marrakech dans une villa privatisée de 5 à 60 chambres avec logistique complète supervisée par Nadia.",
+      "en": "Host your corporate retreat in Marrakech in an exclusive villa up to 60 bedrooms with comprehensive on-site event coordination by Nadia.",
+      "es": "Organice su seminario corporativo en Marrakech en una villa privada de 5 a 60 habitaciones con logística integral supervisada por Nadia."
+    },
+    "photos": []
+  },
+  "mariages": {
+    "slug": "mariages",
+    "image": "/img/les-lys-magique-entree.webp",
+    "title": {
+      "fr": "Mariages d'exception",
+      "en": "Exclusive Weddings",
+      "es": "Bodas Exclusivas"
+    },
+    "intro": {
+      "fr": "Votre mariage ne se vit qu'une fois. C'est l'occasion de réunir ceux que vous aimez dans un lieu à la hauteur de votre histoire, avec une soirée mille et une nuit dont chacun se souviendra. Que vous ayez besoin de 60 couchages ou d'une villa plus intimiste, nous avons la propriété adaptée.",
+      "en": "Your wedding is a once-in-a-lifetime milestone. It is your opportunity to bring together those you cherish most in a venue worthy of your love story, celebrating with an Arabian Nights evening that everyone will cherish. Whether you require accommodations for 60 guests or a more intimate private riad, we provide the tailor-made estate.",
+      "es": "Su boda se vive solo una vez. Es la ocasión de reunir a quienes más ama en un lugar a la altura de su historia, con una noche de mil y una noches que todos recordarán. Ya sea que necesite 60 camas o una villa más íntima, disponemos de la propiedad idónea."
+    },
+    "metaTitle": {
+      "fr": "Mariage de Prestige à Marrakech | Domaines & Villas Privées",
+      "en": "Luxury Weddings in Marrakech | Private Estates & Villas",
+      "es": "Bodas de Lujo en Marrakech | Fincas y Villas Privadas"
+    },
+    "metaDesc": {
+      "fr": "Célébrez votre mariage à Marrakech dans une villa d'exception jusqu'à 60 couchages avec dîner mille et une nuit et accompagnement dédié.",
+      "en": "Celebrate your dream wedding in Marrakech in an exceptional estate up to 60 bedrooms with authentic banquets and dedicated event planning.",
+      "es": "Celebre su boda en Marrakech en una villa exclusiva de hasta 60 plazas con ambientación de mil y una noches y gestión profesional."
+    },
+    "photos": []
+  },
+  "anniversaires": {
+    "slug": "anniversaires",
+    "image": "/img/soiree-berbere-01.webp",
+    "title": {
+      "fr": "Anniversaires & Célébrations",
+      "en": "Birthdays & Celebrations",
+      "es": "Cumpleaños y Celebraciones"
+    },
+    "intro": {
+      "fr": "Un anniversaire est le prétexte parfait pour célébrer une vie, un cap, une belle étape. À Marrakech, une villa privée, de la musique, des saveurs orientales et vos proches autour de vous suffisent à transformer cette date en une fête que personne n'oubliera.",
+      "en": "A birthday is the perfect reason to celebrate a life milestone and joyful moments. In Marrakech, an exclusive villa, festive music, authentic oriental gourmet cuisine, and your beloved friends and family around you are all it takes to make this celebration truly unforgettable.",
+      "es": "Un cumpleaños es el motivo perfecto para festejar una etapa y momentos especiales. En Marrakech, una villa privada, música, gastronomía oriental y sus seres queridos reunidos son suficientes para convertir esta fecha en una fiesta inolvidable."
+    },
+    "metaTitle": {
+      "fr": "Fêter son Anniversaire à Marrakech | Villas Privatisées",
+      "en": "Celebrate Your Birthday in Marrakech | Private Villas",
+      "es": "Celebre su Cumpleaños en Marrakech | Villas Privadas"
+    },
+    "metaDesc": {
+      "fr": "Privatisez une villa à Marrakech pour fêter votre anniversaire en famille ou entre amis : traiteur oriental, DJ et ambiance inoubliable.",
+      "en": "Rent a luxury private villa in Marrakech for your milestone birthday: bespoke oriental catering, DJ, and exceptional celebrations.",
+      "es": "Alquile una villa exclusiva en Marrakech para celebrar su cumpleaños: gastronomía tradicional, DJ y veladas espectaculares."
+    },
+    "photos": []
+  },
+  "team-building": {
+    "slug": "team-building",
+    "image": "/img/villa-anouar-terrasse.webp",
+    "title": {
+      "fr": "Team building",
+      "en": "Team Building",
+      "es": "Team Building"
+    },
+    "intro": {
+      "fr": "Un bon team building crée des liens qu'aucune réunion ne remplace. C'est l'occasion de souder vos équipes autour d'expériences partagées, en plein air et dans un cadre exceptionnel, loin des écrans et du quotidien.",
+      "en": "A well-crafted team building retreat builds authentic bonds that no standard office meeting can achieve. It offers a rare opportunity to unite your staff around shared outdoor adventures and exceptional experiences, far from digital screens and routine.",
+      "es": "Un team building bien diseñado crea vínculos que ninguna reunión de oficina puede sustituir. Es la oportunidad de cohesionar a sus equipos en torno a experiencias compartidas al aire libre y en un marco excepcional, lejos de la rutina."
+    },
+    "metaTitle": {
+      "fr": "Team Building à Marrakech | Cohésion & Expériences en Villa",
+      "en": "Team Building in Marrakech | Corporate Retreats & Villas",
+      "es": "Team Building en Marrakech | Retiros Corporativos en Villa"
+    },
+    "metaDesc": {
+      "fr": "Renforcez la cohésion de vos équipes à Marrakech dans un domaine privatisé avec activités en plein air, désert d'Agafay et convivialité.",
+      "en": "Strengthen team bonding in Marrakech within an exclusive estate featuring bespoke outdoor challenges, desert expeditions, and comfort.",
+      "es": "Refuerce la cohesión de su equipo en Marrakech en una finca privada con actividades al aire libre, desierto de Agafay y confort."
+    },
+    "photos": []
+  },
+  "fetes-de-famille": {
+    "slug": "fetes-de-famille",
+    "image": "/img/villa-dhorizon-piscine.webp",
+    "title": {
+      "fr": "Fêtes de famille",
+      "en": "Family Gatherings",
+      "es": "Fiestas Familiares"
+    },
+    "intro": {
+      "fr": "Réunir toute la famille sous le même toit est un cadeau rare. Pour une fête d'une quinzaine d'invités ou davantage, nous avons la villa adaptée, où chacun trouve sa place, des enfants aux grands-parents, et où vous profitez enfin de votre famille au lieu de tout organiser.",
+      "en": "Gathering your entire family under one roof is a priceless gift. Whether hosting fifteen guests or a much larger reunion, we offer the perfectly sized villa where everyone from toddlers to grandparents feels at home, letting you truly relax and enjoy your loved ones instead of managing logistics.",
+      "es": "Reunir a toda la familia bajo el mismo techo es un regalo inestimable. Para una reunión de quince invitados o más, disponemos de la villa adecuada, donde todos, desde los niños hasta los abuelos, encuentran su lugar para disfrutar plenamente sin preocupaciones organizativas."
+    },
+    "metaTitle": {
+      "fr": "Fêtes de Famille & Cousinades à Marrakech | Villas Privées",
+      "en": "Family Reunions in Marrakech | Private Luxury Villas",
+      "es": "Reuniones Familiares en Marrakech | Villas Privadas"
+    },
+    "metaDesc": {
+      "fr": "Réunissez vos proches à Marrakech dans une grande villa privatisée de 15 à 60 personnes avec piscine, personnel de maison et restauration.",
+      "en": "Gather your family in Marrakech in an exclusive private estate with pool, dedicated housekeeping, and customized home-cooked meals.",
+      "es": "Reúna a su familia en Marrakech en una villa privada con piscina, servicio doméstico y cocina marroquí personalizada."
+    },
+    "photos": []
+  },
+  "lancements-de-produit": {
+    "slug": "lancements-de-produit",
+    "image": "/img/majestic-luxury-piscine.webp",
+    "title": {
+      "fr": "Lancements de produit",
+      "en": "Product Launches",
+      "es": "Lanzamientos de Producto"
+    },
+    "intro": {
+      "fr": "Un lancement de produit ne se joue qu'une fois : c'est votre chance de créer la première impression. Marrakech offre un décor inoubliable pour présenter votre nouveauté à vos clients, partenaires et équipes, avec une ambiance et une organisation à la hauteur de votre marque.",
+      "en": "A product launch only happens once: it is your paramount opportunity to make a striking first impression. Marrakech provides an unforgettable backdrop to showcase your latest innovation to key clients, partners, and media, backed by flawless organization worthy of your brand.",
+      "es": "Un lanzamiento de producto solo ocurre una vez: es su oportunidad de causar una primera impresión impactante. Marrakech brinda un escenario memorable para presentar su novedad a clientes, socios y medios, con una organización a la altura de su marca."
+    },
+    "metaTitle": {
+      "fr": "Lancement de Produit à Marrakech | Décors & Villas VIP",
+      "en": "Product Launch Venues in Marrakech | Private VIP Villas",
+      "es": "Lanzamientos de Producto en Marrakech | Espacios VIP"
+    },
+    "metaDesc": {
+      "fr": "Sublimez votre lancement de produit à Marrakech dans une propriété exclusive. Scénographie, son, lumière et accueil traiteur d'exception.",
+      "en": "Showcase your new product launch in Marrakech within an exclusive luxury property. Turnkey scenography, AV lighting, and refined hospitality.",
+      "es": "Presente su nuevo producto en Marrakech en una propiedad exclusiva con escenografía integral, iluminación y alta gastronomía."
+    },
+    "photos": []
+  },
+  "stages-de-yoga": {
+    "slug": "stages-de-yoga",
+    "image": "/img/jardin-les-deux-soeurs.webp",
+    "title": {
+      "fr": "Stages de yoga & bien-être",
+      "en": "Yoga & Wellness Retreats",
+      "es": "Retiros de Yoga y Bienestar"
+    },
+    "intro": {
+      "fr": "Un stage de yoga à Marrakech est une parenthèse pour respirer, se recentrer et se ressourcer, loin du bruit. Dans une propriété calme, avec votre groupe, vous vous concentrez sur l'essentiel pendant que nous nous occupons du reste.",
+      "en": "A yoga retreat in Marrakech is a serene sanctuary to breathe deeply, refocus, and recharge away from daily noise. In a tranquil private property surrounded by nature, you and your group focus purely on mindful practice while our team effortlessly handles the rest.",
+      "es": "Un retiro de yoga en Marrakech es un paréntesis para respirar, reencontrarse y renovar energías lejos del ruido. En una propiedad tranquila y privada, usted se concentra en la práctica mientras nosotros cuidamos de todos los detalles."
+    },
+    "metaTitle": {
+      "fr": "Stages de Yoga & Retraites Bien-Être à Marrakech | Villas Calmes",
+      "en": "Yoga & Wellness Retreats in Marrakech | Peaceful Villas",
+      "es": "Retiros de Yoga y Bienestar en Marrakech | Villas Tranquilas"
+    },
+    "metaDesc": {
+      "fr": "Organisez votre stage de yoga à Marrakech dans une villa calme avec grands jardins, piscine, cuisine saine et accompagnement sur-mesure.",
+      "en": "Host your wellness and yoga retreat in Marrakech: tranquil gardens, private pool, nourishing healthy cuisine, and personalized care.",
+      "es": "Organice su retiro de yoga en Marrakech: jardines serenos, piscina privada, cocina saludable y asistencia integral."
+    },
+    "photos": []
+  },
+  "soirees-et-animations": {
+    "slug": "soirees-et-animations",
+    "image": "/img/event-oriental-night-1.webp",
+    "title": {
+      "fr": "Soirées et animations",
+      "en": "Evenings & Entertainment",
+      "es": "Veladas y Animaciones"
+    },
+    "intro": {
+      "fr": "Une grande soirée se prépare comme un spectacle. DJ, cracheur de feu, groupe folklorique, dégustations orientales : nous réunissons les ingrédients d'une soirée endiablée, dans une propriété privée pensée pour recevoir.",
+      "en": "A grand celebration is orchestrated like a spectacular show. Talented live DJs, fire-breathers, authentic folklore troupes, and exquisite oriental tasting menus: we unite every essential ingredient for an electrifying night in an exclusive estate built for hospitality.",
+      "es": "Una gran velada se orquesta como un espectáculo inolvidable. DJ en vivo, tragafuegos, grupo folclórico y degustaciones orientales: unimos todos los ingredientes para una noche electrizante en una propiedad privada diseñada para celebrar."
+    },
+    "metaTitle": {
+      "fr": "Soirées Privées & Animations à Marrakech | Villas de Fête",
+      "en": "Private Parties & Entertainment in Marrakech | Event Villas",
+      "es": "Fiestas Privadas y Animaciones en Marrakech | Villas de Eventos"
+    },
+    "metaDesc": {
+      "fr": "Vivez une soirée inoubliable à Marrakech : DJs, cracheurs de feu, folklore marocain et dégustations orientales dans une villa de prestige.",
+      "en": "Experience a magical party in Marrakech: live DJs, fire-eaters, traditional folklore performers, and banquets in a private luxury villa.",
+      "es": "Disfrute de una fiesta única en Marrakech: DJs, tragafuegos, folclore tradicional y banquetes árabes en una villa de lujo."
+    },
+    "photos": []
+  }
+}
