@@ -81,6 +81,14 @@
   --shadow-glass: 0 20px 50px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(248, 246, 240, 0.12);
   --shadow-clay:  0 10px 30px rgba(158, 87, 60, 0.30);
 
+  /* Reusable refracted glass tokens */
+  --glass-tint: rgba(248, 246, 240, 0.14);
+  --glass-blur: 18px;
+  --glass-saturation: 165%;
+  --glass-border: rgba(248, 246, 240, 0.42);
+  --glass-shadow: 0 18px 44px rgba(10, 18, 14, 0.34), 0 4px 16px rgba(137, 151, 131, 0.10), inset 0 1px 0 rgba(255, 255, 255, 0.30), inset 0 -1px 0 rgba(10, 18, 14, 0.22);
+  --glass-radius: var(--radius-lg);
+
   /* ── Motion ─────────────────────────────────────────────────────────── */
   --ease-out-cubic:   cubic-bezier(0.215, 0.61, 0.355, 1);
   --transition-fast:  0.2s var(--ease-out-cubic);

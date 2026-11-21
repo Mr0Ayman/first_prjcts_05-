@@ -26,6 +26,18 @@ document.addEventListener('DOMContentLoaded', () => {
     onScroll();
   }
 
+  // Progressive refraction is limited to a handful of small, high-value surfaces.
+  const supportsRefraction = CSS.supports('backdrop-filter', 'url(#glass-refract) blur(2px)') ||
+    CSS.supports('-webkit-backdrop-filter', 'url(#glass-refract) blur(2px)');
+  const lowPowerDevice = (navigator.deviceMemory && navigator.deviceMemory <= 4) ||
+    (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4);
+  if (supportsRefraction && window.innerWidth > 600 && !lowPowerDevice &&
+      !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.nav-pill, .album-card:first-child, .album-chip:first-child, #pv-close, #pv-prev, #pv-next, .modal-card').forEach((surface) => {
+      surface.classList.add('glass-refract');
+    });
+  }
+
     // 3. Accessible Desktop Dropdown Navigation (with hover delay + full keyboard/touch support)
   const dropdownContainers = document.querySelectorAll('.dropdown-container');
   dropdownContainers.forEach(container => {
@@ -135,13 +147,15 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileDrawer.removeAttribute('inert');
       mobileToggle.setAttribute('aria-expanded', 'true');
       document.body.classList.add('modal-open');
+      btnCloseDrawer?.focus();
     };
 
-    const closeDrawer = () => {
+    const closeDrawer = (restoreFocus = true) => {
       mobileDrawer.classList.remove('is-open');
       mobileDrawer.setAttribute('inert', '');
       mobileToggle.setAttribute('aria-expanded', 'false');
       document.body.classList.remove('modal-open');
+      if (restoreFocus) mobileToggle.focus();
     };
 
     mobileToggle.addEventListener('click', () => {
@@ -150,7 +164,22 @@ document.addEventListener('DOMContentLoaded', () => {
       else openDrawer();
     });
 
-    btnCloseDrawer?.addEventListener('click', closeDrawer);
+    btnCloseDrawer?.addEventListener('click', () => closeDrawer());
+
+    mobileDrawer.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        closeDrawer();
+        return;
+      }
+      if (e.key !== 'Tab') return;
+      const focusable = Array.from(mobileDrawer.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'));
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    });
 
     // Accordion in drawer
     accordionTriggers.forEach(accBtn => {
@@ -166,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Close on link click inside drawer
     mobileDrawer.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', closeDrawer);
+      link.addEventListener('click', () => closeDrawer(false));
     });
   }
 

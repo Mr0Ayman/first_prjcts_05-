@@ -116,6 +116,14 @@
   --shadow-glass: 0 20px 50px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(248, 246, 240, 0.12);
   --shadow-clay:  0 10px 30px rgba(158, 87, 60, 0.30);
 
+  /* Reusable refracted glass tokens */
+  --glass-tint: rgba(248, 246, 240, 0.14);
+  --glass-blur: 18px;
+  --glass-saturation: 165%;
+  --glass-border: rgba(248, 246, 240, 0.42);
+  --glass-shadow: 0 18px 44px rgba(10, 18, 14, 0.34), 0 4px 16px rgba(137, 151, 131, 0.10), inset 0 1px 0 rgba(255, 255, 255, 0.30), inset 0 -1px 0 rgba(10, 18, 14, 0.22);
+  --glass-radius: var(--radius-lg);
+
   /* ── Motion ─────────────────────────────────────────────────────────── */
   --ease-out-cubic:   cubic-bezier(0.215, 0.61, 0.355, 1);
   --transition-fast:  0.2s var(--ease-out-cubic);
@@ -2132,6 +2140,162 @@ html:has(dialog.photo-viewer-dialog[open]) {
   .btn-arrow { align-self: flex-start; }
 }
 
+/* --------------------------------------------------------------------------
+   Refracted glass surfaces: reusable base, pill, card and strong variants
+   -------------------------------------------------------------------------- */
+.glass {
+  --glass-local-tint: var(--glass-tint);
+  position: relative;
+  isolation: isolate;
+  background-color: var(--glass-local-tint);
+  border: 1px solid transparent;
+  background-image: linear-gradient(var(--glass-local-tint), var(--glass-local-tint)),
+    linear-gradient(135deg, rgba(255,255,255,.72), rgba(248,246,240,.18) 38%, rgba(26,45,36,.50));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturation)) brightness(1.05);
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturation)) brightness(1.05);
+  box-shadow: var(--glass-shadow);
+}
+.glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(142deg, rgba(255,255,255,.30), rgba(255,255,255,.08) 18%, transparent 43%),
+    radial-gradient(ellipse at 4% 0%, rgba(255,255,255,.18), transparent 44%),
+    linear-gradient(315deg, transparent 80%, rgba(248,246,240,.08));
+  opacity: .82;
+}
+.nav-pill > ul, .dropdown-menu > a, .lang-switcher > a,
+.mobile-drawer > .mobile-drawer-header, .mobile-drawer > .mobile-nav-list, .mobile-drawer > .mobile-drawer-footer,
+.modal-card > .modal-scroll-container, .testimonial-card > *, .service-card > *, .room-card > .room-card-img-wrap,
+.room-card > .room-card-body { position: relative; z-index: 1; }
+.album-card::before { -webkit-backdrop-filter: blur(2px) saturate(150%); backdrop-filter: blur(2px) saturate(150%); }
+.glass--pill { --glass-radius: var(--radius-full); border-radius: var(--glass-radius); }
+.glass--card { --glass-radius: var(--radius-lg); border-radius: var(--glass-radius); }
+.glass--strong {
+  --glass-local-tint: rgba(26, 45, 36, .94);
+  --glass-blur: 22px;
+  --glass-border: rgba(248, 246, 240, .54);
+  --glass-shadow: 0 26px 70px rgba(10,18,14,.52), inset 0 1px 0 rgba(255,255,255,.28), inset 0 -1px 0 rgba(10,18,14,.35);
+  border-radius: var(--radius-xl);
+}
+.site-header.is-scrolled {
+  background: rgba(26, 45, 36, .94);
+  -webkit-backdrop-filter: blur(20px) saturate(165%);
+  backdrop-filter: blur(20px) saturate(165%);
+  border-bottom: 1px solid rgba(248,246,240,.30);
+  box-shadow: 0 8px 28px rgba(10,18,14,.24), inset 0 1px 0 rgba(255,255,255,.16);
+}
+.site-header.is-scrolled .nav-pill {
+  background: rgba(248,246,240,.10);
+  border-color: rgba(248,246,240,.26);
+  -webkit-backdrop-filter: blur(16px) saturate(165%);
+  backdrop-filter: blur(16px) saturate(165%);
+}
+.nav-pill.glass { --glass-local-tint: rgba(26,45,36,.76); }
+.nav-pill.glass::before { opacity: .20; }
+.section--forest, .section--deep {
+  background-image: radial-gradient(ellipse at 12% 38%, rgba(137,151,131,.10), transparent 38%),
+    radial-gradient(ellipse at 86% 72%, rgba(185,110,79,.07), transparent 32%);
+}
+.section--sand {
+  background-image: radial-gradient(ellipse at 88% 28%, rgba(137,151,131,.12), transparent 36%),
+    radial-gradient(ellipse at 10% 82%, rgba(185,110,79,.06), transparent 30%);
+}
+.lang-switcher.glass { padding: 0 9px; color: var(--offwhite); }
+.lang-switcher.glass { --glass-local-tint: rgba(26,45,36,.88); }
+.dropdown-menu.glass { --glass-local-tint: rgba(26,45,36,.97); position: absolute; top: 100%; left: 50%; transform: translateX(-50%); z-index: 100; }
+.mobile-drawer.glass { --glass-local-tint: rgba(26,45,36,.98); position: fixed; inset: 0; z-index: 110; border: 0; border-radius: 0; }
+.modal-card.glass { --glass-local-tint: rgba(38,61,50,.98); }
+.album-card.glass { --glass-local-tint: rgba(248,246,240,.11); }
+.album-card::before { z-index: 1; }
+.album-card .album-cover-img { z-index: 0; }
+.album-card .album-card-overlay { z-index: 2; }
+.album-card .album-card-content { z-index: 3; }
+.album-card .album-card-content { text-shadow: 0 2px 14px rgba(10,18,14,.8); }
+.album-chip.glass, .chip-all-albums.glass,
+.pv-btn-close.glass, .pv-btn-nav.glass, .btn-ghost {
+  --glass-local-tint: rgba(26,45,36,.84);
+  color: var(--offwhite);
+  border-color: rgba(248,246,240,.56);
+}
+.pv-btn-close.glass, .pv-btn-nav.glass { position: absolute; }
+.album-chip.is-active.glass { --glass-local-tint: rgba(248,246,240,.96); color: var(--forest); }
+.testimonial-card.glass {
+  --glass-local-tint: rgba(248,246,240,.96);
+  --glass-blur: 16px;
+  color: var(--forest);
+}
+.service-card.glass, .room-card.glass {
+  --glass-local-tint: rgba(46,74,58,.96);
+  color: var(--offwhite);
+}
+.section--sand .service-card.glass { --glass-local-tint: rgba(248,246,240,.98); color: var(--forest); }
+.section--sand .service-card.glass .service-card-title { color: var(--forest); }
+.section--sand .service-card.glass .service-card-text { color: var(--text-muted-on-sand); }
+.btn-ghost { background-color: rgba(26,45,36,.82); -webkit-backdrop-filter: blur(16px) saturate(160%); backdrop-filter: blur(16px) saturate(160%); }
+.glass-filter-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+.glass-refract {
+  -webkit-backdrop-filter: url(#glass-refract) blur(var(--glass-blur)) saturate(var(--glass-saturation));
+  backdrop-filter: url(#glass-refract) blur(var(--glass-blur)) saturate(var(--glass-saturation));
+}
+.nav-pill:has(.dropdown-container.is-open).glass-refract {
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturation)) brightness(1.05) !important;
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturation)) brightness(1.05) !important;
+}
+.glass:hover { border-color: var(--glass-border); transform: translateY(-2px); opacity: .98; }
+.glass:active { transform: translateY(1px); }
+.btn-ghost:hover { background-color: rgba(26,45,36,.94); }
+.pv-btn-nav.glass:hover { transform: translateY(-50%) scale(1.03); }
+.pv-btn-close.glass:hover { transform: scale(1.03); }
+.glass:focus-visible, .btn-ghost:focus-visible { outline: 2px solid var(--clay); outline-offset: 3px; }
+
+@media (max-width: 960px) {
+  .desktop-nav { display: none; }
+  .mobile-toggle { display: flex; margin-left: auto; flex: 0 0 48px; }
+  .header-inner { gap: 12px; }
+  .header-actions { margin-left: auto; gap: 8px; }
+  .header-actions > .js-open-quote { display: none; }
+  .mobile-drawer { inset-inline-start: auto; inset-inline-end: 0; }
+  .header-inner { padding-right: calc(var(--section-pad-x) + env(safe-area-inset-right, 0px)); }
+}
+@media (max-width: 480px) {
+  .header-inner { padding-left: 14px; padding-right: calc(14px + env(safe-area-inset-right, 0px)); }
+  .brand { gap: 8px; }
+  .brand-emblem { width: 38px; height: 38px; flex-basis: 38px; }
+  .brand-text { font-size: 13px; }
+  .brand-text small { font-size: 8px; }
+  .header-actions > .lang-switcher { display: none; }
+  .mobile-toggle { margin-left: 0; }
+  .sec-title { font-size: clamp(1.45rem, 7vw, 2rem); letter-spacing: .04em; }
+}
+@media (prefers-reduced-transparency: reduce), (forced-colors: active) {
+  .glass, .glass--strong, .mobile-drawer.glass, .btn-ghost, .site-header.is-scrolled {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    background: var(--forest) !important;
+    background-image: none !important;
+    border: 1px solid var(--offwhite) !important;
+    box-shadow: none !important;
+  }
+  .testimonial-card.glass, .album-chip.is-active.glass, .section--sand .service-card.glass {
+    background: var(--sand) !important;
+    color: var(--forest) !important;
+    border-color: var(--forest) !important;
+  }
+  .glass::before { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .glass:hover { transform: none; }
+  .pv-btn-nav.glass:hover { transform: translateY(-50%); }
+  .pv-btn-close.glass:hover { transform: none; }
+  .glass::before { background: none; }
+}
+
 /* ==========================================================================
    Continuous Single Photo Background (No Seams, 100lvh Fixed)
    ========================================================================== */
@@ -2201,6 +2365,7 @@ html:has(dialog.photo-viewer-dialog[open]) {
     max-width: 100%;
   }
 }
+
   </style>
 
   <!-- JSON-LD -->
@@ -2239,6 +2404,12 @@ html:has(dialog.photo-viewer-dialog[open]) {
   </script>
 </head>
 <body>
+  <svg class="glass-filter-defs" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <filter id="glass-refract" x="-12%" y="-12%" width="124%" height="124%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018 0.035" numOctaves="2" seed="7" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="30" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </svg>
   <!-- Accessibility Skip Link -->
   <a href="#main-content" class="skip-link">Passer au contenu principal</a>
 
@@ -2260,7 +2431,7 @@ html:has(dialog.photo-viewer-dialog[open]) {
 
       <!-- Desktop Navigation — centered translucent pill -->
       <nav class="desktop-nav" aria-label="Menu">
-        <div class="nav-pill">
+        <div class="nav-pill glass glass--pill">
           <ul class="nav-list">
             <li>
               <a href="/" class="nav-link active" aria-current="page">Accueil</a>
@@ -2273,7 +2444,7 @@ html:has(dialog.photo-viewer-dialog[open]) {
                 Nos Services
                 <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
               </button>
-              <div class="dropdown-menu" role="menu">
+              <div class="dropdown-menu glass glass--card" role="menu">
                 
                   <a href="/nos-services/seminaires/" class="dropdown-item" role="menuitem" >
                     Séminaires d'entreprise
@@ -2322,7 +2493,7 @@ html:has(dialog.photo-viewer-dialog[open]) {
       <!-- Header Actions Right: lang switcher + CTA + hamburger -->
       <div class="header-actions">
         <!-- Language Switcher FR | EN | ES -->
-        <div class="lang-switcher" aria-label="Langue">
+        <div class="lang-switcher glass glass--pill" aria-label="Langue">
           <a href="/product/riad-le-bleu-de-la-medina/" class="lang-link is-active" hreflang="fr" aria-current="page">FR</a>
           <span class="lang-divider" aria-hidden="true">|</span>
           <a href="/en/product/riad-le-bleu-de-la-medina/" class="lang-link " hreflang="en" >EN</a>
@@ -2344,13 +2515,13 @@ html:has(dialog.photo-viewer-dialog[open]) {
   </header>
 
   <!-- Mobile Fullscreen Navigation Drawer -->
-  <aside id="mobile-drawer" class="mobile-drawer" aria-label="Menu" inert>
+  <aside id="mobile-drawer" class="mobile-drawer glass glass--strong" aria-label="Menu" inert>
     <div class="mobile-drawer-header">
       <span class="brand-text">
         Marrakech Séminaire
         <small>Maison d'Hôtes</small>
       </span>
-      <button type="button" class="btn-ghost btn-sm btn-close-drawer" aria-label="Fermer">
+      <button type="button" class="btn-ghost glass glass--pill btn-sm btn-close-drawer" aria-label="Fermer">
         Fermer ✕
       </button>
     </div>
@@ -2389,7 +2560,7 @@ html:has(dialog.photo-viewer-dialog[open]) {
         <a href="/es/product/riad-le-bleu-de-la-medina/" class="lang-link ">ES</a>
       </div>
 
-      <a href="tel:+212619918223" class="btn-ghost" style="width: 100%;">
+      <a href="tel:+212619918223" class="btn-ghost glass glass--pill" style="width: 100%;">
         Appeler : +212 619 918 223
       </a>
       <button type="button" class="btn-gold js-open-quote" style="width: 100%;">
@@ -2456,7 +2627,7 @@ html:has(dialog.photo-viewer-dialog[open]) {
             </p>
             <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
               <button type="button" class="btn-gold js-open-quote">Demander un devis</button>
-              <a href="tel:+212619918223" class="btn-ghost">Appeler : +212 619 918 223</a>
+              <a href="tel:+212619918223" class="btn-ghost glass glass--pill">Appeler : +212 619 918 223</a>
             </div>
           </div>
         </div>
@@ -2477,7 +2648,7 @@ html:has(dialog.photo-viewer-dialog[open]) {
 
   <!-- Accessible Quote Request Modal Dialog (Hidden scrollbar clipped by card) -->
   <div id="quote-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" inert>
-    <div class="modal-card">
+    <div class="modal-card glass glass--strong">
       <div class="modal-fade-top" aria-hidden="true"></div>
       <div class="modal-scroll-container">
         <div class="modal-header">

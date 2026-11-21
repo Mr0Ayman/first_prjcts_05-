@@ -15,12 +15,11 @@ Démo statique haute performance, accessible (WCAG AA), responsive et multilingu
   - *Cormorant Garamond* (500, 600, 700) pour les titres élégants
   - *Jost* (400, 500, 600, 700) pour les corps de texte et la navigation
   - Formats WOFF2 avec sous-ensembles Latin et Latin-Ext, `font-display: swap`.
-- **Direction Visuelle Luxury Dark Mode** :
-  - Fond noir absolu (`#000000` / `#0B0B0B`)
-  - Accentuation dorée tan-gold (`#C59A68`)
-  - Cadre de page doré fin (`.page-frame`)
-  - En-tête transparent sur le hero se métamorphosant en barre sombre avec flou d'arrière-plan au scroll (`backdrop-filter`)
-  - Cartes d'albums événementiels style Apple Liquid Glass avec interaction fluide FLIP / View Transitions.
+- **Direction Visuelle Earth & Architecture** :
+  - Palette forêt (`#263D32`), sauge (`#899783`), sable (`#E8DDC9`), argile (`#B96E4F`) et blanc cassé (`#F8F6F0`).
+  - En-tête transparent sur le hero, puis surface forêt translucide au défilement.
+  - Surfaces vitrées réfractées avec reflets doux, contours lumineux et fonds suffisamment teintés pour conserver le contraste.
+  - Typographies auto-hébergées Cormorant Garamond pour les titres et Jost pour les textes.
 
 ---
 
@@ -29,7 +28,7 @@ Démo statique haute performance, accessible (WCAG AA), responsive et multilingu
 | Commande | Rôle |
 | :--- | :--- |
 | `npm run build` | Génère l'ensemble du site statique dans `dist/` (FR, EN, ES, redirections, robots.txt) |
-| `npm run images` | *(En local uniquement)* Traite récursivement `assets/originals/` avec Sharp pour produire les WebP optimisés (480, 800, 1200, 1920 px) dans `public/img/` |
+| `npm run images` | *(En local uniquement)* Traite récursivement `assets/originals/` avec Sharp pour produire des WebP responsives en 480, 800, 1200, 1920, 2560 et 3840 px (les variantes 2560/3840 sont créées pour les héros quand la source le permet) dans `public/img/` |
 | `npm run fonts` | Télécharge et convertit les polices Cormorant Garamond et Jost dans `public/fonts/` |
 | `npm run serve` | Lance un serveur de prévisualisation local sur `http://localhost:3000` |
 | `npm run dev` | Reconstruit le site et lance le serveur local de prévisualisation |
@@ -48,7 +47,7 @@ Démo statique haute performance, accessible (WCAG AA), responsive et multilingu
    ```bash
    npm run images
    ```
-   Ce script génère automatiquement les déclinaisons WebP responsives (480w, 800w, 1200w, 1920w) et met à jour `public/img/images-manifest.json`.
+   Ce script génère automatiquement les déclinaisons WebP responsives 480w, 800w, 1200w et 1920w; les héros ajoutent 2560w et 3840w quand la source le permet. Il met à jour `public/img/images-manifest.json`.
 3. Référencez les nouveaux chemins d'images dans `data/site.json`.
 4. Reconstruisez le site :
    ```bash
@@ -96,6 +95,13 @@ Démo statique haute performance, accessible (WCAG AA), responsive et multilingu
 - **Espagnol (DRAFT)** : `data/i18n/es.json`
 
 Toutes les modifications textuelles, balises SEO, attributs `alt` et textes de boutons sont centralisés dans ces fichiers JSON.
+
+### E. Système de verre
+- Les surfaces réutilisent les classes `.glass`, `.glass--pill`, `.glass--card` et `.glass--strong` définies dans `src/css/main.css`.
+- Les variables `--glass-tint`, `--glass-blur`, `--glass-saturation`, `--glass-border`, `--glass-shadow` et `--glass-radius` sont définies dans `src/css/theme.css`.
+- Les surfaces doivent garder une teinte assez opaque pour assurer le contraste AA sur la partie la plus claire de leur arrière-plan.
+- La distorsion SVG est progressive et réservée à quelques petites surfaces sur les appareils compatibles; les autres navigateurs gardent le flou et les reflets CSS.
+- Les préférences de transparence réduite et les modes de couleurs forcées utilisent des surfaces opaques avec une bordure visible.
 
 ---
 

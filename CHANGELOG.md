@@ -4,6 +4,26 @@ Toutes les modifications notables apportées à la démo client pour **Marrakech
 
 ---
 
+## [Style 2.4.1] - Verre réfracté et en-tête mobile
+
+- Ajout d'un système CSS réutilisable de verre avec teintes lisibles, bords lumineux, reflets, ombres et variantes pilule/carte/renforcée.
+- Distorsion SVG progressive limitée à quelques surfaces et aux appareils compatibles; surfaces opaques pour transparence réduite et couleurs forcées.
+- Alignement du menu hamburger à droite jusqu'à 960px, avec une cible de 48px et marge de zone de sécurité.
+- Conservation du tiroir plein écran, avec fermeture Échap et piège de focus.
+- Mise à jour de la documentation de la palette et des tailles responsives d'images.
+
+### Fichiers source modifiés
+- `src/css/theme.css`
+- `src/css/main.css`
+- `src/js/main.js`
+- `scripts/build-static-site.mjs`
+- `README.md`
+- `CHANGELOG.md`
+
+La commande `npm run build` a aussi régénéré 74 fichiers suivis dans `dist/` : les pages statiques FR/EN/ES, `css/styles.min.css` et `js/main.js`.
+
+---
+
 ## [Version 2.4.0] - Arrière-Plan Continu, Visionneuse Photo & Chips Flottants
 
 ### 1. Arrière-Plan Photographique Unique et Continu sur /events/

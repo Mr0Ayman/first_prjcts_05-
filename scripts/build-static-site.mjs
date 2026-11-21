@@ -182,6 +182,12 @@ function renderPage({
   </script>
 </head>
 <body>
+  <svg class="glass-filter-defs" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <filter id="glass-refract" x="-12%" y="-12%" width="124%" height="124%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018 0.035" numOctaves="2" seed="7" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="30" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </svg>
   <!-- Accessibility Skip Link -->
   <a href="#main-content" class="skip-link">Passer au contenu principal</a>
 
@@ -203,7 +209,7 @@ function renderPage({
 
       <!-- Desktop Navigation — centered translucent pill -->
       <nav class="desktop-nav" aria-label="${dict.nav.menu}">
-        <div class="nav-pill">
+        <div class="nav-pill glass glass--pill">
           <ul class="nav-list">
             <li>
               <a href="${urlFor(lang, '')}" class="nav-link ${activeNav === 'home' ? 'active' : ''}" ${activeNav === 'home' ? 'aria-current="page"' : ''}>${dict.nav.home}</a>
@@ -216,7 +222,7 @@ function renderPage({
                 ${dict.nav.services}
                 <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
               </button>
-              <div class="dropdown-menu" role="menu">
+              <div class="dropdown-menu glass glass--card" role="menu">
                 ${Object.keys(servicesData).map(k => {
                   const s = servicesData[k];
                   const svcUrl = urlFor(lang, 'nos-services/' + s.slug);
@@ -242,7 +248,7 @@ function renderPage({
       <!-- Header Actions Right: lang switcher + CTA + hamburger -->
       <div class="header-actions">
         <!-- Language Switcher FR | EN | ES -->
-        <div class="lang-switcher" aria-label="${dict.nav.language}">
+        <div class="lang-switcher glass glass--pill" aria-label="${dict.nav.language}">
           <a href="${urlFor('fr', slug)}" class="lang-link ${lang === 'fr' ? 'is-active' : ''}" hreflang="fr" ${lang === 'fr' ? 'aria-current="page"' : ''}>FR</a>
           <span class="lang-divider" aria-hidden="true">|</span>
           <a href="${urlFor('en', slug)}" class="lang-link ${lang === 'en' ? 'is-active' : ''}" hreflang="en" ${lang === 'en' ? 'aria-current="page"' : ''}>EN</a>
@@ -264,13 +270,13 @@ function renderPage({
   </header>
 
   <!-- Mobile Fullscreen Navigation Drawer -->
-  <aside id="mobile-drawer" class="mobile-drawer" aria-label="${dict.nav.menu}" inert>
+  <aside id="mobile-drawer" class="mobile-drawer glass glass--strong" aria-label="${dict.nav.menu}" inert>
     <div class="mobile-drawer-header">
       <span class="brand-text">
         Marrakech Séminaire
         <small>Maison d'Hôtes</small>
       </span>
-      <button type="button" class="btn-ghost btn-sm btn-close-drawer" aria-label="${dict.nav.close}">
+      <button type="button" class="btn-ghost glass glass--pill btn-sm btn-close-drawer" aria-label="${dict.nav.close}">
         ${dict.nav.close} ✕
       </button>
     </div>
@@ -314,7 +320,7 @@ function renderPage({
         <a href="${urlFor('es', slug)}" class="lang-link ${lang === 'es' ? 'is-active' : ''}">ES</a>
       </div>
 
-      <a href="tel:+212619918223" class="btn-ghost" style="width: 100%;">
+      <a href="tel:+212619918223" class="btn-ghost glass glass--pill" style="width: 100%;">
         ${dict.nav.call} : +212 619 918 223
       </a>
       <button type="button" class="btn-gold js-open-quote" style="width: 100%;">
@@ -386,7 +392,7 @@ function renderPage({
 
   <!-- Accessible Quote Request Modal Dialog (Hidden scrollbar clipped by card) -->
   <div id="quote-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" inert>
-    <div class="modal-card">
+    <div class="modal-card glass glass--strong">
       <div class="modal-fade-top" aria-hidden="true"></div>
       <div class="modal-scroll-container">
         <div class="modal-header">
@@ -551,7 +557,7 @@ function renderTestimonialsSection(lang) {
         <div class="carousel-container" role="region" aria-label="${dict.sections.testimonials}">
           <div class="carousel-track" tabindex="0" aria-label="Liste des témoignages">
             ${itemsToRender.map(item => `
-              <article class="testimonial-card">
+              <article class="testimonial-card glass glass--card">
                 <div class="testimonial-header">
                   <span class="testimonial-author">${item.firstName}</span>
                   <span class="testimonial-date">${item.date}</span>
@@ -619,7 +625,7 @@ languages.forEach(lang => {
         <!-- 4 Verbatim Cards + 4 Placeholder Cards -->
         <div class="services-grid">
           <!-- Verbatim 1: Airport transfer -->
-          <div class="service-card">
+          <div class="service-card glass glass--card">
             <div class="service-icon-badge" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-8 8H5l-2 3v-9a8 8 0 0 1 8-8h2a8 8 0 0 1 8 6z"/></svg>
             </div>
@@ -627,7 +633,7 @@ languages.forEach(lang => {
           </div>
 
           <!-- Verbatim 2: Oriental tastings -->
-          <div class="service-card">
+          <div class="service-card glass glass--card">
             <div class="service-icon-badge" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M17 8h1a3 3 0 0 1 0 6h-1M3 8h14v6a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8zM7 2v3M11 2v3M15 2v3"/></svg>
             </div>
@@ -635,7 +641,7 @@ languages.forEach(lang => {
           </div>
 
           <!-- Verbatim 3: DJ, Fire eater, Folk group -->
-          <div class="service-card">
+          <div class="service-card glass glass--card">
             <div class="service-icon-badge" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm12-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/></svg>
             </div>
@@ -643,7 +649,7 @@ languages.forEach(lang => {
           </div>
 
           <!-- Verbatim 4: Nadia as relay -->
-          <div class="service-card">
+          <div class="service-card glass glass--card">
             <div class="service-icon-badge" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm14 10v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg>
             </div>
@@ -691,7 +697,7 @@ languages.forEach(lang => {
 
         <div class="room-grid">
           ${site.categories.map(cat => `
-            <a href="${urlFor(lang, cat.slug)}" class="room-card">
+          <a href="${urlFor(lang, cat.slug)}" class="room-card glass glass--card">
               <div class="room-card-img-wrap">
                 <img src="${cat.image}" alt="${cat.title} - Marrakech Séminaire" loading="lazy" width="600" height="375">
               </div>
@@ -725,7 +731,7 @@ languages.forEach(lang => {
                   <p style="color: var(--text-secondary); font-size: 13.5px; margin-top: 4px;">${prop.capacity}</p>
                 </div>
                 <div class="property-actions">
-                  <a href="${urlFor(lang, 'product/' + prop.slug)}" class="btn-ghost btn-sm">
+                  <a href="${urlFor(lang, 'product/' + prop.slug)}" class="btn-ghost glass glass--pill btn-sm">
                     ${prop.name}
                   </a>
                   <button type="button" class="btn-gold btn-sm js-open-quote">
@@ -786,7 +792,7 @@ languages.forEach(lang => {
 
           <div style="margin-top: 40px; display: flex; gap: 16px; flex-wrap: wrap;">
             <button type="button" class="btn-gold js-open-quote">${dict.nav.quoteBtn}</button>
-            <a href="tel:+212619918223" class="btn-ghost">${dict.nav.call} : +212 619 918 223</a>
+            <a href="tel:+212619918223" class="btn-ghost glass glass--pill">${dict.nav.call} : +212 619 918 223</a>
           </div>
         </div>
       </div>
@@ -960,7 +966,7 @@ languages.forEach(lang => {
           <!-- Icon-only button to return to all albums -->
           <button type="button" 
                   id="btn-back-albums" 
-                  class="chip-all-albums" 
+                  class="chip-all-albums glass glass--pill"
                   aria-label="${dict.eventsPage.backToAlbums}" 
                   title="${dict.eventsPage.backToAlbums}">
             <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="currentColor">
@@ -974,7 +980,7 @@ languages.forEach(lang => {
               const name = a.name[lang] || a.name.fr;
               return `
               <button type="button" 
-                      class="album-chip" 
+                      class="album-chip glass glass--pill"
                       data-album-slug="${a.slug}" 
                       role="tab" 
                       aria-selected="false" 
@@ -994,7 +1000,7 @@ languages.forEach(lang => {
         <!-- 4 Large Liquid Glass Floating Cards (Initial State) -->
         <div id="album-overview" class="album-overview">
           ${site.albums.map(a => `
-            <div class="album-card" role="button" tabindex="0" data-album-slug="${a.slug}" aria-label="${a.name[lang] || a.name.fr}">
+            <div class="album-card glass glass--card" role="button" tabindex="0" data-album-slug="${a.slug}" aria-label="${a.name[lang] || a.name.fr}">
               <img src="${a.cover}" alt="${a.name[lang] || a.name.fr}" class="album-cover-img" loading="lazy" width="600" height="800">
               <div class="album-card-overlay" aria-hidden="true"></div>
               <div class="album-card-content">
@@ -1013,17 +1019,17 @@ languages.forEach(lang => {
     <!-- Native HTML5 Dialog Photo Viewer (Edge Image Viewer style) -->
     <dialog id="photo-viewer-dialog" class="photo-viewer-dialog" aria-modal="true">
       <div class="pv-inner" id="pv-inner">
-        <button type="button" class="pv-btn-close" id="pv-close" aria-label="${dict.eventsPage.close}" title="${dict.eventsPage.close}">
+        <button type="button" class="pv-btn-close glass glass--pill" id="pv-close" aria-label="${dict.eventsPage.close}" title="${dict.eventsPage.close}">
           <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
         </button>
-        <button type="button" class="pv-btn-nav pv-btn-prev" id="pv-prev" aria-label="${dict.eventsPage.prev}" title="${dict.eventsPage.prev}">
+        <button type="button" class="pv-btn-nav pv-btn-prev glass glass--pill" id="pv-prev" aria-label="${dict.eventsPage.prev}" title="${dict.eventsPage.prev}">
           <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
         </button>
         <div class="pv-img-container" id="pv-img-container">
           <div class="pv-spinner" id="pv-spinner" aria-hidden="true"></div>
           <img id="pv-img" class="pv-img" src="" alt="" loading="eager">
         </div>
-        <button type="button" class="pv-btn-nav pv-btn-next" id="pv-next" aria-label="${dict.eventsPage.next}" title="${dict.eventsPage.next}">
+        <button type="button" class="pv-btn-nav pv-btn-next glass glass--pill" id="pv-next" aria-label="${dict.eventsPage.next}" title="${dict.eventsPage.next}">
           <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
         </button>
       </div>
@@ -1168,7 +1174,7 @@ languages.forEach(lang => {
                     <p style="color: var(--text-secondary); font-size: 13.5px; margin-top: 4px;">${prop.capacity}</p>
                   </div>
                   <div class="property-actions">
-                    <a href="${urlFor(lang, 'product/' + prop.slug)}" class="btn-ghost btn-sm">${prop.name}</a>
+                    <a href="${urlFor(lang, 'product/' + prop.slug)}" class="btn-ghost glass glass--pill btn-sm">${prop.name}</a>
                     <button type="button" class="btn-gold btn-sm js-open-quote">${dict.nav.quoteBtn}</button>
                   </div>
                 </div>
@@ -1216,7 +1222,7 @@ languages.forEach(lang => {
             </p>
             <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
               <button type="button" class="btn-gold js-open-quote">${dict.nav.quoteBtn}</button>
-              <a href="tel:+212619918223" class="btn-ghost">${dict.nav.call} : +212 619 918 223</a>
+              <a href="tel:+212619918223" class="btn-ghost glass glass--pill">${dict.nav.call} : +212 619 918 223</a>
             </div>
           </div>
         </div>
