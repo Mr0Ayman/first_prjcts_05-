@@ -120,3 +120,4 @@ Le projet est configuré pour un hébergement statique ultra-rapide sur Netlify 
 - **Règles de redirection** : `dist/_redirects` gère automatiquement la redirection 301 de `/de-40-a-60-chambre` vers `/de-40-a-60-chambres/` en français, anglais et espagnol.
 - **Protection anti-indexation** : `dist/robots.txt` contient `Disallow: /` et chaque page intègre `<meta name="robots" content="noindex, nofollow">` pour garantir que cette prévisualisation client ne concurrence pas le site WordPress en ligne.
 - **Dépendances sur Netlify** : `npm run build` s'exécute sans dépendre de Sharp ni des originaux bruts grâce aux assets WebP pré-optimisés et commités dans `public/img/`.
+"# first_prjcts_05-" 
